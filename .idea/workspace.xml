@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +20,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -122,22 +120,45 @@
       <workItem from="1583131486564" duration="1720000" />
       <workItem from="1583133695344" duration="1617000" />
       <workItem from="1583135422635" duration="4825000" />
-      <workItem from="1583152961663" duration="332000" />
+      <workItem from="1583152961663" duration="977000" />
+      <workItem from="1583214181140" duration="603000" />
     </task>
+    <task id="LOCAL-00001" summary="韦健峰">
+      <created>1583153347654</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583153347654</updated>
+    </task>
+    <task id="LOCAL-00002" summary="韦健峰修改">
+      <created>1583153463503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583153463503</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="韦健峰" />
+    <MESSAGE value="韦健峰修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="韦健峰修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="572" y="202" key="#Project_Structure" timestamp="1583134612383">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="572" y="202" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1583134612383" />
-    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1583153346966">
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1583153462842">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583153346966" />
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583153462842" />
     <state x="740" y="298" key="FileChooserDialogImpl" timestamp="1583138954751">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -194,15 +215,27 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="490" y="198" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583135767887" />
+    <state x="129" y="61" key="MergeDialog" timestamp="1583153672662">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="61" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1583153672662" />
+    <state x="392" y="81" key="MultipleFileMergeDialog" timestamp="1583153672668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="81" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1583153672668" />
     <state x="329" y="19" key="SettingsEditor" timestamp="1583152993432">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="329" y="19" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583152993432" />
     <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583153362256">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583153696127">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583153362256" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583153696127" />
+    <state x="377" y="166" key="git4idea.merge.GitPullDialog" timestamp="1583153662093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="377" y="166" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583153662093" />
     <state x="334" y="244" key="new project wizard" timestamp="1583132523387">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
