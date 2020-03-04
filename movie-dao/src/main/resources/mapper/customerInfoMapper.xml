@@ -13,6 +13,7 @@
         <result property="customerInterest" column="cu_interest"/>
         <result property="customerSign" column="cu_sign"/>
         <result property="customerState" column="cu_state"/>
+        <collection property="roles" resultMap="roleMap"/>
     </resultMap>
 
     <resultMap id="roleMap" type="edu.nf.movie.customer.entity.CustomerRole">
