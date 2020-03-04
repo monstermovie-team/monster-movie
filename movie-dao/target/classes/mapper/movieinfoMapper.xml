@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.movie.dao.MovieDao">
+    <resultMap id="MovieMap" type="edu.nf.movie.movie.entity.MovieInfo">
+        <id property="movieId" column="movie_id"/>
+        <result property="movieName" column="movie_name"/>
+        <result property="movieEnglishName" column="movie_english_name"/>
+        <result property="movieWantToSee" column="movie_want_to_see"/>
+        <result property="movieType" column="movie_type"/>
+        <result property="movieRegion" column="movie_region"/>
+        <result property="movieYear" column="movie_year"/>
+        <result property="movieState" column="movie_state"/>
+        <result property="movieTime" column="movie_time"/>
+        <result property="movieIntroduce" column="movie_introduce"/>
+        <result property="movieImage" column="movie_image"/>
+    </resultMap>
+
+    <select id="movieInfoList" resultMap="MovieMap">
+        select movie_id,movie_name,movie_english_name,movie_want_to_see,
+        mt.mt_message,mr_message,my_message,ms_message,movie_time,movie_introduce
+        from movie_info mi
+        left join movie_type mt on mi.movie_type=mt.mt_id
+        left join movie_region mr on mi.movie_region=mr.mr_id
+        left join movie_year my on mi.movie_year=my.my_id
+        left join movie_state ms on mi.movie_state=ms.ms_id
+    </select>
+</mapper>
