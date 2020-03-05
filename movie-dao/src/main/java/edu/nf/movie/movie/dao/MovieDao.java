@@ -1,6 +1,7 @@
 package edu.nf.movie.movie.dao;
 
-import edu.nf.movie.customer.entity.MovieInfo;
+import edu.nf.movie.movie.entity.MovieInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
