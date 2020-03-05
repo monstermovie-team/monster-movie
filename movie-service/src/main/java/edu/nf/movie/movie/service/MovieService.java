@@ -1,7 +1,7 @@
 package edu.nf.movie.movie.service;
 
 import com.github.pagehelper.PageInfo;
-import edu.nf.movie.customer.entity.MovieInfo;
+import edu.nf.movie.movie.entity.MovieInfo;
 
 
 /**
