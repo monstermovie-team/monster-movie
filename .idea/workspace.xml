@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/PasswordUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/MovieInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/MovieInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/forgetpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/forgetpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/forgetpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/forgetpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/test/java/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/test/java/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/test-classes/MovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/test-classes/MovieTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,8 +136,16 @@
       <workItem from="1583367071065" duration="2911000" />
       <workItem from="1583389908807" duration="230000" />
       <workItem from="1583409093697" duration="3358000" />
-      <workItem from="1583413050110" duration="257000" />
+      <workItem from="1583413050110" duration="551000" />
     </task>
+    <task id="LOCAL-00001" summary="实现登录功能2">
+      <created>1583413407195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583413407196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +157,8 @@
     <MESSAGE value="付金鑫修改xxx" />
     <MESSAGE value="付金鑫修改xxxx" />
     <MESSAGE value="实现登录功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现登录功能" />
+    <MESSAGE value="实现登录功能2" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现登录功能2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="572" y="202" key="#Project_Structure" timestamp="1583134612383">
@@ -188,6 +169,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583220780536" />
+    <state x="534" y="133" key="CommitChangelistDialog2" timestamp="1583413400884">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="534" y="133" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583413400884" />
     <state x="740" y="298" key="FileChooserDialogImpl" timestamp="1583368766751">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -266,10 +251,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583221214867" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583153617895">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="650" y="323" key="git4idea.merge.GitPullDialog" timestamp="1583413658841">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583153617895" />
+    <state x="650" y="323" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583413658841" />
     <state x="334" y="235" key="new project wizard" timestamp="1583221330756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
