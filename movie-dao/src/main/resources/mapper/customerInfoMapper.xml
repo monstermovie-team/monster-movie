@@ -28,4 +28,5 @@
         join customer_role cr on cr.cr_id=cur.cr_id
         where cu.cu_accounts=#{accounts}
     </select>
+
 </mapper>
