@@ -1,20 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/MovieInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/vo/ResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/test/java/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/monstermovie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monstermovie.iml" afterDir="false" />
+    <list default="true" id="d7742ca8-bc8a-419a-ac0a-f8e05c5c97ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/AreaInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-appweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/customer/dao/CustomerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/test-classes/META-INF/movie-dao.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/MovieTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/META-INF/movie-entity.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieRegion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieYear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/vo/ResultVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/vo/ResultVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/app.09ebb06f95ff4c729293c79136bbd134.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/comment.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/confirmOrder.34c52e65649768a8a40cbb11f6ae3042.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/detail.aa4171576cadfe555a33806d30ee79ae.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/home.42d875f689014643ebb62ec314da83d0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/sns-login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/style1536672475627.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/vendor.aade76778e378ed7f66df3e175becfd4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/forgetpassword.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/12377.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/198015791585840511582272975574.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/19801582272552035.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/4dd0d9073f8a63e158d86d922a5302eb829df7d0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/8URZhIAs1573201328894.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/a23e95f6899188498deb478539c3b5c100cc49fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imH809cdcwsRc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imHl3T3Z455Sc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imoXtxrDfyyu2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/confirmOrder.d6130e2a7321529fcce2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/detail.d5f8fb907550dc233ec7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/home.29c94a0a23d456dd7a7a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/initialCookie.183bf82a90064a6a0090.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jumpToH5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/manifest.94caa86e5d3d8a9bda8f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/maps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/recaptcha__zh_cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/timing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.28047b75b535f539749f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.fd5e73123e0a5f68c3a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/shopping_trolley.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_buy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/META-INF/movie-pcweb.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/exception/UserNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/test-classes/META-INF/movie-service.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +91,20 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,7 +119,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
