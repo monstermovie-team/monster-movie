@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="" />
+    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/dao/ActorInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/actorIntroduction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/celebrity-index.da195e08.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/common.d1d257d3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/movie-detail.6bbac42e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/filmIntroduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/monstermovie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monstermovie.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,8 +51,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="mavenHome" value="F:/Apache Maven/apache-maven-3.6.1" />
+        <option name="localRepository" value="F:\Apache Maven\repo" />
         <option name="userSettingsFile" value="F:\Apache Maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -51,11 +77,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-pcweb/src/main/resources/static" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -68,11 +100,11 @@
       <recent name="edu.nf.movie.customer.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\S3S152\毕业团队项目\monstermovie\movie-pcweb\src\main\resources\static" />
+      <recent name="G:\S3S152\毕业团队项目\monstermovie\movie-pcweb\src\main\resources\static\css" />
       <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\resources" />
       <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\java\edu\nf\movie\customer\pcweb" />
       <recent name="F:\study\ideaproject\monstermovie\movie-dao\src\main\resources\mapper" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-entity\src\main\java\edu\nf\movie\customer\entity" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-appweb\src\main\java\edu\nf\movie" />
     </key>
   </component>
   <component name="RunManager">
@@ -122,58 +154,83 @@
       <workItem from="1583133695344" duration="1617000" />
       <workItem from="1583135422635" duration="4825000" />
       <workItem from="1583152961663" duration="332000" />
-      <workItem from="1583154712316" duration="34000" />
+      <workItem from="1583154712316" duration="316000" />
+      <workItem from="1583300857722" duration="13987000" />
+      <workItem from="1583383380158" duration="4034000" />
     </task>
+    <task id="LOCAL-00001" summary="黄芊富">
+      <created>1583154979702</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583154979702</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="黄芊富" />
+    <option name="LAST_COMMIT_MESSAGE" value="黄芊富" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="572" y="202" key="#Project_Structure" timestamp="1583134612383">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="407" y="44" key="#Project_Structure" timestamp="1583330349977">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="407" y="44" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1583330349977" />
     <state x="572" y="202" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1583134612383" />
-    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1583153346966">
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1583154978806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583153346966" />
-    <state x="526" y="201" key="FileChooserDialogImpl" timestamp="1583154740772">
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583154978806" />
+    <state x="526" y="201" key="FileChooserDialogImpl" timestamp="1583304751177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583154740772" />
+    <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583304751177" />
     <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583138954751" />
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.0.bottom" timestamp="1583387660221">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583387660221" />
     <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1583140253701">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.0.center" timestamp="1583387660221">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583387660221" />
     <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253701" />
-    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1583140253701">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.0.left" timestamp="1583387660221">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583387660221" />
     <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253701" />
-    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.0.right" timestamp="1583387660221">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583387660221" />
     <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.1.bottom" timestamp="1583387660222">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583387660222" />
     <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.1.center" timestamp="1583387660222">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583387660222" />
     <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.1.left" timestamp="1583387660222">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583387660221" />
     <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="398" key="GridCell.Tab.1.right" timestamp="1583387660222">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="398" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583387660222" />
     <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
     <state width="1877" height="363" key="GridCell.Tab.2.bottom" timestamp="1583140253702">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -191,23 +248,24 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="363" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state x="490" y="198" key="Maven.ArtifactSearchDialog" timestamp="1583135767887">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="349" y="37" key="Maven.ArtifactSearchDialog" timestamp="1583304277527">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="349" y="37" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1583304277527" />
     <state x="490" y="198" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583135767887" />
-    <state x="329" y="11" key="SettingsEditor" timestamp="1583154744809">
+    <state x="326" y="0" key="SettingsEditor" timestamp="1583317911080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="329" y="11" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583154744809" />
+    <state x="326" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583317911080" />
     <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583153362256">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583154982580">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583153362256" />
-    <state x="373" y="154" key="git4idea.merge.GitPullDialog" timestamp="1583154928495">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583154982580" />
+    <state x="373" y="154" key="git4idea.merge.GitPullDialog" timestamp="1583387731609">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="373" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583154928495" />
+    <state x="373" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583387731609" />
     <state x="334" y="244" key="new project wizard" timestamp="1583132523387">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
