@@ -3,7 +3,11 @@ spring:
   # 数据源配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+<<<<<<< HEAD
+    url: jdbc:mysql://localhost:3306/monster-movie?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8
+=======
     url: jdbc:mysql://134.175.228.170:3306/monster_movie?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8
+>>>>>>> origin/master
     username: root
     password: root
     # 使用druid连接池，当使用其他连接池的时候，可以指定type类型为对应的数据源
