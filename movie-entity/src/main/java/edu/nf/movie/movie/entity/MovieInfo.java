@@ -1,4 +1,4 @@
-package edu.nf.movie.customer.entity;
+package edu.nf.movie.movie.entity;
 
 import lombok.Data;
 
@@ -15,9 +15,9 @@ public class MovieInfo {
     private String movieType;//电影类型
     private String movieRegion;//电影区域
     private String movieYear;//电影年代
-    private Integer movieState;//电影状态
+    private String movieState;//电影状态
     private Integer movieTime;//电影时长
     private String movieIntroduce;//电影介绍
-    private String movieImage;//电影图片
+    //private String movieImage;//电影图片
 
 }

@@ -7,13 +7,12 @@
         <result property="movieName" column="movie_name"/>
         <result property="movieEnglishName" column="movie_english_name"/>
         <result property="movieWantToSee" column="movie_want_to_see"/>
-        <result property="movieType" column="movie_type"/>
-        <result property="movieRegion" column="movie_region"/>
-        <result property="movieYear" column="movie_year"/>
-        <result property="movieState" column="movie_state"/>
+        <result property="movieType" column="mt_message"/>
+        <result property="movieRegion" column="mr_message"/>
+        <result property="movieYear" column="my_message"/>
+        <result property="movieState" column="ms_message"/>
         <result property="movieTime" column="movie_time"/>
         <result property="movieIntroduce" column="movie_introduce"/>
-        <result property="movieImage" column="movie_image"/>
     </resultMap>
 
     <select id="movieInfoList" resultMap="MovieMap">

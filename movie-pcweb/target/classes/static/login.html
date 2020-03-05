@@ -12,7 +12,7 @@
 	<body class="pg-unitive-login theme--maoyan">
 		<!-- logo图片 -->
 		<header class="header cf" >
-			<img src="img/logo.png"/>
+			<img src="img/logo.png" style="width: 200px; height:auto;"/>
 		</header>
 
 		<div class="site-body-wrapper">
@@ -26,8 +26,9 @@
 					<form id="loginForm" action="customer_login" method="POST" class="form form--stack">
 						
 						<!-- 提示密码错误div -->
-						<div class="validate-info" style="visibility:hidden;">
+						<div class="validate-info" style="display:none;">
 							<i class="tip-status tip-status--opinfo"></i>
+							<span id="errorTips"></span>
 						</div>
 
 						<span>账号登录</span>
@@ -84,8 +85,10 @@
 				    data : params,
 				    success : function(result){
 				        if(result.code == 401){
-				            alert(result.message);
+				        	$(".validate-info").css("display","block");
+				            $("#errorTips").text(result.message);
 				        }else {
+							$(".validate-info").css("display","none");
 				            alert("登陆成功");
 				        }
 				    }

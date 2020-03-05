@@ -1,10 +1,10 @@
 
 import com.github.pagehelper.PageInfo;
-import edu.nf.movie.customer.entity.MovieInfo;
+import edu.nf.movie.movie.entity.MovieInfo;
 import edu.nf.movie.movie.service.MovieService;
-import edu.nf.movie.movie.service.impl.MovieServiceImpl;
 
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author Fu
@@ -12,10 +12,12 @@ import org.junit.Test;
  */
 public class MovieTest {
 
+    @Autowired
+    private MovieService service;
+
     @Test
     public void testListMovie() {
-        MovieService movieService = new MovieServiceImpl();
-        PageInfo<MovieInfo> pageInfo = movieService.movieInfoList(1, 5);
+        PageInfo<MovieInfo> pageInfo = service.movieInfoList(1, 5);
         pageInfo.getList().forEach(movieInfo -> System.out.println(movieInfo.getMovieName()));
     }
 
