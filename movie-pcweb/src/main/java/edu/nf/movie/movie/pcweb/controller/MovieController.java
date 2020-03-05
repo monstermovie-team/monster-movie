@@ -18,7 +18,7 @@ public class MovieController extends BaseController{
     @Autowired
     private MovieService movieService;
 
-    @GetMapping("/list_movie")
+    @GetMapping("/movie_list")
     public ResultVO<PageInfo<MovieInfo>> listCity(Integer pageNum, Integer pageSize){
         PageInfo<MovieInfo> movieInfos = movieService.movieInfoList(pageNum,pageSize);
         return success(movieInfos);
