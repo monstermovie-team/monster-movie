@@ -1,4 +1,4 @@
-package edu.nf.movie.actor.dao;
+package edu.nf.movie.actor.entity;
 
 import lombok.Data;
 
