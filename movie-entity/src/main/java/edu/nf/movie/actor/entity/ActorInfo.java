@@ -18,6 +18,10 @@ public class ActorInfo {
      */
     private String actorName;
     /**
+     * 演员英文名
+     */
+    private String actorEnglishName;
+    /**
      * 演员身份
      */
     private String actorIdentity;
