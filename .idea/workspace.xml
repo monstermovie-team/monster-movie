@@ -16,6 +16,12 @@
     <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\Apache Maven\repo" />
+        <option name="userSettingsFile" value="F:\Apache Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -34,6 +40,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -58,6 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583415845941</updated>
     </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="" />
+      <created>1583487127672</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583487127672</updated>
+      <workItem from="1583487129114" duration="94000" />
+    </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
@@ -77,6 +95,14 @@
     </state>
     <state x="344" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583486062742" />
     <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415844847" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1583487222334">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583487222334" />
+    <state x="184" y="5" key="SettingsEditor" timestamp="1583487224564">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583487224564" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583415864907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
