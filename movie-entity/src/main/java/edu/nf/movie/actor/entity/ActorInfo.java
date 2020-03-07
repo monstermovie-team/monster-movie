@@ -1,4 +1,4 @@
-package edu.nf.movie.actor.dao;
+package edu.nf.movie.actor.entity;
 
 import lombok.Data;
 
@@ -17,6 +17,10 @@ public class ActorInfo {
      * 演员姓名
      */
     private String actorName;
+    /**
+     * 演员英文名
+     */
+    private String actorEnglishName;
     /**
      * 演员身份
      */

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.actor.dao.ActorDao">
+    <resultMap id="ActorMap" type="edu.nf.movie.actor.entity.ActorInfo">
+        <id property="actorId" column="actor_id"/>
+        <result property="actorName" column="actor_name"/>
+        <result property="actorEnglishName" column="actor_english_name"/>
+        <result property="actorIdentity" column="actor_identity"/>
+        <result property="actorBirthday" column="actor_birthday"/>
+        <result property="actorSex" column="actor_sex"/>
+        <result property="actorIntroduce" column="actor_introduce"/>
+        <result property="actorBirthplace" column="actor_birthplace"/>
+        <result property="actorNationality" column="actor_nationality"/>
+        <result property="actorGraduation" column="actor_graduation"/>
+        <result property="actorPrize" column="actor_prize"/>
+    </resultMap>
+
+    <!--    <select id="findActor" resultMap="ActorMap" parameterType="integer">-->
+
+    <!--    </select>-->
+
+</mapper>

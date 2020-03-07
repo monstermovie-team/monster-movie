@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/actor/dao/ActorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/actorInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorJoinMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/actorIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/actorIntroduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/filmIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movieIntroduction.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="mapper" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\Apache Maven\repo" />
+        <option name="userSettingsFile" value="F:\Apache Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yk9LQHentGR7VXLAQIsMfVZXP3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\S3S152\毕业团队项目\monster-movie\movie-entity\src\main\java\edu\nf\movie\actor\entity" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="付金鑫123">
+      <created>1583415845941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583415845941</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="" />
+      <created>1583487127672</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583487127672</updated>
+      <workItem from="1583487129114" duration="1189000" />
+    </task>
+    <task id="LOCAL-00002" summary="qianf">
+      <created>1583487298084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583487298084</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改">
+      <created>1583487452726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583487452726</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="测试" />
+    <MESSAGE value="付金鑫123" />
+    <MESSAGE value="qianf" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="344" y="0" key="CommitChangelistDialog2" timestamp="1583487451174">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583487451174" />
+    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415844847" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1583487222334">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583487222334" />
+    <state x="184" y="5" key="SettingsEditor" timestamp="1583487224564">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583487224564" />
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1583487458958">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583487458958" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415864907" />
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583415854947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583415854947" />
+  </component>
+</project>
