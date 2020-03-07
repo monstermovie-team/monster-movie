@@ -2,95 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7742ca8-bc8a-419a-ac0a-f8e05c5c97ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/AreaInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-appweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/customer/dao/CustomerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/test-classes/META-INF/movie-dao.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/MovieTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/META-INF/movie-entity.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieRegion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieYear.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/BaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/vo/ResultVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/BaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/vo/ResultVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/app.09ebb06f95ff4c729293c79136bbd134.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/comment.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/confirmOrder.34c52e65649768a8a40cbb11f6ae3042.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/detail.aa4171576cadfe555a33806d30ee79ae.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/home.42d875f689014643ebb62ec314da83d0.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/sns-login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/style1536672475627.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/vendor.aade76778e378ed7f66df3e175becfd4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/forgetpassword.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/12377.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/198015791585840511582272975574.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/19801582272552035.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/4dd0d9073f8a63e158d86d922a5302eb829df7d0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/8URZhIAs1573201328894.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/a23e95f6899188498deb478539c3b5c100cc49fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imH809cdcwsRc.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imHl3T3Z455Sc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imoXtxrDfyyu2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/confirmOrder.d6130e2a7321529fcce2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/detail.d5f8fb907550dc233ec7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/hm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/home.29c94a0a23d456dd7a7a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/initialCookie.183bf82a90064a6a0090.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jumpToH5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/manifest.94caa86e5d3d8a9bda8f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/maps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/recaptcha__zh_cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/timing.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.28047b75b535f539749f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.fd5e73123e0a5f68c3a6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/shopping_trolley.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_buy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/META-INF/movie-pcweb.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/exception/UserNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/test-classes/META-INF/movie-service.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -123,15 +41,12 @@
     <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="JRebelWorkspace">
-    <option name="jrebelEnabledAutocompile" value="true" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\Fu\Desktop\Study\repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Study/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="C:\Users\Fu\Desktop\Study\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="D:\Maven\Repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -247,7 +162,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="" />
+      <changelist id="d7742ca8-bc8a-419a-ac0a-f8e05c5c97ae" name="Default Changelist" comment="" />
       <created>1583131107834</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -260,7 +175,19 @@
       <workItem from="1583221214894" duration="2077000" />
       <workItem from="1583223848655" duration="3726000" />
       <workItem from="1583306432948" duration="9138000" />
+      <workItem from="1583408702559" duration="247000" />
+      <workItem from="1583408969593" duration="718000" />
+      <workItem from="1583409708240" duration="3115000" />
+      <workItem from="1583581568357" duration="238000" />
     </task>
+    <task id="LOCAL-00001" summary="wjf 3-5">
+      <created>1583393782599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583393782600</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +198,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="付金鑫修改xxx" />
     <MESSAGE value="付金鑫修改xxxx" />
-    <option name="LAST_COMMIT_MESSAGE" value="付金鑫修改xxxx" />
+    <MESSAGE value="wjf 3-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="wjf 3-5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="572" y="202" key="#Project_Structure" timestamp="1583134612383">
@@ -286,9 +214,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583220780536" />
-    <state x="740" y="287" key="FileChooserDialogImpl" timestamp="1583220082431">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="254" y="0" key="CommitChangelistDialog2" timestamp="1583581976038">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="254" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583581976038" />
+    <state x="526" y="201" key="FileChooserDialogImpl" timestamp="1583408795912">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583408795912" />
     <state x="740" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583220082431" />
     <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583138954751" />
     <state width="1877" height="552" key="GridCell.Tab.0.bottom" timestamp="1583319482803">
@@ -351,9 +284,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="490" y="198" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583135767887" />
-    <state x="463" y="178" key="SettingsEditor" timestamp="1583319358114">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="329" y="19" key="SettingsEditor" timestamp="1583410163766">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="329" y="19" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583410163766" />
     <state x="463" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583319358114" />
     <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583153579930">
@@ -364,9 +298,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583306438281" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583153617895">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="462" y="218" key="git4idea.merge.GitPullDialog" timestamp="1583393797969">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="462" y="218" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583393797969" />
     <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583153617895" />
     <state x="334" y="235" key="new project wizard" timestamp="1583221330756">
       <screen x="0" y="0" width="1920" height="1040" />

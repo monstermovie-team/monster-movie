@@ -1,5 +1,6 @@
 package edu.nf.movie.cinema.dao;
 
+import edu.nf.movie.cinema.entity.MovieTheatre;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -18,5 +19,5 @@ public interface CinemaDao {
      * @param pageSize
      * @return
      */
-    List<MovieTheatre> getCinemaList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize,String areaCounty);
+    List<MovieTheatre> getCinemaList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize, String areaCounty);
 }
