@@ -117,7 +117,7 @@
       <workItem from="1583647907945" duration="2556000" />
       <workItem from="1583650726245" duration="614000" />
       <workItem from="1583651356845" duration="584000" />
-      <workItem from="1583652155116" duration="17000" />
+      <workItem from="1583652155116" duration="531000" />
     </task>
     <task id="LOCAL-00002" summary="怪兽电影">
       <created>1583475758147</created>
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583651555285</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="怪兽电影-付金鑫">
+      <created>1583652196582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583652196582</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,10 +163,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="怪兽电影-付金鑫" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="41" key="CommitChangelistDialog2" timestamp="1583651554500">
+    <state x="484" y="41" key="CommitChangelistDialog2" timestamp="1583652195453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583651554500" />
+    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583652195453" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583651939905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,21 +203,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="144" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665389" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1583652172898">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1583652892387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583652172898" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583652892387" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583475767429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583475767429" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583652154545">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583652882499">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583652154545" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583651882767">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583652882499" />
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583652231039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583651882767" />
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583652231039" />
   </component>
 </project>
