@@ -11,8 +11,8 @@
 
 		<!-- 顶部logo -->
 		<header class="header--mini">
-			<div style="border-bottom: 2px solid #CC0000;height: 55px;">
-				<a class="site-logo" href="javascript:void(0)" style="margin-left:450px;background-image: ;">怪兽电影logo</a>
+			<div style="border-bottom: 2px solid #CC0000;height: 70px;">
+				<img src="img/logo.png" style="width: 200px; height:auto;margin-left: 400px;"/>
 			</div>
 		</header>
 
@@ -21,46 +21,37 @@
 
 				<div class="sheet" style="display:block">
 					<!-- 注册表单 -->
-					<form action="" method="POST">
-						<!-- 手机号框 -->
+					<form id="registerForm" method="POST">
+
+						<!-- 注册失败提示框 -->
+						<div class="validate-info" style="display:none;">
+							<i class="tip-status tip-status--opinfo"></i>
+							<span id="errorTips"></span>
+						</div>
+
+						<!-- 用户名框 -->
 						<div class="form-field form-field--mobile">
-							<label>手机号</label>
-							<input type="text" name="" class="f-text J-mobile">
+							<label>用户名</label>
+							<input type="text" name="customerName" class="f-text J-mobile">
 						</div>
-						<!-- 获取动态码按钮 -->
-						<div class="form-field form-field--vbtn">
-							<div class="verify-wrapper">
-								<input type="button" class="btn-normal btn-mini verify-btn J-verify-btn" value="免费获取短信动态码">
-								<!-- 获取后计时标签 -->
-								<span class="f1 verify-tip" id="J-verify-tip"></span>
-							</div>
-						</div>
-						<!-- 填写动态码框 -->
-						<div class="form-field form-field--sms">
-							<label>短信动态码</label>
-							<input type="text" name="" class="f-text J-sms">
+						<!-- 账号框 -->
+						<div class="form-field form-field--mobile">
+							<label>账号</label>
+							<input type="text" name="customerAccounts" class="f-text J-mobile">
 						</div>
 						<!-- 创建密码框 -->
 						<div class="form-field form-field--pwd">
-							<div class="pw-strength">
-								<div class="pw-strength__bar" id="J-pw-strength__bar"></div>
-								<div class="pw-strength__letter">
-									<span class="pw-strength__label">弱</span>
-									<span class="pw-strength__label">中</span>
-									<span class="pw-strength__label pw-strength__label--noborder">强</span>
-								</div>
-							</div>
-							<label>创建密码</label>
-							<input type="password" name="password" class="f-text J-pwd">
+							<label>密码</label>
+							<input type="password" name="customerPassword" class="f-text J-pwd">
 						</div>
 						<!-- 确认密码框 -->
-						<div class="form-field form-field--pwd2" style="margin-top: 16px;">
+						<div class="form-field form-field--pwd2">
 							<label>确认密码</label>
 							<input type="password" name="password2" class="f-text J-pwd2">
 						</div>
 						<!-- 注册按钮 -->
 						<div class="form-field">
-							<input type="button" name="" class="btn" value="注册" style="width: 260px;">
+							<input type="button" class="btn" value="注册" style="width: 260px;" onclick="register()">
 						</div>
 					</form>
 				</div>
@@ -78,5 +69,39 @@
 				</p>
 			</div>
 		</footer>
+
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script>
+			function register() {
+				var accounts = $("input[name='customerAccounts']").val();
+				var form = $("#registerForm").serialize();
+				$.ajax({
+					url : 'register',
+					type : 'post',
+					data : form,
+					success : function(result){
+						if(result.code == 200){
+							//$(".validate-info").css("display","none");
+							alert("注册成功");
+							//location.href="login.html";
+							// $.ajax({
+							// 	url : 'addCustomerUserRole',
+							// 	type : 'post',
+							// 	data : "customerAccounts="+accounts,
+							// 	success : function(result){
+							// 		if(result.code == 200){
+							// 			alert("注册成功");
+							// 		}
+							// 	}
+							// });
+						}else {
+							alert(result.message);
+							// $(".validate-info").css("display","block");
+							// $("#errorTips").text(result.message);
+						}
+					}
+				});
+			}
+		</script>
 	</body>
 </html>

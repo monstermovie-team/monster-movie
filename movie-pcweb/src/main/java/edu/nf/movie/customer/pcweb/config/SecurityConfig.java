@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.nf.movie.customer.pcweb.vo.ResultVO;
 import edu.nf.movie.customer.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -13,6 +14,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
@@ -111,8 +114,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/login.html","/register.html","/forgetpassword.html","/**/*.css","/**/*.js","/**/*.png");
+        web.ignoring().antMatchers("/**/*.css","/**/*.js","/**/*.png");
     }
+
+    /**
+     * 设置密码加密的encoder
+     * @return
+     */
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+    }
+
     /**
      *  指定获取用户信息的Service类，因为该Service类必须实现UserDetailsService接口
      *  ，所以security会调用该接口的loadUserByUsername方法获取用户以及角色信息
@@ -123,7 +136,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         //auth.inMemoryAuthentication().withUser("wangl").password("{noop}123456").roles("user");
-        auth.userDetailsService(customerService);
+        auth.userDetailsService(customerService).passwordEncoder(passwordEncoder());
     }
 
     /**
