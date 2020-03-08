@@ -74,9 +74,6 @@
 
 		<script src="js/jquery-1.12.4.min.js"></script>
 		<script>
-			function test() {
-				alert("12#");
-			}
 			function log() {
 				var params = $("#loginForm").serialize();
 				$.ajax({
@@ -84,12 +81,12 @@
 				    type : 'post',
 				    data : params,
 				    success : function(result){
-				        if(result.code == 401){
-				        	$(".validate-info").css("display","block");
-				            $("#errorTips").text(result.message);
-				        }else {
+				        if(result.code == 200){
 							$(".validate-info").css("display","none");
-				            alert("登陆成功");
+							alert("登陆成功");
+				        }else {
+							$(".validate-info").css("display","block");
+							$("#errorTips").text(result.message);
 				        }
 				    }
 				});
