@@ -1,6 +1,7 @@
 package edu.nf.movie.movie.service.impl;
 
 import com.github.pagehelper.PageInfo;
+import edu.nf.movie.exception.DataException;
 import edu.nf.movie.movie.entity.MovieInfo;
 import edu.nf.movie.movie.dao.MovieDao;
 import edu.nf.movie.movie.entity.MovieRegion;
@@ -51,4 +52,37 @@ public class MovieServiceImpl implements MovieService {
         List<MovieRegion> movieRegion = movieDao.movieRegionList();
         return movieRegion;
     }
+
+
+
+    @Override
+    public MovieInfo findMovie(Integer movieId) {
+        try{
+            MovieInfo movieInfo=movieDao.findMovie(movieId);
+            return movieInfo;
+        }catch (Exception e){
+            throw  new DataException("服务器内部错误,暂时无法访问");
+        }
+    }
+
+    @Override
+    public String moviePoster(Integer movieId) {
+        try{
+            return movieDao.moviePoster(movieId);
+        }catch (Exception e){
+            throw new DataException("服务器内部错误，无法查询海报");
+        }
+    }
+
+    @Override
+    public List<String> listMoviePoster(Integer movieId) {
+        try{
+            List<String> list=movieDao.listMoviePoster(movieId);
+            return list;
+        }catch (Exception e){
+            throw new DataException("服务器内部错误，无法查询图集");
+        }
+    }
+
+
 }

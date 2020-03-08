@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.cinema.dao.CinemaDao">
+    <resultMap id="MTMap" type="edu.nf.movie.cinema.entity.MovieTheatre">
+        <id property="mtId" column="mt_id"/>
+        <result property="mtName" column="mt_name"/>
+        <result property="areaId" column="address"/>
+    </resultMap>
+
+    <select id="getCinemaList"  resultMap="MTMap">
+        SELECT m.mt_id,m.mt_name,CONCAT(a.area_county ,a.area_address)as address
+         FROM movie_theatre m
+        left JOIN area_info a
+        ON m.area_id=a.area_id
+    </select>
+</mapper>
