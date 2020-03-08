@@ -111,10 +111,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/css/**", "/js/**",
-                "/**/*.html", "/**/*.jpg", "/**/*.png", "/**/*.ico");
+        web.ignoring().antMatchers("/login.html","/register.html","/forgetpassword.html","/**/*.css","/**/*.js","/**/*.png");
     }
-
     /**
      *  指定获取用户信息的Service类，因为该Service类必须实现UserDetailsService接口
      *  ，所以security会调用该接口的loadUserByUsername方法获取用户以及角色信息

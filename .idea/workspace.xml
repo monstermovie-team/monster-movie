@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="" />
+    <list default="true" id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/movie-list.22f5a22a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/common.74858235.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/movie-list.c1db5e4f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/owl_1.7.11.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/saved_resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/saved_resource(1)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/stat.88d57c80.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/web.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/hm.js" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/hm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,9 +37,58 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static\js" />
+      <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static\css" />
+      <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MonsterMovieApplication">
+    <configuration name="MovieTest.testListMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.MovieTest" />
+      <option name="METHOD_NAME" value="testListMovie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonsterMovieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="movie-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.nf.movie.MonsterMovieApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MonsterMovieApplication" />
+        <item itemvalue="JUnit.MovieTest.testListMovie" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -46,28 +113,84 @@
       <option name="project" value="LOCAL" />
       <updated>1583415845941</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="" />
+      <created>1583475668197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583475668197</updated>
+      <workItem from="1583475670847" duration="2182000" />
+      <workItem from="1583647907945" duration="2556000" />
+    </task>
+    <task id="LOCAL-00002" summary="怪兽电影">
+      <created>1583475758147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583475758147</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="测试" />
     <MESSAGE value="付金鑫123" />
-    <option name="LAST_COMMIT_MESSAGE" value="付金鑫123" />
+    <MESSAGE value="怪兽电影" />
+    <option name="LAST_COMMIT_MESSAGE" value="怪兽电影" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="41" key="CommitChangelistDialog2" timestamp="1583415844847">
+    <state x="484" y="41" key="CommitChangelistDialog2" timestamp="1583475757427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415844847" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583415864907">
+    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583475757427" />
+    <state width="1877" height="144" key="GridCell.Tab.0.bottom" timestamp="1583649665388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415864907" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583415854947">
+    <state width="1877" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665388" />
+    <state width="1877" height="144" key="GridCell.Tab.0.center" timestamp="1583649665388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583415854947" />
+    <state width="1877" height="144" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665388" />
+    <state width="1877" height="144" key="GridCell.Tab.0.left" timestamp="1583649665387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="144" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665387" />
+    <state width="1877" height="144" key="GridCell.Tab.0.right" timestamp="1583649665388">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="144" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665388" />
+    <state width="1877" height="144" key="GridCell.Tab.1.bottom" timestamp="1583649665389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="144" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665389" />
+    <state width="1877" height="144" key="GridCell.Tab.1.center" timestamp="1583649665389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="144" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665389" />
+    <state width="1877" height="144" key="GridCell.Tab.1.left" timestamp="1583649665388">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="144" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665388" />
+    <state width="1877" height="144" key="GridCell.Tab.1.right" timestamp="1583649665389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="144" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583649665389" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583475767429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583475767429" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583650727788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583650727788" />
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583650459286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583650459286" />
   </component>
 </project>
