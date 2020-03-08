@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/movie-list.22f5a22a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/common.74858235.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/movie-list.c1db5e4f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/owl_1.7.11.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/saved_resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/saved_resource(1)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/stat.88d57c80.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/web.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/hm.js" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/hm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" afterDir="false" />
-    </list>
+    <list default="true" id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +103,7 @@
       <updated>1583475668197</updated>
       <workItem from="1583475670847" duration="2182000" />
       <workItem from="1583647907945" duration="2556000" />
+      <workItem from="1583650726245" duration="614000" />
     </task>
     <task id="LOCAL-00002" summary="怪兽电影">
       <created>1583475758147</created>
@@ -129,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583475758147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="怪兽电影">
+      <created>1583650763337</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583650763337</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,10 +134,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="怪兽电影" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="41" key="CommitChangelistDialog2" timestamp="1583475757427">
+    <state x="484" y="41" key="CommitChangelistDialog2" timestamp="1583650762275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583475757427" />
+    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583650762275" />
     <state width="1877" height="144" key="GridCell.Tab.0.bottom" timestamp="1583649665388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,13 +174,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583475767429" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583650727788">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583651356706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583650727788" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583650459286">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583651356706" />
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583650772404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583650459286" />
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583650772404" />
   </component>
 </project>
