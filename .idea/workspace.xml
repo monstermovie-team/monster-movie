@@ -2,91 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19dec0c4-c531-4766-8c6b-89755af63bd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/arquillianContainers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-appweb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-appweb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/actor/dao/ActorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/store/dao/StoreDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/actorInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/cinemaMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/storeInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/META-INF/movie-dao.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/store/dao/StoreDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/storeInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorJoinMovie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/store/entity/StoreInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/actor/dao/ActorInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/store/entity/StoreInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/entity/CustomerInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/entity/CustomerMenu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/entity/CustomerRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.1.7.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/CinemaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/vo/ResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movieIntroduction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CinemaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/storeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/actorIntroduction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/celebrity-index.da195e08.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/common.d1d257d3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/movie-detail.6bbac42e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/storeTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/CinemaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/store/service/StoreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/store/service/impl/StoreServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/META-INF/movie-service.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/StoreService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/impl/StoreServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/dao/ActorInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/actorIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/actorIntroduction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/a.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/filmIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/filmIntroduction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/store/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/store/service/impl/StoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/impl/StoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/impl/StoreServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,30 +141,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:monstermovie-team/monster-movie&#10;&#10; Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class&#10;&#9;movie-dao/target/classes/mapper/customerInfoMapper.xml&#10;&#9;movie-dao/target/classes/mapper/movieinfoMapper.xml&#10;&#9;movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class&#10;&#9;movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class&#10;&#9;movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class&#10;&#9;movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class&#10;&#9;movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="25" key="#Web_Browsers" timestamp="1583674663546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="25" key="#Web_Browsers/0.0.1366.728@0.0.1366.728" timestamp="1583674663546" />
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583674721015">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583674721015" />
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1583671888973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583671888973" />
-    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1583673449770">
+    <state x="275" y="25" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1583674606707">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="173" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583673449770" />
-    <state width="1323" height="392" key="GridCell.Tab.0.bottom" timestamp="1583674054157">
+    <state x="275" y="25" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1583674606707" />
+    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1583674263913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
-    <state width="1323" height="392" key="GridCell.Tab.0.center" timestamp="1583674054157">
+    <state x="173" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583674263913" />
+    <state width="1323" height="392" key="GridCell.Tab.0.bottom" timestamp="1583674515834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
-    <state width="1323" height="392" key="GridCell.Tab.0.left" timestamp="1583674054157">
+    <state width="1323" height="392" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583674515834" />
+    <state width="1323" height="392" key="GridCell.Tab.0.center" timestamp="1583674515834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
-    <state width="1323" height="392" key="GridCell.Tab.0.right" timestamp="1583674054157">
+    <state width="1323" height="392" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583674515834" />
+    <state width="1323" height="392" key="GridCell.Tab.0.left" timestamp="1583674515834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
+    <state width="1323" height="392" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583674515834" />
+    <state width="1323" height="392" key="GridCell.Tab.0.right" timestamp="1583674515834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="392" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583674515834" />
     <state x="186" y="9" key="SettingsEditor" timestamp="1583673617998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -256,9 +189,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1583672686241" />
-    <state x="353" y="166" key="git4idea.merge.GitPullDialog" timestamp="1583674140604">
+    <state x="353" y="166" key="git4idea.merge.GitPullDialog" timestamp="1583674229265">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="353" y="166" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583674140604" />
+    <state x="353" y="166" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583674229265" />
   </component>
 </project>
