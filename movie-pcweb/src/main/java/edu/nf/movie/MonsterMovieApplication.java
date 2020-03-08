@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020-03-02
  */
 @SpringBootApplication
-@MapperScan(basePackages = {"edu.nf.movie.customer.dao","edu.nf.movie.movie.dao"})
+@MapperScan(basePackages = {"edu.nf.movie.customer.dao","edu.nf.movie.movie.dao","edu.nf.movie.cinema.dao"})
 public class MonsterMovieApplication {
 
 

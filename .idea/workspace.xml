@@ -1,45 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7742ca8-bc8a-419a-ac0a-f8e05c5c97ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19dec0c4-c531-4766-8c6b-89755af63bd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/arquillianContainers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-appweb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-appweb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/actor/dao/ActorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/store/dao/StoreDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/actorInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/cinemaMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/storeInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/META-INF/movie-dao.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/store/dao/StoreDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/storeInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorJoinMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/store/entity/StoreInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/actor/dao/ActorInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/store/entity/StoreInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/entity/CustomerInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/entity/CustomerMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/entity/CustomerRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/CinemaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/vo/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movieIntroduction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CinemaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/storeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/actorIntroduction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/celebrity-index.da195e08.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/common.d1d257d3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/movie-detail.6bbac42e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/storeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/CinemaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/store/service/StoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/store/service/impl/StoreServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/META-INF/movie-service.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/StoreService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/impl/StoreServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/dao/ActorInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/actor/entity/ActorInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/actorIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/actorIntroduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/filmIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/filmIntroduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="mybatis-mapper" />
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -55,93 +116,73 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1YYsxRCdhcIVzm2WBhsPFII4x3b" />
   <component name="ProjectViewState">
-    <option name="abbreviatePackageNames" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-service/src" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.29770115" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.nf.movie.cinema.pcweb.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.nf.movie.movie.pcweb.controller" />
-      <recent name="edu.nf.movie.movie.pcweb.vo" />
-      <recent name="edu.nf.movie.customer.pcweb.config" />
-      <recent name="edu.nf.movie.customer.service.exception" />
-      <recent name="edu.nf.movie.customer.service" />
+      <recent name="edu.nf.movie.cinema.pcweb.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-service\src" />
-      <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\resources" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\java\edu\nf\movie\customer\pcweb" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-dao\src\main\resources\mapper" />
+      <recent name="D:\monstermovie\movie-pcweb\src\main\java\edu\nf\movie\cinema\pcweb" />
+      <recent name="D:\monstermovie\movie-pcweb\src\main\java\edu\nf\movie" />
+      <recent name="D:\monstermovie\movie-pcweb\src\main\resources\static" />
+      <recent name="D:\monstermovie\movie-dao\src\main\resources\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest.testListMovie (1)">
-    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CinemaTest.testListMovie">
+    <configuration name="CinemaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movie-pcweb" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MovieTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CinemaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTest.testListMovie (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="movie-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MovieTest" />
-      <option name="METHOD_NAME" value="testListMovie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovieTest.testListMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="movie-pcweb" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MovieTest" />
-      <option name="METHOD_NAME" value="testListMovie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonsterMovieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CinemaTest.testListMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movie-pcweb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.nf.movie.*" />
+          <option name="PATTERN" value="edu.nf.movie.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.nf.movie.MonsterMovieApplication" />
+      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CinemaTest" />
+      <option name="METHOD_NAME" value="testListMovie" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieTest.testListMovie (1)" />
-        <item itemvalue="JUnit.MovieTest" />
-        <item itemvalue="JUnit.MovieTest.testListMovie" />
-        <item itemvalue="Spring Boot.MonsterMovieApplication" />
+        <item itemvalue="JUnit.CinemaTest.testListMovie" />
+        <item itemvalue="JUnit.CinemaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -162,151 +203,62 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d7742ca8-bc8a-419a-ac0a-f8e05c5c97ae" name="Default Changelist" comment="" />
-      <created>1583131107834</created>
+      <changelist id="19dec0c4-c531-4766-8c6b-89755af63bd2" name="Default Changelist" comment="" />
+      <created>1583667309486</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583131107834</updated>
-      <workItem from="1583131111018" duration="330000" />
-      <workItem from="1583131486564" duration="1720000" />
-      <workItem from="1583133695344" duration="1617000" />
-      <workItem from="1583135422635" duration="4825000" />
-      <workItem from="1583219301999" duration="1815000" />
-      <workItem from="1583221214894" duration="2077000" />
-      <workItem from="1583223848655" duration="3726000" />
-      <workItem from="1583306432948" duration="9138000" />
-      <workItem from="1583408702559" duration="247000" />
-      <workItem from="1583408969593" duration="718000" />
-      <workItem from="1583409708240" duration="3115000" />
-      <workItem from="1583581568357" duration="238000" />
+      <updated>1583667309486</updated>
+      <workItem from="1583667319124" duration="6269000" />
     </task>
-    <task id="LOCAL-00001" summary="wjf 3-5">
-      <created>1583393782599</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1583393782600</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="付金鑫修改xxx" />
-    <MESSAGE value="付金鑫修改xxxx" />
-    <MESSAGE value="wjf 3-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="wjf 3-5" />
+    <MESSAGE value="Merge branch 'master' of github.com:monstermovie-team/monster-movie&#10;&#10; Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class&#10;&#9;movie-dao/target/classes/mapper/customerInfoMapper.xml&#10;&#9;movie-dao/target/classes/mapper/movieinfoMapper.xml&#10;&#9;movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class&#10;&#9;movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class&#10;&#9;movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class&#10;&#9;movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class&#10;&#9;movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:monstermovie-team/monster-movie&#10;&#10; Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class&#10;&#9;movie-dao/target/classes/mapper/customerInfoMapper.xml&#10;&#9;movie-dao/target/classes/mapper/movieinfoMapper.xml&#10;&#9;movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class&#10;&#9;movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class&#10;&#9;movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class&#10;&#9;movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class&#10;&#9;movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="572" y="202" key="#Project_Structure" timestamp="1583134612383">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="572" y="202" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1583134612383" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1583318969941">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583318969941" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583220780536">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583220780536" />
-    <state x="254" y="0" key="CommitChangelistDialog2" timestamp="1583581976038">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1583671888973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="254" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583581976038" />
-    <state x="526" y="201" key="FileChooserDialogImpl" timestamp="1583408795912">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583671888973" />
+    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1583673449770">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583408795912" />
-    <state x="740" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583220082431" />
-    <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583138954751" />
-    <state width="1877" height="552" key="GridCell.Tab.0.bottom" timestamp="1583319482803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="552" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583319482803" />
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="552" key="GridCell.Tab.0.center" timestamp="1583319482803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="552" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583319482803" />
-    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253701" />
-    <state width="1877" height="552" key="GridCell.Tab.0.left" timestamp="1583319482803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="552" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583319482803" />
-    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253701" />
-    <state width="1877" height="552" key="GridCell.Tab.0.right" timestamp="1583319482803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="552" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583319482803" />
-    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583317922408">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583317922408" />
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1583317922408">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583317922408" />
-    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1583317922407">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583317922407" />
-    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1583317922408">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583317922408" />
-    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.bottom" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.center" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.left" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.right" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state x="490" y="198" key="Maven.ArtifactSearchDialog" timestamp="1583135767887">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="490" y="198" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583135767887" />
-    <state x="329" y="19" key="SettingsEditor" timestamp="1583410163766">
+    <state x="173" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583673449770" />
+    <state width="1323" height="392" key="GridCell.Tab.0.bottom" timestamp="1583674054157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="329" y="19" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583410163766" />
-    <state x="463" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583319358114" />
-    <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583153579930">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583153579930" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583306438281">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583306438281" />
-    <state x="462" y="218" key="git4idea.merge.GitPullDialog" timestamp="1583393797969">
+    <state width="1323" height="392" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
+    <state width="1323" height="392" key="GridCell.Tab.0.center" timestamp="1583674054157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="218" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583393797969" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583153617895" />
-    <state x="334" y="235" key="new project wizard" timestamp="1583221330756">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="392" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
+    <state width="1323" height="392" key="GridCell.Tab.0.left" timestamp="1583674054157">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="235" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583221330756" />
-    <state x="334" y="244" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1583132523387" />
+    <state width="1323" height="392" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
+    <state width="1323" height="392" key="GridCell.Tab.0.right" timestamp="1583674054157">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="392" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583674054157" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1583673617998">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583673617998" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583674135322">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583674135322" />
+    <state x="424" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583672686241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="424" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1583672686241" />
+    <state x="353" y="166" key="git4idea.merge.GitPullDialog" timestamp="1583674140604">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="353" y="166" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583674140604" />
   </component>
 </project>

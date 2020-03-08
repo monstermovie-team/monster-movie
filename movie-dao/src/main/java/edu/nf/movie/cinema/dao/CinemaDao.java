@@ -14,10 +14,10 @@ import java.util.List;
 @Repository
 public interface CinemaDao {
     /**
-     * 根据县区级地区查出所有电影列表
+     * 根据县区级地区查出所有电影院列表
      * @param pageNum
      * @param pageSize
      * @return
      */
-    List<MovieTheatre> getCinemaList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize, String areaCounty);
+    List<MovieTheatre> getCinemaList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize);
 }

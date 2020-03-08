@@ -19,8 +19,14 @@ public class MovieController extends BaseController{
     private MovieService movieService;
 
     @GetMapping("/movie_list")
-    public ResultVO<PageInfo<MovieInfo>> listCity(Integer pageNum, Integer pageSize){
+    public ResultVO<PageInfo<MovieInfo>> listMovie(Integer pageNum, Integer pageSize){
         PageInfo<MovieInfo> movieInfos = movieService.movieInfoList(pageNum,pageSize);
+        return success(movieInfos);
+    }
+
+    @GetMapping("/movie_list_by_State")
+    public ResultVO<PageInfo<MovieInfo>> listMovieByState(Integer pageNum, Integer pageSize,Integer State){
+        PageInfo<MovieInfo> movieInfos = movieService.movieInfoListByState(pageNum,pageSize,State);
         return success(movieInfos);
     }
 }
