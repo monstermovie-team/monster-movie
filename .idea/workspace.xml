@@ -1,41 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="movie-dao:war" />
+      <artifact name="movie-dao:war exploded" />
+      <artifact name="movie-entity:war" />
+      <artifact name="movie-entity:war exploded" />
+      <artifact name="movie-service:war" />
+      <artifact name="movie-service:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e09b13cf-d94c-40fa-8712-a1ceddfeba94" name="Default Changelist" comment="">
+    <list default="true" id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/application-dao.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/actor/dao/ActorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/dao/CustomerDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/dao/MovieDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/store/dao/StoreDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/mapper/actorInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/mapper/customerInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/mapper/movieinfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/classes/mapper/storeInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/druid-spring-boot-starter-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/movie-entity-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-autoconfigure-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-starter-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-autoconfigure-1.2.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-starter-1.2.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-dao/target/movie-dao-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/META-INF/movie-entity.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/META-INF/movie-entity.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/actor/entity/ActorImage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/actor/entity/ActorInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/actor/entity/ActorJoinMovie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/entity/MovieImage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/entity/MovieInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/entity/MovieRegion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/entity/MovieState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/entity/MovieType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/entity/MovieYear.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/store/entity/StoreInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/common.d1d257d3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/movie-list.22f5a22a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/common.74858235.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/hm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/movie-list.c1db5e4f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/owl_1.7.11.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/saved_resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/saved_resource(1)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/stat.88d57c80.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/web.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/service/exception/UserNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/service/MovieService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/store/service/StoreService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/classes/edu/nf/movie/store/service/impl/StoreServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/druid-spring-boot-starter-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/movie-dao-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/movie-entity-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/movie-util-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-autoconfigure-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-starter-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-autoconfigure-1.2.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-starter-1.2.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.4.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/customer/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/customer/dao/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/META-INF/movie-dao.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/customer/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/customer/dao/CustomerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/test-classes/META-INF/movie-dao.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/META-INF/movie-entity.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/actor/dao/ActorInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/target/movie-entity-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/actorIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/actorIntroduction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/filmIntroduction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/movie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/META-INF/movie-pcweb.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/META-INF/movie-service.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/test-classes/META-INF/movie-service.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/MovieTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +177,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="F:\Apache Maven\repo" />
-        <option name="userSettingsFile" value="F:\Apache Maven\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="C:\Users\Fu\Desktop\Study\repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Study/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="C:\Users\Fu\Desktop\Study\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -85,7 +203,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RebelAgentSelection">
@@ -97,6 +215,8 @@
       <recent name="edu.nf.movie.customer.pcweb.advice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static\css" />
+      <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static\js" />
       <recent name="G:\S3S152\毕业团队项目\monster-movie\movie-entity\src\main\java\edu\nf\movie\actor\entity" />
     </key>
   </component>
@@ -130,6 +250,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieTest.testListMovieByStatic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.MovieTest" />
+      <option name="METHOD_NAME" value="testListMovieByStatic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTest.testMovieType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.MovieTest" />
+      <option name="METHOD_NAME" value="testMovieType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonsterMovieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="movie-pcweb" />
       <extension name="coverage">
@@ -146,6 +298,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MonsterMovieApplication" />
+        <item itemvalue="JUnit.MovieTest.testListMovieByStatic" />
+        <item itemvalue="JUnit.MovieTest.testMovieType" />
         <item itemvalue="JUnit.CustomerTest.testRegister" />
         <item itemvalue="Application.PasswordUtils" />
       </list>
@@ -175,7 +329,7 @@
       <updated>1583415845941</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e09b13cf-d94c-40fa-8712-a1ceddfeba94" name="Default Changelist" comment="" />
+      <changelist id="1470130d-30b5-4a5a-85f8-337fd80935da" name="Default Changelist" comment="" />
       <created>1583487127672</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -184,6 +338,9 @@
       <workItem from="1583629718781" duration="2484000" />
       <workItem from="1583646248590" duration="188000" />
       <workItem from="1583649461971" duration="508000" />
+      <workItem from="1583665592264" duration="3301000" />
+      <workItem from="1583668916103" duration="3006000" />
+      <workItem from="1583671935256" duration="3080000" />
     </task>
     <task id="LOCAL-00002" summary="qianf">
       <created>1583487298084</created>
@@ -224,47 +381,57 @@
     </state>
     <state x="344" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583487451174" />
     <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415844847" />
-    <state x="651" y="175" key="FileChooserDialogImpl" timestamp="1583629997473">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="651" y="169" key="FileChooserDialogImpl" timestamp="1583665895197">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583487222334" />
+    <state x="651" y="169" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583665895197" />
     <state x="651" y="175" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583629997473" />
-    <state width="1877" height="174" key="GridCell.Tab.0.bottom" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1583672890702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890702" />
     <state width="1877" height="174" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state width="1877" height="174" key="GridCell.Tab.0.center" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1583672890701">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890701" />
     <state width="1877" height="174" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state width="1877" height="174" key="GridCell.Tab.0.left" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1583672890700">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890700" />
     <state width="1877" height="174" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state width="1877" height="174" key="GridCell.Tab.0.right" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1583672890702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890702" />
     <state width="1877" height="174" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state width="1877" height="174" key="GridCell.Tab.1.bottom" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.1.bottom" timestamp="1583672890702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890702" />
     <state width="1877" height="174" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state width="1877" height="174" key="GridCell.Tab.1.center" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.1.center" timestamp="1583672890702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890702" />
     <state width="1877" height="174" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state width="1877" height="174" key="GridCell.Tab.1.left" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.1.left" timestamp="1583672890702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890702" />
     <state width="1877" height="174" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state width="1877" height="174" key="GridCell.Tab.1.right" timestamp="1583632205939">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="137" key="GridCell.Tab.1.right" timestamp="1583672890702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="137" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583672890702" />
     <state width="1877" height="174" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583632205939" />
-    <state x="184" y="5" key="SettingsEditor" timestamp="1583487224564">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="259" y="7" key="SettingsEditor" timestamp="1583665900276">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583487224564" />
+    <state x="259" y="7" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665900276" />
     <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1583487458958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

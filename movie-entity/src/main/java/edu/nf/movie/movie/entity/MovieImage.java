@@ -13,11 +13,11 @@ public class MovieImage {
     /**
      * 电影图片ID
      */
-    private int movieImageId ;
+    private Integer movieImageId ;
     /**
      * 电影ID
      */
-    private int movieId;
+    private Integer movieId;
     /**
      * 电影图片路径
      */
@@ -25,5 +25,5 @@ public class MovieImage {
     /**
      * 电影图片类型，1海报2图集
      */
-    private int movieImageType;
+    private Integer movieImageType;
 }

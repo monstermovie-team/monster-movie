@@ -4,6 +4,7 @@ import edu.nf.movie.customer.entity.CustomerInfo;
 import edu.nf.movie.customer.pcweb.vo.ResultVO;
 import edu.nf.movie.customer.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +18,7 @@ public class CustomerController extends BaseController{
     @Autowired
     private CustomerService customerService;
 
-    @PostMapping("/register")
+    @GetMapping("/register")
     public ResultVO register(CustomerInfo customerInfo){
         customerService.addCustomer(customerInfo);
         return success("注册成功");

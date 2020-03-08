@@ -47,7 +47,7 @@
 						<!-- 确认密码框 -->
 						<div class="form-field form-field--pwd2">
 							<label>确认密码</label>
-							<input type="password" name="password2" class="f-text J-pwd2">
+							<input type="password" class="f-text J-pwd2">
 						</div>
 						<!-- 注册按钮 -->
 						<div class="form-field">
@@ -74,11 +74,13 @@
 		<script>
 			function register() {
 				var accounts = $("input[name='customerAccounts']").val();
-				var form = $("#registerForm").serialize();
+				//var form = $("#registerForm").serialize();
 				$.ajax({
 					url : 'register',
-					type : 'post',
-					data : form,
+					method : 'get',
+					data : {"customerName":$("input[name='customerName']").val(),
+						    "customerPassword":$("input[name='customerPassword']").val(),
+					     	"customerAccounts":$("input[name='customerAccounts']").val()},
 					success : function(result){
 						if(result.code == 200){
 							//$(".validate-info").css("display","none");

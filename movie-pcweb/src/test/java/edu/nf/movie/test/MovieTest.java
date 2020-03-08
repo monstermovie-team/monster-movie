@@ -32,7 +32,7 @@ public class MovieTest {
 
     @Test
     public void testListMovieByStatic() {
-        PageInfo<MovieInfo> pageInfo = movieService.movieInfoListByState(1, 5,2);
+        PageInfo<MovieInfo> pageInfo = movieService.movieInfoListByState(1, 5,1);
         pageInfo.getList().forEach(movieInfo -> System.out.println(movieInfo.getMovieName()));
     }
 

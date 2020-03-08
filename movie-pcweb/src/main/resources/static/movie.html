@@ -3,25 +3,24 @@
 <html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>即将上映_电影票预售_影片关注_电影推荐-猫眼电影</title>
 
-
-  <script async="" src="js/saved_resource"></script>
-  <script src="js/hm.js"></script>
   <link rel="stylesheet" href="css/common.d1d257d3.css">
 <link rel="stylesheet" href="css/movie-list.22f5a22a.css">
-  <script crossorigin="anonymous" src="js/stat.88d57c80.js"></script><script async="" defer="" charset="utf-8" src="js/web.js"></script>
+ <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.pagination.js"></script>
+  <link rel="stylesheet" href="css/pagination.css">
 <body>
 
 
 <div class="subnav">
-  <ul class="navbar">
+  <ul class="navbar" id="navbar">
     <li>
-      <a href="javascript:void(0);">正在热映</a>
+      <a class="active" href="javascript:void(0);" onclick="updateMovieState(1,this)">正在热映</a>
     </li>
     <li>
-      <a class="active" href="javascript:void(0);">即将上映</a>
+      <a href="javascript:void(0);" onclick="updateMovieState(2,this)">即将上映</a>
     </li>
     <li>
-      <a href="javascript:void(0);">经典影片</a>
+      <a href="javascript:void(0);" onclick="updateMovieState(3,this)">经典影片</a>
     </li>
   </ul>
 </div>
@@ -35,27 +34,19 @@
     <ul class="tags-lines">
       <li class="tags-line" data-val="{tagTypeName:&#39;cat&#39;}">
         <div class="tags-title">类型 :</div>
-        <ul class="tags">
-          <li class="active" data-state-val="{ catTagName:&#39;全部&#39;}">
-            <a data-act="tag-click" data-val="{TagName:&#39;全部&#39;}" href="javascript:void(0);" style="cursor: default">全部</a>
-          </li>
+        <ul class="tags" id="movieType">
+
         </ul>
       </li>
       <li class="tags-line tags-line-border" data-val="{tagTypeName:&#39;source&#39;}">
         <div class="tags-title">区域 :</div>
-        <ul class="tags">
-          <li class="active" data-state-val="{ sourceTagName:&#39;全部&#39;}">
-            <a data-act="tag-click" data-val="{TagName:&#39;全部&#39;}" href="javascript:void(0);" style="cursor: default">全部</a>
-          </li>
+        <ul class="tags" id="movieRegion">
 
         </ul>
       </li>
       <li class="tags-line tags-line-border" data-val="{tagTypeName:&#39;year&#39;}">
         <div class="tags-title">年代 :</div>
-        <ul class="tags">
-          <li class="active" data-state-val="{ yearTagName:&#39;全部&#39;}">
-            <a data-act="tag-click" data-val="{TagName:&#39;全部&#39;}" href="javascript:void(0);" style="cursor: default">全部</a>
-          </li>
+        <ul class="tags" id="movieYear">
 
         </ul>
       </li>
@@ -72,7 +63,7 @@
             </span>
           </li>
           <li>
-            <span class="sort-control-group" data-act="sort-click" data-val="{tagId: 2 }" data-href="?showType=2&amp;sortId=2" onclick="location.href=this.getAttribute(&#39;data-href&#39;)">
+            <span class="sort-control-group" data-act="sort-click" data-val="{tagId: 2 }" data-href="?showType=2&amp;sortId=2">
               <span class="sort-control sort-radio"></span>
               <span class="sort-control-label">按时间排序</span>
             </span>
@@ -80,7 +71,7 @@
         </ul>
       </div>
       <div class="play-sorter">
-        <span class="sort-control-group" data-act="isplay-click" data-val="{isplay:1}" data-href="?showType=2&amp;isPlay=1" onclick="location.href=this.getAttribute(&#39;data-href&#39;)">
+        <span class="sort-control-group" data-act="isplay-click" data-val="{isplay:1}" data-href="?showType=2&amp;isPlay=1">
           <span class="sort-control sort-checkbox"></span>
           <span class="sort-control-label">可播放</span>
         </span>
@@ -88,69 +79,175 @@
     </div>
     <div class="movies-list">
 
-    <dl class="movie-list">
-      <dd>
-        <div class="movie-item">
-          <a href="https://maoyan.com/films/1217023" target="_blank" data-act="movie-click" data-val="{movieid:1217023}">
-            <div class="movie-poster">
-              <img class="poster-default" src="./即将上映_电影票预售_影片关注_电影推荐-猫眼电影_files/loading_2.e3d934bf.png">
-              <img alt="唐人街探案3海报封面" src="./即将上映_电影票预售_影片关注_电影推荐-猫眼电影_files/b0e0d6ce9914f37e7f9f6ade13e096342721150.jpg@160w_220h_1e_1c">
-            </div>
-          </a>
+    <dl class="movie-list" id="movieList">
 
-          <div class="movie-ver"><i class="imax2d"></i></div>
-        </div>
-        <div class="channel-detail movie-item-title" title="唐人街探案3">
-          <a href="https://maoyan.com/films/1217023" target="_blank" data-act="movies-click" data-val="{movieId:1217023}">唐人街探案3</a>
-        </div>
-        <div class="channel-detail channel-detail-orange"><span class="stonefont"></span>人想看</div>
-
-      </dd>
     </dl>
 
 
     </div>
     <div class="movies-pager">
-      
-  
-  <ul class="list-pager">
-
-
-
-    <li class="active">
-    <a class="page_1" href="javascript:void(0);" style="cursor: default">1</a>
-
-</li>
-  <li>
-    <a class="page_2" href="https://maoyan.com/films?showType=2&amp;offset=30">2</a>
-
-</li>
-  <li>
-    <a class="page_3" href="https://maoyan.com/films?showType=2&amp;offset=60">3</a>
-
-</li>
-  <li>
-    <a class="page_4" href="https://maoyan.com/films?showType=2&amp;offset=90">4</a>
-
-</li>
-
-
-<li>  <a class="page_2" href="https://maoyan.com/films?showType=2&amp;offset=30">下一页</a>
-</li>
-</ul>
-
-
+        <div id="page"></div>
     </div>
   </div>
 </div>
 
     </div>
+<script>
+  load();
 
+  function load() {
+    $.ajax({
+      url : 'movie_type',
+      method : 'get',
+      success : function(result){
+        if(result.code == 200){
+          $.each(result.data,function (index,obj) {
+            if (index==0){
+              $("#movieType").append(
+                      '<li class="active">'+
+                      '<a href="javascript:void(0);" style="cursor: default">'+obj.movieTypeMessage+'</a>'+
+                      '</li>'
+              )
+            }else{
+              $("#movieType").append(
+                      '<li>'+
+                      '<a href="javascript:void(0);" style="cursor: default">'+obj.movieTypeMessage+'</a>'+
+                      '</li>'
+              )
+            }
+          })
+        }else {
+            alert(result.message);
+        }
+      }
+    });
+    $.ajax({
+      url : 'movie_region',
+      method : 'get',
+      success : function(result){
+        if(result.code == 200){
+          $.each(result.data,function (index,obj) {
+            if (index==0){
+              $("#movieRegion").append(
+                      '<li class="active">'+
+                      '<a href="javascript:void(0);" style="cursor: default">'+obj.movieRegionMessage+'</a>'+
+                      '</li>'
+              )
+            }else{
+              $("#movieRegion").append(
+                      '<li>'+
+                      '<a href="javascript:void(0);" style="cursor: default">'+obj.movieRegionMessage+'</a>'+
+                      '</li>'
+              )
+            }
+          })
+        }else {
+          alert(result.message);
+        }
+      }
+    });
+    $.ajax({
+      url : 'movie_year',
+      method : 'get',
+      success : function(result){
+        if(result.code == 200){
+          $.each(result.data,function (index,obj) {
+            if (index==0){
+              $("#movieYear").append(
+                      '<li class="active">'+
+                      '<a href="javascript:void(0);" style="cursor: default">'+obj.movieYearMessage+'</a>'+
+                      '</li>'
+              )
+            }else{
+              $("#movieYear").append(
+                      '<li>'+
+                      '<a href="javascript:void(0);" style="cursor: default">'+obj.movieYearMessage+'</a>'+
+                      '</li>'
+              )
+            }
+          })
+        }else {
+          alert(result.message);
+        }
+      }
+    });
+    $.ajax({
+      url : 'movie_list_by_State',
+      method : 'get',
+      data:{'pageNum':1,'pageSize':18,'State':1},
+      success : function(result){
+        if(result.code == 200){
+          addMovie(result.data);
+          page(result.data);
+        }else {
+          alert(result.message);
+        }
+      }
+    });
+  }
+  function addMovie(dataList){
+    $("#movieList").empty();
+    $.each(dataList.list,function (index,obj) {
+      $("#movieList").append(
+              '<dd>'+
+              '<div class="movie-item">'+
+              '<a href="javascript:void(0);" target="_blank" id="'+obj.movieId+'">'+
+              '<div class="movie-poster">'+
+              '<img class="poster-default">'+
+              '<img alt="'+obj.movieName+'海报封面">'+
+              '</div>'+
+              '</a>'+
+              '</div>'+
+              '<div class="channel-detail movie-item-title" title="唐人街探案3">'+
+              '<a href="javascript:void(0);" target="_blank" id="'+obj.movieId+'">'+obj.movieName+'</a>'+
+              '</div>'+
+              '<div class="channel-detail channel-detail-orange"><span class="stonefont">'+obj.movieWantToSee+'</span>人想看</div>'+
+              '</dd>'
+      )
+    })
+  }
+  //分页
+  function page(pageInfo){
+    $("#page").pagination(pageInfo.total, { //第一个参数指定共多少条记录
+      items_per_page:18, // 每页显示多少条记录
+      next_text:"下一页", //下一页按钮图标
+      prev_text:"上一页", //上一页按钮图标
+      num_display_entries:5,//主体页数
+      num_edge_entries: 2, //边缘页数
+      callback: function(index){//定义一个回调函数，用于每次点击页码发起分页查询请求
+        //index为当前页码，只不过下标是从0开始，因此需要+1操作
+        var pageNum = ++index;
+        $.ajax({
+          url : 'movie_list_by_State',
+          method : 'get',
+          data : {'pageNum' : pageNum, 'pageSize' : 18,'State':1},
+          success : function(result){
+            //渲染表格
+            addMovie(result.data);
+          }
+        });
+      }
+    });
+  }
 
-    <script crossorigin="anonymous" src="js/owl_1.7.11.js"></script>
-    <script src="js/saved_resource(1)"></script>
-    <script crossorigin="anonymous" src="js/common.74858235.js"></script>
-<script crossorigin="anonymous" src="js/movie-list.c1db5e4f.js"></script>
-
-
-</body></html>
+  function updateMovieState(state,id){
+    $("a.active").removeAttr("class");
+    $.ajax({
+      url : 'movie_list_by_State',
+      method : 'get',
+      data:{'pageNum':1,'pageSize':18,'State':state},
+      success : function(result){
+        if(result.code == 200){
+          alert("ok");
+          addMovie(result.data);
+          page(result.data);
+          $(id).addClass("active");
+        }else {
+          alert(result.message);
+        }
+      }
+    });
+  }
+</script>
+</body>
+</html>

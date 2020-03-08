@@ -56,7 +56,7 @@
         left join movie_region mr on mi.movie_region=mr.mr_id
         left join movie_year my on mi.movie_year=my.my_id
         left join movie_state ms on mi.movie_state=ms.ms_id
-        where ms_id = #{param1}
+        where ms_id = #{State}
     </select>
 
 
