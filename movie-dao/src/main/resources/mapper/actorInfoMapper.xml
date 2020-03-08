@@ -16,8 +16,30 @@
         <result property="actorPrize" column="actor_prize"/>
     </resultMap>
 
-    <!--    <select id="findActor" resultMap="ActorMap" parameterType="integer">-->
+    <resultMap id="actorImageMap" type="edu.nf.movie.actor.entity.ActorImage">
+        <id property="actorImageId" column="ai_id"/>
+        <result property="actorId" column="ai_actor_id"/>
+        <result property="actorImagePath" column="ai_path"/>
+        <result property="actorImageType" column="ai_type"/>
+    </resultMap>
 
-    <!--    </select>-->
+
+
+
+    <select id="findActor" resultMap="ActorMap" parameterType="integer">
+        select actor_id,actor_name,actor_english_name,actor_identity,actor_birthday,actor_sex,actor_introduce,
+        actor_birthplace,actor_nationality,actor_graduation,actor_prize from actor_info
+        where actot_id =#{actorId}
+    </select>
+
+    <select id="actorPoster" resultType="string" parameterType="integer">
+        select ai_id,ai_actor_id,ai_path,ai_type from actor_image
+        where ai_actor_id =#{actorId} and ai_type=1
+    </select>
+
+    <select id="actorListPoster" resultType="string" parameterType="integer">
+        select ai_id,ai_actor_id,ai_path,ai_type from actor_image
+        where ai_actor_id =#{actorId} and ai_type=2
+    </select>
 
 </mapper>

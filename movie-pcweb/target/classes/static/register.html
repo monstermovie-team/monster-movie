@@ -75,7 +75,6 @@
 			function register() {
 				var accounts = $("input[name='customerAccounts']").val();
 				var form = $("#registerForm").serialize();
-				alert(form);
 				$.ajax({
 					url : 'register',
 					type : 'post',
