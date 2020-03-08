@@ -188,22 +188,32 @@
   function addMovie(dataList){
     $("#movieList").empty();
     $.each(dataList.list,function (index,obj) {
-      $("#movieList").append(
-              '<dd>'+
-              '<div class="movie-item">'+
-              '<a href="javascript:void(0);" target="_blank" id="'+obj.movieId+'">'+
-              '<div class="movie-poster">'+
-              '<img class="poster-default">'+
-              '<img alt="'+obj.movieName+'海报封面">'+
-              '</div>'+
-              '</a>'+
-              '</div>'+
-              '<div class="channel-detail movie-item-title" title="唐人街探案3">'+
-              '<a href="javascript:void(0);" target="_blank" id="'+obj.movieId+'">'+obj.movieName+'</a>'+
-              '</div>'+
-              '<div class="channel-detail channel-detail-orange"><span class="stonefont">'+obj.movieWantToSee+'</span>人想看</div>'+
-              '</dd>'
-      )
+      $.ajax({
+        url : 'movie_poster',
+        method : 'get',
+        data:{'movieId':obj.movieId},
+        success : function(moviePoster){
+          if(moviePoster.code == 200){
+            $("#movieList").append(
+                    '<dd>'+
+                    '<div class="movie-item">'+
+                    '<a href="javascript:void(0);" target="_blank" id="'+obj.movieId+'">'+
+                    '<div class="movie-poster">'+
+                    '<img alt="'+obj.movieName+'海报封面" src="'+moviePoster.data+'">'+
+                    '</div>'+
+                    '</a>'+
+                    '</div>'+
+                    '<div class="channel-detail movie-item-title" title="唐人街探案3">'+
+                    '<a href="javascript:void(0);" target="_blank" id="'+obj.movieId+'">'+obj.movieName+'</a>'+
+                    '</div>'+
+                    '<div class="channel-detail channel-detail-orange"><span class="stonefont">'+obj.movieWantToSee+'</span>人想看</div>'+
+                    '</dd>'
+            )
+          }else {
+            alert(moviePoster.message);
+          }
+        }
+      });
     })
   }
   //分页
@@ -238,7 +248,6 @@
       data:{'pageNum':1,'pageSize':18,'State':state},
       success : function(result){
         if(result.code == 200){
-          alert("ok");
           addMovie(result.data);
           page(result.data);
           $(id).addClass("active");

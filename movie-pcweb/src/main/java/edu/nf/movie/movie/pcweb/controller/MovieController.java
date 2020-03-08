@@ -1,11 +1,8 @@
 package edu.nf.movie.movie.pcweb.controller;
 
 import com.github.pagehelper.PageInfo;
-import edu.nf.movie.movie.entity.MovieInfo;
+import edu.nf.movie.movie.entity.*;
 import edu.nf.movie.customer.pcweb.vo.ResultVO;
-import edu.nf.movie.movie.entity.MovieRegion;
-import edu.nf.movie.movie.entity.MovieType;
-import edu.nf.movie.movie.entity.MovieYear;
 import edu.nf.movie.movie.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -50,5 +47,11 @@ public class MovieController extends BaseController{
     public ResultVO listMovieYear(){
         List<MovieYear> movieYear = movieService.movieYearList();
         return success(movieYear);
+    }
+
+    @GetMapping("/movie_poster")
+    public ResultVO moviePoster(Integer movieId){
+        String moviePoster = movieService.moviePoster(movieId);
+        return success(moviePoster);
     }
 }

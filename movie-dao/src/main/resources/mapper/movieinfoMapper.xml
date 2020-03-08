@@ -79,12 +79,12 @@
     </select>
 
     <select id="moviePoster" resultType="string" parameterType="integer">
-        select mi_id,mi_movie_id,mi_path,mi_type from movie_image where movie_id = #{movieId} and mi_type=1
+        select mi_path from movie_image where mi_movie_id = #{movieId} and mi_type=1
     </select>
 
 
     <select id="listMoviePoster" resultType="string" parameterType="integer">
-        select mi_id,mi_movie_id,mi_path,mi_type from movie_image where movie_id = #{m} and mi_type=2
+        select mi_path from movie_image where movie_id = #{m} and mi_type=2
     </select>
 
 </mapper>

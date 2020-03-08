@@ -13,7 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan(basePackages = {"edu.nf.movie.customer.dao",
                             "edu.nf.movie.movie.dao",
                             "edu.nf.movie.actor.dao",
-                            "edu.nf.movie.store.dao"})
+                            "edu.nf.movie.store.dao",
+                            "edu.nf.movie.cinema.dao"})
 public class MonsterMovieApplication {
 
 
