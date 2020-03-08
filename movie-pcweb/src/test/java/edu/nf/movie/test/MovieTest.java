@@ -41,4 +41,11 @@ public class MovieTest {
         List<MovieType> pageInfo = movieService.movieTypeList();
         pageInfo.forEach(movieInfo -> System.out.println(movieInfo.getMovieTypeMessage()));
     }
+
+    @Test
+    public void testfindMovie(){
+        MovieInfo movieInfo=movieService.findMovie(1);
+        System.out.println(movieInfo.getMovieName());
+
+    }
 }
