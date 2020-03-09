@@ -45,7 +45,21 @@ public class MovieTest {
     @Test
     public void testfindMovie(){
         MovieInfo movieInfo=movieService.findMovie(1);
-        System.out.println(movieInfo.getMovieName());
+        System.out.println(movieInfo.getMoviesType().getMovieTypeMessage());
 
+    }
+
+    @Test
+    public void testMoviePoster(){
+        String s=movieService.moviePoster(1);
+        System.out.println(s);
+    }
+
+    @Test
+    public void testMovieListPoster(){
+        List<String> list=movieService.listMoviePoster(1);
+        for (String s : list) {
+            System.out.println(s);
+        }
     }
 }

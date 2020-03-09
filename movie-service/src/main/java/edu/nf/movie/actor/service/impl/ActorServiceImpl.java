@@ -4,6 +4,7 @@ import edu.nf.movie.actor.dao.ActorDao;
 import edu.nf.movie.actor.entity.ActorInfo;
 import edu.nf.movie.actor.service.ActorService;
 import edu.nf.movie.exception.DataException;
+import edu.nf.movie.movie.entity.MovieInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,5 +48,17 @@ public class ActorServiceImpl implements ActorService {
         }catch (Exception e){
             throw new DataException("服务器内部错误,暂时无法访问图集");
         }
+    }
+
+    @Override
+    public List<ActorInfo> listActorJoinMovie(Integer movieId) {
+        try{
+            List<ActorInfo> list=actorDao.listActorJoinMovie(movieId);
+            return list;
+        }catch (Exception e){
+            throw new DataException("服务器内部错误,暂时无法访问演员");
+        }
+
+
     }
 }

@@ -74,8 +74,13 @@
 
 
     <select id="findMovie" resultMap="MovieMap" parameterType="integer">
-        select movie_id,movie_name,movie_english_name,movie_want_to_see,movie_type,movie_region,movie_year,movie_state,movie_time,movie_introduce
-        from movie_info where movie_id = #{movieId}
+        select movie_id,movie_name,movie_english_name,movie_want_to_see,mt_message,mr_message,my_message,ms_message,movie_time,movie_introduce
+        from movie_info mi
+        left join movie_type mt on mi.movie_type=mt.mt_id
+        left join movie_region mr on mi.movie_region=mr.mr_id
+        left join movie_year my on mi.movie_year=my.my_id
+        left join movie_state ms on mi.movie_state=ms.ms_id
+				where movie_id = #{movieId}
     </select>
 
     <select id="moviePoster" resultType="string" parameterType="integer">
@@ -84,7 +89,8 @@
 
 
     <select id="listMoviePoster" resultType="string" parameterType="integer">
-        select mi_path from movie_image where movie_id = #{m} and mi_type=2
+        select mi_path from movie_image where mi_movie_id = #{movieId} and mi_type=2
     </select>
+
 
 </mapper>

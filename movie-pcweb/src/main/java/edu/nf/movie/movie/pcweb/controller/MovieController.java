@@ -54,4 +54,10 @@ public class MovieController extends BaseController{
         String moviePoster = movieService.moviePoster(movieId);
         return success(moviePoster);
     }
+
+    @GetMapping("/movie_find")
+    public ResultVO findmovie(Integer movieId){
+        MovieInfo movieInfo=movieService.findMovie(movieId);
+        return success(movieInfo);
+    }
 }
