@@ -1,6 +1,7 @@
 package edu.nf.movie.actor.dao;
 
 import edu.nf.movie.actor.entity.ActorInfo;
+import edu.nf.movie.movie.entity.MovieInfo;
 
 import java.util.List;
 
@@ -29,4 +30,11 @@ public interface ActorDao {
      * @return
      */
     List<String> actorListPoster(Integer actorId);
+
+    /**
+     * 加载该电影的演职人员
+     * 芊富
+     * @// TODO: 2020/3/6
+     */
+    List<ActorInfo> listActorJoinMovie(Integer movieId);
 }

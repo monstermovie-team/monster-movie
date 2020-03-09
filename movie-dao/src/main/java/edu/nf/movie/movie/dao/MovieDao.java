@@ -47,10 +47,6 @@ public interface MovieDao {
      */
     List<String> listMoviePoster(Integer movieId);
 
-    /**
-     * 加载该电影的演职人员
-     * 芊富
-     * @// TODO: 2020/3/6
-     */
+
 
 }

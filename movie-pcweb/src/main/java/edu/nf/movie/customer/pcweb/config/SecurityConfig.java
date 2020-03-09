@@ -67,7 +67,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .and()
                     //请求认证鉴权配置
                     .authorizeRequests()
-                    //任何请求都需要身份认证.anyRequest().authenticated()
+                    //任何请求都需要身份认证
+                    //.anyRequest().authenticated()
                     .and()
                     //登出
                     .logout()
@@ -113,9 +114,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/login.html","/register.html","/forgetpassword.html","/**/*.css","/**/*.js","/**/*.png");
+        web.ignoring().antMatchers("/*.html","/**/*.css","/**/*.js","/**/*.png");
     }
-
 
     /**
      * 设置密码加密的encoder

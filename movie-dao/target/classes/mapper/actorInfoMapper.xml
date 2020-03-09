@@ -14,6 +14,9 @@
         <result property="actorNationality" column="actor_nationality"/>
         <result property="actorGraduation" column="actor_graduation"/>
         <result property="actorPrize" column="actor_prize"/>
+        <association property="movieInfo" resultMap="MovieMap"/>
+        <association property="actorImages" resultMap="actorImageMap"/>
+        <association property="actorJoinMovies" resultMap="ActorJoinMovie"/>
     </resultMap>
 
     <resultMap id="actorImageMap" type="edu.nf.movie.actor.entity.ActorImage">
@@ -23,23 +26,47 @@
         <result property="actorImageType" column="ai_type"/>
     </resultMap>
 
+    <resultMap id="MovieMap" type="edu.nf.movie.movie.entity.MovieInfo">
+    <id property="movieId" column="movie_id"/>
+    <result property="movieName" column="movie_name"/>
+    <result property="movieEnglishName" column="movie_english_name"/>
+    <result property="movieWantToSee" column="movie_want_to_see"/>
+    <result property="movieType" column="movie_type"/>
+    <result property="movieRegion" column="movie_region"/>
+    <result property="movieYear" column="movie_year"/>
+    <result property="movieState" column="movie_state"/>
+    <result property="movieTime" column="movie_time"/>
+    <result property="movieIntroduce" column="movie_introduce"/>
+    </resultMap>
+
+    <resultMap id="ActorJoinMovie" type="edu.nf.movie.actor.entity.ActorJoinMovie">
+        <result property="actorId" column="actor_id"/>
+        <result property="movieId" column="movie_id"/>
+    </resultMap>
+
 
 
 
     <select id="findActor" resultMap="ActorMap" parameterType="integer">
         select actor_id,actor_name,actor_english_name,actor_identity,actor_birthday,actor_sex,actor_introduce,
         actor_birthplace,actor_nationality,actor_graduation,actor_prize from actor_info
-        where actot_id =#{actorId}
+        where actor_id =#{actorId}
     </select>
 
     <select id="actorPoster" resultType="string" parameterType="integer">
-        select ai_id,ai_actor_id,ai_path,ai_type from actor_image
-        where ai_actor_id =#{actorId} and ai_type=1
+        select ai_path from actor_image where ai_actor_id =#{actorId} and ai_type=1
     </select>
 
     <select id="actorListPoster" resultType="string" parameterType="integer">
-        select ai_id,ai_actor_id,ai_path,ai_type from actor_image
+        select ai_path from actor_image
         where ai_actor_id =#{actorId} and ai_type=2
+    </select>
+
+    <select id="listActorJoinMovie" resultMap="ActorMap" parameterType="integer">
+        select a.actor_id,a.actor_name,ai.ai_path from actor_info a
+	        left join actor_image ai on ai.ai_actor_id=a.actor_id
+	        left join actor_join_movie ajm on a.actor_id=ajm.actor_id
+	        left join movie_info mi on mi.movie_id=ajm.movie_id where mi.movie_id =#{movieId} and ai.ai_type=1
     </select>
 
 </mapper>

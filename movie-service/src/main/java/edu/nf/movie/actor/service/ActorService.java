@@ -1,6 +1,7 @@
 package edu.nf.movie.actor.service;
 
 import edu.nf.movie.actor.entity.ActorInfo;
+import edu.nf.movie.movie.entity.MovieInfo;
 
 import java.util.List;
 
@@ -15,4 +16,10 @@ public interface ActorService {
     ActorInfo findActor(Integer actorId);
     String actorPoster(Integer actorId);
     List<String> actorListPoster(Integer actorId);
+
+    /**
+     * 加载该电影的演职人员
+     * 芊富
+     */
+    List<ActorInfo> listActorJoinMovie(Integer movieId);
 }

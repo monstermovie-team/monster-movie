@@ -4,6 +4,7 @@
   <title>电影介绍</title>
 
     <link rel="stylesheet" href="css/common.d1d257d3.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
 <link rel="stylesheet" href="css/movie-detail.6bbac42e.css">
 <script>
   window.mta && mta('tag', 'page', '/films/-id-')
@@ -22,39 +23,41 @@
   </style>
 <body>
 
+
+
 </div>
 
   <div class="banner">
     <div class="wrapper clearfix">
       <div class="celeInfo-left">
-        <div class="avatar-shadow">
+        <div class="avatar-shadow" id="moviePoster">
             <!--      电影封面海报      -->
-          <img class="avatar" src="img/a.jpg" alt="电影海报">
+<!--          <img class="avatar" src="img/a.jpg" alt="电影海报">-->
             <div class="movie-ver"></div>
         </div>
       </div>
-      <div class="celeInfo-right clearfix">
-            <div class="movie-brief-container">
-      <!-- 电影标题 -->
-      <h1 class="name">电影标题</h1>
-       <!-- 电影小标题 -->
-      <div class="ename ellipsis">小标题</div>
-       <!-- 电影类型 -->
-      <ul>
-        <li class="ellipsis">
-            <a class="text-link" href="https://maoyan.com/films?catId=5" target="_blank"> 电影类型1 </a>
-            <a class="text-link" href="https://maoyan.com/films?catId=1" target="_blank"> 电影类型2 </a>
-            <a class="text-link" href="https://maoyan.com/films?catId=21" target="_blank"> 电影类型3 </a>
-        </li>
-        <!-- 区域和时间 -->
-        <li class="ellipsis">
-        中国大陆
-          / 107分钟
-        </li>
-        <!-- 上映时间 -->
-        <li class="ellipsis">2019-12-20大陆上映</li>
-      </ul>
-    </div>
+      <div class="celeInfo-right clearfix" id="movieHead">
+<!--            <div class="movie-brief-container">-->
+<!--      &lt;!&ndash; 电影标题 &ndash;&gt;-->
+<!--      <h1 class="name">电影标题</h1>-->
+<!--       &lt;!&ndash; 电影小标题 &ndash;&gt;-->
+<!--      <div class="ename ellipsis">小标题</div>-->
+<!--       &lt;!&ndash; 电影类型 &ndash;&gt;-->
+<!--      <ul>-->
+<!--        <li class="ellipsis">-->
+<!--            <a class="text-link" href="https://maoyan.com/films?catId=5" target="_blank"> 电影类型1 </a>-->
+<!--            <a class="text-link" href="https://maoyan.com/films?catId=1" target="_blank"> 电影类型2 </a>-->
+<!--            <a class="text-link" href="https://maoyan.com/films?catId=21" target="_blank"> 电影类型3 </a>-->
+<!--        </li>-->
+<!--        &lt;!&ndash; 区域和时间 &ndash;&gt;-->
+<!--        <li class="ellipsis">-->
+<!--        中国大陆-->
+<!--          / 107分钟-->
+<!--        </li>-->
+<!--        &lt;!&ndash; 上映时间 &ndash;&gt;-->
+<!--        <li class="ellipsis">2019-12-20大陆上映</li>-->
+<!--      </ul>-->
+<!--    </div>-->
     <div class="action-buyBtn">
       <div class="action clearfix" data-val="{movieid:1190122}">
         <a class="wish ">
@@ -103,7 +106,7 @@
         </div>
     </div>
 
-      </div>
+      </div>  <!-- -->
     </div>
 </div>
 
@@ -129,9 +132,9 @@
     <div class="mod-title">
       <h2>剧情简介</h2>
     </div>
-    <div class="mod-content">
-        <!-- 剧情简介 -->
-                    <span class="dra">剧情介绍。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。</span>
+    <div class="mod-content" id="movieIntroduce">
+<!--        &lt;!&ndash; 剧情简介 &ndash;&gt;-->
+<!--                    <span class="dra">剧情介绍。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。</span>-->
 
     </div>
   </div>
@@ -921,15 +924,76 @@
 
 
 
-    <script crossorigin="anonymous" src="./js_css/owl_1.7.11.js"></script>
     <script>
-      Owl.start({
-        project: 'com.sankuai.movie.fe.mywww',
-        pageUrl: location.href.split('?')[0].replace(/\/\d+/g, '/:id'),
-        devMode: false
-      })
+      $(function () {
+
+          var url = window.location.search;
+          var movieId=null;
+
+          if (url.indexOf("?") != -1) {    //判断是否有参数
+              var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
+              strs = str.split("=");   //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）
+              movieId=strs[1];
+          }
+
+              $.ajax({
+                  url : 'movie_find',
+                  method : 'get',
+                  data: {'movieId': movieId},
+                  success : function(result){
+                      if(result.code == 200){
+                          console.log(result.data);
+                              $("#movieHead").append(
+                                  '<div class="movie-brief-container">'+
+                                  '<!-- 电影标题 -->'+
+                                  '<h1 class="name">'+ result.data.movieName +'</h1>'+
+                                  '<!-- 电影小标题 -->'+
+                                  '<div class="ename ellipsis">'+ result.data.movieEnglishName +'</div>'+
+                                  '<!-- 电影类型 -->'+
+                                  '<ul>'+
+                                  '<li class="ellipsis">'+
+                                  '<a class="text-link" href="javascript:void(0);" target="_blank"> '+ result.data.moviesType.movieTypeMessage +' </a>'+
+                                  '</li>'+
+                                  '<!-- 区域和时间 -->'+
+                                  '<li class="ellipsis">'+ result.data.moviesRegion.MovieRegionMessage+' / '+result.data.movieTime +'分钟</li>'+
+                                  '<!-- 上映时间 -->'+
+                                  '<li class="ellipsis">'+ result.data.moviesYear.MovieYearMessage +'</li>'+
+                                  '</ul>'+
+                                  '</div>'
+                              )
+                              $("#movieIntroduce").append(
+                                  '<span class="dra">'+ result.data.movieIntroduce +'</span>'
+                              )
+                      }else {
+                          alert(result.message);
+                      }
+                  }
+              });
+
+
+          $.ajax({
+              url : 'movie_poster',
+              method : 'get',
+              data: {'movieId': movieId},
+              success : function(result){
+                  if(result.code == 200){
+                      console.log(result.data);
+                      $("#moviePoster").append(
+                        '<img class="avatar" src="'+ result.data +'" alt="电影海报">'
+                      )
+                  }else {
+                      alert(result.message);
+                  }
+              }
+          });
+
+
+
+
+
+
+          });
+
     </script>
-    <script crossorigin="anonymous" src="./js_css/common.74858235.js"></script>
-<script crossorigin="anonymous" src="./js_css/movie-detail.809b6c61.js"></script>
 </body>
 </html>
