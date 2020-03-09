@@ -8,10 +8,19 @@
         <result property="areaId" column="address"/>
     </resultMap>
 
-    <select id="getCinemaList"  resultMap="MTMap">
+
+    <resultMap id="messageMap" type="edu.nf.movie.cinema.entity.CinemaMessage">
+        <id property="mtId" column=""></id>
+        <result property="mtName" column="mt_name"/>
+        <result property="areaId" column="address"/>
+    </resultMap>
+    <select id="getCinemaList"  resultMap="MTMap" >
         SELECT m.mt_id,m.mt_name,CONCAT(a.area_county ,a.area_address)as address
          FROM movie_theatre m
         left JOIN area_info a
         ON m.area_id=a.area_id
+    </select>
+    <select id="getCinemaMessage" resultMap="">
+
     </select>
 </mapper>

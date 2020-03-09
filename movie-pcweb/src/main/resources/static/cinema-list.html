@@ -8,6 +8,36 @@
   <link rel="stylesheet" href="css/cinemas-list.d5916a9a.css">
   <link rel="stylesheet" href="css/cinema.css">
   <script src="js/jquery-3.4.1.min.js"></script>
+<script>
+  $(function() {
+    $.ajax({
+      url: 'cinema_list',
+      type: 'get',
+//		data:{},
+      success: function (result) {
+        if(result.code == 200){
+          $.each(result.data,function(i,v){
+            $(".cinemas-list").append("<div class=\"cinema-cell\">\n" +
+                    "    <div class=\"cinema-info\">\n" +
+                    "    <a href=\"cinema-details.html\" class=\"cinema-name\" >"+v+"</a>\n" +
+                    "<p class=\"cinema-address\">"+v+"</p>\n" +
+                    "</div>\n" +
+                    "\n" +
+                    "<div class=\"buy-btn\">\n" +
+                    "    <a href=\"cinema-details.html\">选座购票</a>\n" +
+                    "    </div>\n" +
+                    "\n" +
+                    "    <div class=\"price\">\n" +
+                    "    <span>暂无参考价</span>\n" +
+                    "    </div>\n" +
+                    "    </div>");
+
+          })
+        }
+      }
+    });
+  });
+</script>
   <script type="text/javascript"src="js/cinma.js"></script>
   <script crossorigin="anonymous" src="js/stat.88d57c80.js"></script><script async="" defer="" charset="utf-8" src="js/web.js"></script>
   <div id="my-cinema">
@@ -100,94 +130,7 @@
       <h2 class="cinemas-list-header">影院列表</h2>
 
 
-      <div class="cinema-cell">
-        <div class="cinema-info">
-          <a href="cinema-details.html" class="cinema-name" data-act="cinema-name-click" data-bid="b_4tkpau4m" data-val="{city_id: 108, cinema_id: 16847}">海上影城（格力海岸店）</a>
-          <p class="cinema-address">地址：香洲区情侣北路格力海岸商业街1号4层</p>
-        </div>
 
-        <div class="buy-btn">
-          <a href="cinema-details.html" data-act="buy-btn-click" data-val="{city_id: 108, cinema_id: 16847}" data-bid="b_4tkpau4m">选座购票</a>
-        </div>
-
-        <div class="price">
-          <span>暂无参考价</span>
-        </div>
-      </div>
-      <div class="cinema-cell">
-        <div class="cinema-info">
-          <a href="cinema-details.html" class="cinema-name" data-act="cinema-name-click" data-bid="b_4tkpau4m" data-val="{city_id: 108, cinema_id: 12743}">中影傲视电影城</a>
-          <p class="cinema-address">地址：金湾区三灶镇榕月路158号（月堂巴士站后面，鹏泰商场旁）</p>
-        </div>
-
-        <div class="buy-btn">
-          <a href="cinema-details.html" data-act="buy-btn-click" data-val="{city_id: 108, cinema_id: 12743}" data-bid="b_4tkpau4m">选座购票</a>
-        </div>
-
-        <div class="price">
-          <span>暂无参考价</span>
-        </div>
-      </div>
-      <div class="cinema-cell">
-        <div class="cinema-info">
-          <a href="cinema-details.html" class="cinema-name" data-act="cinema-name-click" data-bid="b_4tkpau4m" data-val="{city_id: 108, cinema_id: 7635}">中影Face电影城（夏湾店）</a>
-          <p class="cinema-address">地址：香洲区夏湾路184号-194号综合楼3、4楼（夏湾市场旁）</p>
-        </div>
-
-        <div class="buy-btn">
-          <a href="cinema-details.html" data-act="buy-btn-click" data-val="{city_id: 108, cinema_id: 7635}" data-bid="b_4tkpau4m">选座购票</a>
-        </div>
-
-        <div class="price">
-          <span>暂无参考价</span>
-        </div>
-      </div>
-      <div class="cinema-cell">
-        <div class="cinema-info">
-          <a href="cinema-details.html" class="cinema-name" data-act="cinema-name-click" data-bid="b_4tkpau4m" data-val="{city_id: 108, cinema_id: 9603}">国艺都会影城</a>
-          <p class="cinema-address">地址：香洲区粤海西路17号都会立方广场6楼（中山威尼斯楼上）</p>
-        </div>
-
-        <div class="buy-btn">
-          <a href="cinema-details.html" data-act="buy-btn-click" data-val="{city_id: 108, cinema_id: 9603}" data-bid="b_4tkpau4m">选座购票</a>
-        </div>
-
-        <div class="price">
-          <span>暂无参考价</span>
-        </div>
-      </div>
-      <div class="cinema-cell">
-        <div class="cinema-info">
-          <a href="cinema-details.html" class="cinema-name" data-act="cinema-name-click" data-bid="b_4tkpau4m" data-val="{city_id: 108, cinema_id: 7313}">中影国际影城（凯华店）</a>
-          <p class="cinema-address">地址：香洲区昌盛路376号华发新天地商业街2101铺</p>
-        </div>
-
-        <div class="buy-btn">
-          <a href="cinema-details.html"data-act="buy-btn-click" data-val="{city_id: 108, cinema_id: 7313}" data-bid="b_4tkpau4m">选座购票</a>
-        </div>
-
-        <div class="price">
-          <span>参考价</span>
-          <span class="rmb red">￥</span>
-          <span class="price-num red"><span class="stonefont"></span></span>
-          <span>起</span>
-        </div>
-      </div>
-
-
-
-      <div class="cinema-info">
-        <a href="/cinema/16144?poi=107964506" class="cinema-name" data-act="cinema-name-click" data-bid="b_4tkpau4m" data-val="{city_id: 108, cinema_id: 16144}">环球国际影城（斗门店）</a>
-        <p class="cinema-address">地址：斗门区新青科技工业园文化路10号综合楼首层129-130号</p>
-      </div>
-
-      <div class="buy-btn">
-        <a href="/cinema/16144?poi=107964506" data-act="buy-btn-click" data-val="{city_id: 108, cinema_id: 16144}" data-bid="b_4tkpau4m">选座购票</a>
-      </div>
-
-      <div class="price">
-        <span>暂无参考价</span>
-      </div>
     </div>
 
 
