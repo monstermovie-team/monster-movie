@@ -1,5 +1,7 @@
 package edu.nf.movie.movie.entity;
 
+import edu.nf.movie.actor.entity.ActorInfo;
+import edu.nf.movie.actor.entity.ActorJoinMovie;
 import lombok.Data;
 
 /**
@@ -18,8 +20,11 @@ public class MovieInfo {
     private Integer movieState;//电影状态
     private Integer movieTime;//电影时长
     private String movieIntroduce;//电影介绍
+    private MovieImage movieImage;
     private MovieType moviesType;
     private MovieRegion moviesRegion;
     private MovieYear moviesYear;
     private MovieState moviesState;
+    private ActorInfo actorInfo;
+    private ActorJoinMovie actorJoinMovie;
 }
