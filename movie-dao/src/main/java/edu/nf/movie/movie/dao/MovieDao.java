@@ -47,6 +47,13 @@ public interface MovieDao {
      */
     List<String> listMoviePoster(Integer movieId);
 
+    /**
+     * 加载演员相关电影
+     * @param actorId
+     * @return
+     */
+    List<MovieInfo> listMovieActor(Integer actorId);
+
 
 
 }

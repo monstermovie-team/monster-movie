@@ -84,5 +84,15 @@ public class MovieServiceImpl implements MovieService {
         }
     }
 
+    @Override
+    public List<MovieInfo> listMovieActor(Integer actorId) {
+        try{
+            List<MovieInfo> list=movieDao.listMovieActor(actorId);
+            return list;
+        }catch (Exception e){
+            throw new DataException("服务器内部错误，无法查询该演员相关的电影");
+        }
+    }
+
 
 }

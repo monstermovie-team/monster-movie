@@ -173,55 +173,55 @@
   <div class="celebrity-type">
     演员
   </div>
-   <!-- 演员一模块 -->
-  <ul class="celebrity-list clearfix">
-      <li class="celebrity actor" data-act="celebrity-click" data-val="{celebrityid:28936}">
-  <a href="javascript:void(0);" target="_blank" class="portrait">
-    <img class="default-img" alt="演员一" src="img/a.jpg">
-  </a>
-  <div class="info">
-    <a href="javascript:void(0);" target="_blank" class="name">
-      演员一名字
-    </a>
-      <br><span class="role"> 饰：演员一</span>
-  </div>
-</li>
-<!-- 演员二模块 -->
-      <li class="celebrity actor" data-act="celebrity-click" data-val="{celebrityid:561}">
-  <a href="javascript:void(0);" target="_blank" class="portrait">
-    <img class="default-img" alt="演员二" src="img/a.jpg">
-  </a>
-  <div class="info">
-    <a href="javascript:void(0);" target="_blank" class="name">
-      演员二名称
-    </a>
-      <br><span class="role">饰：演员二</span>
-  </div>
-</li>
-<!-- 演员三模块 -->
-      <li class="celebrity actor" data-act="celebrity-click" data-val="{celebrityid:29755}">
-  <a href="javascript:void(0);" target="_blank" class="portrait">
-    <img class="default-img" alt="演员三" src="img/a.jpg">
-  </a>
-  <div class="info">
-    <a href="javascript:void(0);" target="_blank" class="name">
-      演员三
-    </a>
-      <br><span class="role">饰：演员三</span>
-  </div>
-</li>
-<!-- 演员四模块 -->
-      <li class="celebrity actor" data-act="celebrity-click" data-val="{celebrityid:2927}">
-  <a href="https://maoyan.com/films/celebrity/2927" target="_blank" class="portrait">
-    <img class="default-img" alt="演员四" src="img/a.jpg">
-  </a>
-  <div class="info">
-    <a href="javascript:void(0);" target="_blank" class="name">
-      演员四
-    </a>
-      <br><span class="role">饰：演员四</span>
-  </div>
-</li>
+   <!-- 演员模块 -->
+  <ul class="celebrity-list clearfix" id="movie_actor">
+<!--      <li class="celebrity actor" >-->
+<!--  <a href="javascript:void(0);" target="_blank" class="portrait">-->
+<!--    <img class="default-img" alt="演员一" src="img/a.jpg">-->
+<!--  </a>-->
+<!--  <div class="info">-->
+<!--    <a href="javascript:void(0);" target="_blank" class="name">-->
+<!--      演员一名字-->
+<!--    </a>-->
+<!--      <br><span class="role"> 饰：演员一</span>-->
+<!--  </div>-->
+<!--</li>-->
+<!--&lt;!&ndash; 演员二模块 &ndash;&gt;-->
+<!--      <li class="celebrity actor" >-->
+<!--  <a href="javascript:void(0);" target="_blank" class="portrait">-->
+<!--    <img class="default-img" alt="演员二" src="img/a.jpg">-->
+<!--  </a>-->
+<!--  <div class="info">-->
+<!--    <a href="javascript:void(0);" target="_blank" class="name">-->
+<!--      演员二名称-->
+<!--    </a>-->
+<!--      <br><span class="role">饰：演员二</span>-->
+<!--  </div>-->
+<!--</li>-->
+<!--&lt;!&ndash; 演员三模块 &ndash;&gt;-->
+<!--      <li class="celebrity actor" >-->
+<!--  <a href="javascript:void(0);" target="_blank" class="portrait">-->
+<!--    <img class="default-img" alt="演员三" src="img/a.jpg">-->
+<!--  </a>-->
+<!--  <div class="info">-->
+<!--    <a href="javascript:void(0);" target="_blank" class="name">-->
+<!--      演员三-->
+<!--    </a>-->
+<!--      <br><span class="role">饰：演员三</span>-->
+<!--  </div>-->
+<!--</li>-->
+<!--&lt;!&ndash; 演员四模块 &ndash;&gt;-->
+<!--      <li class="celebrity actor">-->
+<!--  <a href="https://maoyan.com/films/celebrity/2927" target="_blank" class="portrait">-->
+<!--    <img class="default-img" alt="演员四" src="img/a.jpg">-->
+<!--  </a>-->
+<!--  <div class="info">-->
+<!--    <a href="javascript:void(0);" target="_blank" class="name">-->
+<!--      演员四-->
+<!--    </a>-->
+<!--      <br><span class="role">饰：演员四</span>-->
+<!--  </div>-->
+<!--</li>-->
 
   </ul>
 </div>
@@ -981,6 +981,33 @@
                       $("#moviePoster").append(
                         '<img class="avatar" src="'+ result.data +'" alt="电影海报">'
                       )
+                  }else {
+                      alert(result.message);
+                  }
+              }
+          });
+
+
+
+          $.ajax({
+              url : 'find_movieJoinActor',
+              method : 'get',
+              data: {'movieId': movieId},
+              success : function(result){
+                  if(result.code == 200){
+                      console.log(result.data);
+                     $.each(result.data,function (index,obj) {
+                         $("#movie_actor").append(
+                         '<li class="celebrity actor" >'+
+                             '<a href="actorIntroduction.html?id='+ obj.actorId +'" target="_blank" class="portrait">'+
+                             '<img class="default-img" alt="'+ obj.actorName +'" src="'+ obj.actorImages.actorImagePath +'">'+
+                             '</a>'+
+                             '<div class="info">'+
+                             '<a href="actorIntroduction.html?id='+ obj.actorId +'" target="_blank" class="name">'+ obj.actorName +' </a>'+
+                             '</div>'+
+                         '</li>'
+                         )
+                     })
                   }else {
                       alert(result.message);
                   }

@@ -17,6 +17,28 @@
         <association property="moviesRegion" resultMap="MovieRegion"/>
         <association property="moviesYear" resultMap="MovieYear"/>
         <association property="moviesState" resultMap="MovieState"/>
+        <association property="actorInfo" resultMap="ActorMap"/>
+        <association property="actorJoinMovie" resultMap="ActorJoinMovie"/>
+        <association property="movieImage" resultMap="MovieImage"/>
+    </resultMap>
+
+    <resultMap id="ActorMap" type="edu.nf.movie.actor.entity.ActorInfo">
+        <id property="actorId" column="actor_id"/>
+        <result property="actorName" column="actor_name"/>
+        <result property="actorEnglishName" column="actor_english_name"/>
+        <result property="actorIdentity" column="actor_identity"/>
+        <result property="actorBirthday" column="actor_birthday"/>
+        <result property="actorSex" column="actor_sex"/>
+        <result property="actorIntroduce" column="actor_introduce"/>
+        <result property="actorBirthplace" column="actor_birthplace"/>
+        <result property="actorNationality" column="actor_nationality"/>
+        <result property="actorGraduation" column="actor_graduation"/>
+        <result property="actorPrize" column="actor_prize"/>
+    </resultMap>
+
+    <resultMap id="ActorJoinMovie" type="edu.nf.movie.actor.entity.ActorJoinMovie">
+        <result property="actorId" column="actor_id"/>
+        <result property="movieId" column="movie_id"/>
     </resultMap>
 
     <resultMap id="MovieType" type="edu.nf.movie.movie.entity.MovieType">
@@ -37,6 +59,13 @@
     <resultMap id="MovieState" type="edu.nf.movie.movie.entity.MovieState">
         <id property="movieStateId" column="ms_id"/>
         <result property="movieStateMessage" column="ms_message"/>
+    </resultMap>
+
+    <resultMap id="MovieImage" type="edu.nf.movie.movie.entity.MovieImage">
+        <id property="movieId" column="mi_id"/>
+        <result property="movieImageId" column="mi_movie_id"/>
+        <result property="movieImagePath" column="mi_path"/>
+        <result property="movieImageType" column="mi_type"/>
     </resultMap>
 
 
@@ -90,6 +119,13 @@
 
     <select id="listMoviePoster" resultType="string" parameterType="integer">
         select mi_path from movie_image where mi_movie_id = #{movieId} and mi_type=2
+    </select>
+
+    <select id="listMovieActor" resultMap="MovieMap" parameterType="integer">
+        select mi.movie_id,mi.movie_name,mo.mi_path from movie_info mi
+            left join movie_image mo on mo.mi_movie_id=mi.movie_id
+            left join actor_join_movie ajm on ajm.movie_id=mi.movie_id
+            left join actor_info ai on ai.actor_id=ajm.actor_id where ai.actor_id =#{actorId} and mo.mi_type=1
     </select>
 
 
