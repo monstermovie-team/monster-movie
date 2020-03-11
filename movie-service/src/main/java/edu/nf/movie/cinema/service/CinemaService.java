@@ -1,8 +1,9 @@
 package edu.nf.movie.cinema.service;
 
 import com.github.pagehelper.PageInfo;
+import edu.nf.movie.cinema.entity.CinemaMessage;
 import edu.nf.movie.cinema.entity.MovieTheatre;
-import org.apache.ibatis.annotations.Param;
+import edu.nf.movie.cinema.entity.MyService;
 
 import java.util.List;
 
@@ -12,4 +13,8 @@ import java.util.List;
  */
 public interface CinemaService {
     PageInfo<MovieTheatre> getCinemaList(Integer pageNum, Integer pageSize);
+
+    CinemaMessage getCinemaMessage(Integer Id);
+
+    List<MyService> getServicList(Integer[] id);
 }

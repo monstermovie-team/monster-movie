@@ -1,8 +1,8 @@
 package edu.nf.movie.cinema.dao;
 
 import edu.nf.movie.cinema.entity.CinemaMessage;
+import edu.nf.movie.cinema.entity.MyService;
 import edu.nf.movie.cinema.entity.MovieTheatre;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -26,5 +26,12 @@ public interface CinemaDao {
     /**
      * 根据电影id查出电影信息
      */
-    CinemaMessage getCinemaMessage(Integer Id);
+    CinemaMessage getCinemaMessage(Integer mId);
+
+    /**
+     *
+     * @param
+     * @return
+     */
+    List<MyService> getServicList(Integer[] csId);
 }
