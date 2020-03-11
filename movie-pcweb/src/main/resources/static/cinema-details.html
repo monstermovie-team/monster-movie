@@ -15,17 +15,14 @@
 	  <div class="wrapper clearfix" id="影院">
 	    <div class="cinema-left">
 	      <div class="avatar-shadow">
-	        <img class="avatar" src="img/test-one.png" alt="中影国际影城（凯华店）">
-	        <div class="avatar-num">查看图片</div>
+	        <img class="avatar" src="http://101.37.28.124:8080/monster_movie/cinema_images/movie1.jpg" >
 	      </div>
 	    </div>
 	
 	    <div class="cinema-main clearfix">
 	      <div class="cinema-brief-container" >
 			  <div id="message" >
-	        <h1 class="name text-ellipsis">中影国际影城（凯华店）</h1>
-	        <div class="address text-ellipsis">香洲区昌盛路376号华发新天地商业街2101铺</div>
-	        <div class="telphone">电话：0756-8696333</div>
+
 		 	 </div>
 	        <div class="features-group">
 	          <div class="group-title">影院服务</div>
@@ -46,18 +43,18 @@
 		$.ajax({
 			url: 'message_list',
 			type: 'get',
-			data:{"mId":"1,2,3"},
+			data:{"mId":1},
 			success: function (result) {
 				if(result.code == 200){
 					$("#message").append("<h1 class=\"name text-ellipsis\">"+result.data.mtName+"</h1>\n" +
-							"\t        <div class=\"address text-ellipsis\">"+result.data.areaId+"</div>\n" +
-							"\t        <div class=\"telphone\">电话："+result.data.number+"</div>"
+							"\t        <div class=\"address text-ellipsis\">"+result.data.areaCounty+" "+result.data.areaAddress+"</div>\n" +
+							"\t        <div class=\"telphone\">电话："+result.data.mtNumber+"</div>"
 					);
 					$.ajax(
 							{
-								url: 'message_list',
+								url: 'service_list',
 								type: 'get',
-								data:{"csId":result.data.csId},
+								data:{"csId":1},
 								success: function (rs) {
 									$.each(rs.data,function(i,v){
 										$(".features-group").append(" <div class=\"feature\">\n" +

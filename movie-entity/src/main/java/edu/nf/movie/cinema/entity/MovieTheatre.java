@@ -9,6 +9,7 @@ import lombok.Data;
 public class MovieTheatre {
     private  Integer  mtId ;	//影院编号
     private String mtName;   //影院名称
-    private String areaId; //影院地址
-
+    private String areaCounty; //影院行政区
+    private String areaAddress; //影院地址
+    private String mtNumber;//影院电话
 }

@@ -1,8 +1,9 @@
 package edu.nf.movie.test;
 
 import com.github.pagehelper.PageInfo;
-import edu.nf.movie.cinema.entity.CinemaMessage;
+
 import edu.nf.movie.cinema.entity.MovieTheatre;
+import edu.nf.movie.cinema.entity.OrderForm;
 import edu.nf.movie.cinema.service.CinemaService;
 import edu.nf.movie.movie.entity.MovieInfo;
 import edu.nf.movie.movie.entity.MovieType;
@@ -31,8 +32,11 @@ public class CinemaTest {
     public void testListMovie() {
 //        PageInfo<MovieTheatre> pageInfo = cinemaService.getCinemaList(1, 5);
 //        pageInfo.getList().forEach(cinema -> System.out.println(cinema.getMtName()));
-        CinemaMessage cinemaMessage = cinemaService.getCinemaMessage(1);
-        System.out.println(  cinemaMessage.getMtName());
+
+//       MovieTheatre cinemaMessage = cinemaService.getCinemaMessage(1);
+//       System.out.println(  cinemaMessage.getMtName());
+        List<OrderForm> orderList = cinemaService.getOrderList(1);
+        orderList.forEach(orderForm -> System.out.println(orderForm.getTStudiosName()));
     }
 
 
