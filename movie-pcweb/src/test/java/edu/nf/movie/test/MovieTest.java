@@ -62,4 +62,14 @@ public class MovieTest {
             System.out.println(s);
         }
     }
+
+    @Test
+    public void testListMovieActor(){
+        List<MovieInfo> list=movieService.listMovieActor(1);
+        for (MovieInfo m : list) {
+            System.out.println(m.getMovieId());
+            System.out.println(m.getMovieName());
+            System.out.println(m.getMovieImage().getMovieImagePath());
+        }
+    }
 }

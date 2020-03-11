@@ -60,4 +60,10 @@ public class MovieController extends BaseController{
         MovieInfo movieInfo=movieService.findMovie(movieId);
         return success(movieInfo);
     }
+
+    @GetMapping("/findListMovieActor")
+    public ResultVO<List<MovieInfo>> getFindMovie(Integer actorId){
+        List<MovieInfo> list=movieService.listMovieActor(actorId);
+        return success(list);
+    }
 }

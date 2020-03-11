@@ -46,4 +46,12 @@ public interface MovieService {
     List<String> listMoviePoster(Integer movieId);
 
 
+    /**
+     * 查询演员相关电影
+     * @param actorId
+     * @return
+     */
+    List<MovieInfo> listMovieActor(Integer actorId);
+
+
 }
