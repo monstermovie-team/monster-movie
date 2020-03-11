@@ -8,10 +8,41 @@
         <result property="areaId" column="address"/>
     </resultMap>
 
-    <select id="getCinemaList"  resultMap="MTMap">
-        SELECT m.mt_id,m.mt_name,CONCAT(a.area_county ,a.area_address)as address
+
+    <resultMap id="messageMap" type="edu.nf.movie.cinema.entity.CinemaMessage">
+        <id property="mtId" column=""></id>
+        <result property="mtName" column="mt_name"/>
+        <result property="areaId" column="address"/>
+        <result property="number" column="mt_number"/>
+        <result property="csId" column="cs_id"/>
+    </resultMap>
+
+    <resultMap id="csMap" type="edu.nf.movie.cinema.entity.MyService">
+        <id property="csId" column="cs_id"></id>
+        <result property="csName" column="cs_name"/>
+        <result property="csDescribe" column="cs_describe"/>
+    </resultMap>
+
+    <select id="getCinemaList"  resultMap="MTMap" >
+        SELECT m.mt_id,m.mt_name,CONCAT(a.area_cou
+        left JOIN area_info anty ,a.area_address)as address
          FROM movie_theatre m
+        ON m.area_id=a.area_id
+    </select>
+    <select id="getCinemaMessage" resultMap="messageMap"  parameterType="java.lang.Integer">
+        SELECT m.mt_id,m.mt_name,CONCAT(a.area_county ,a.area_address)as address,m.cs_id,m.mt_number FROM movie_theatre m
         left JOIN area_info a
         ON m.area_id=a.area_id
+        WHERE m.mh_id =#{mid}
+
+    </select>
+
+    <select id="getServicList" resultMap="csMap" parameterType="arraylist">
+        SELECT cs_id,cs_name,cs_describe FROM cinema_service
+            where cs_id in
+                <foreach collection="array" item="item" index="index" open="(" separator="," close=")">
+                #{item}
+                </foreach>
+            and cs_status=0
     </select>
 </mapper>
