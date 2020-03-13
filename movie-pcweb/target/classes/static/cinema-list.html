@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+  <title>影院</title>
+
+  <link rel="stylesheet" href="css/common.d1d257d3.css">
+
+  <link rel="stylesheet" href="css/cinemas-list.d5916a9a.css">
+  <link rel="stylesheet" href="css/cinema.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.pagination.js"></script>
+<link rel="stylesheet" href="css/pagination.css">
+<script>
+  $(function() {
+    $.ajax({
+      url: 'cinema_list',
+      type: 'get',
+      data : {'pageNum' : pageNum, 'pageSize' : 5,'State':1},
+      success: function (result) {
+        if(result.code == 200){
+          $.each(result.data,function(i,v){
+            $(".cinemas-list").append("<div class=\"cinema-cell\">\n" +
+                    "    <div class=\"cinema-info\">\n" +
+                    "    <a href=\"cinema-details.html\" class=\"cinema-name\" >"+v.mtName+"</a>\n" +
+                    "<p class=\"cinema-address\">"+v.areaId+"</p>\n" +
+                    "</div>\n" +
+                    "\n" +
+                    "<div class=\"buy-btn\">\n" +
+                    "    <a href=\"cinema-details.html\">选座购票</a>\n" +
+                    "    </div>\n" +
+                    "\n" +
+                    "    <div class=\"price\">\n" +
+                    "    <span>暂无参考价</span>\n" +
+                    "    </div>\n" +
+                    "    </div>");
+
+          })
+        }
+      }
+    });
+  });
+
+
+  function page(pageInfo){
+    $("#page").pagination(pageInfo.total, { //第一个参数指定共多少条记录
+      items_per_page:5, // 每页显示多少条记录
+      next_text:"下一页", //下一页按钮图标
+      prev_text:"上一页", //上一页按钮图标
+      num_display_entries:5,//主体页数
+      num_edge_entries: 2, //边缘页数
+      callback: function(index){//定义一个回调函数，用于每次点击页码发起分页查询请求
+        //index为当前页码，只不过下标是从0开始，因此需要+1操作
+        var pageNum = ++index;
+        $.ajax({
+          url : 'cinema_list',
+          method : 'get',
+          data : {'pageNum' : pageNum, 'pageSize' : 5,'State':1},
+          success : function(result){
+            //渲染表格
+            addMovie(result.data);
+          }
+        });
+      }
+    });
+  }
+</script>
+  <script type="text/javascript"src="js/cinma.js"></script>
+  <script crossorigin="anonymous" src="js/stat.88d57c80.js"></script><script async="" defer="" charset="utf-8" src="js/web.js"></script>
+  <div id="my-cinema">
+    <!-- 选择列表 -->
+    <div class="tags-panel">
+      <ul class="tags-lines">
+        <li class="tags-line" data-type="brand">
+          <div class="tags-title">品牌:</div>
+          <ul class="tags">
+            <li class="active">
+              <a data-act="tag-click" data-val="{TagName:'全部', city_id:108}" data-id="-1"  data-bid="b_x9tdpsnb">全部</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'中影国际影城', city_id:108}" data-id="23745"  data-bid="b_x9tdpsnb">中影国际影城</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'中影Face电影城', city_id:108}" data-id="30894"  data-bid="b_x9tdpsnb">中影Face电影城</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'中影火星湖电影城', city_id:108}" data-id="142019" data-bid="b_x9tdpsnb">中影火星湖电影城</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'幸福蓝海国际影城', city_id:108}" data-id="30053" data-bid="b_x9tdpsnb">幸福蓝海国际影城</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'其他', city_id:108}" data-id="0"  data-bid="b_x9tdpsnb">其他</a>
+            </li>
+          </ul>
+        </li>
+        <li class="tags-line tags-line-border" data-type="district">
+          <div class="tags-title">行政区:</div>
+          <ul class="tags">
+            <li class="active">
+              <a data-act="tag-click" data-val="{TagName:'全部', city_id:108}" data-id="-1" data-bid="b_arz3865r">全部</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'地铁附近', city_id:108}" data-id="-2"  data-bid="b_arz3865r">地铁附近</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'香洲区', city_id:108}" data-id="162"  data-bid="b_arz3865r">香洲区</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'斗门区', city_id:108}" data-id="163"  data-bid="b_arz3865r">斗门区</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'金湾区', city_id:108}" data-id="164" data-bid="b_arz3865r">金湾区</a>
+            </li>
+          </ul>
+        </li>
+        <li class="tags-line tags-line-border" data-type="hallType">
+          <div class="tags-title">特殊厅:</div>
+          <ul class="tags">
+            <li class="active">
+              <a data-act="tag-click" data-val="{TagName:'全部', city_id:108}" data-id="-1"data-bid="b_bmcmwqi9">全部</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'IMAX厅', city_id:108}" data-id="2" data-bid="b_bmcmwqi9">IMAX厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'CGS中国巨幕厅', city_id:108}" data-id="3" data-bid="b_bmcmwqi9">CGS中国巨幕厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'杜比全景声厅', city_id:108}" data-id="9"  data-bid="b_bmcmwqi9">杜比全景声厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'LUXE巨幕厅', city_id:108}" data-id="5"  data-bid="b_bmcmwqi9">LUXE巨幕厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'DTS:X 临境音厅', city_id:108}" data-id="25"  data-bid="b_bmcmwqi9">DTS:X 临境音厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'4K厅', city_id:108}" data-id="8"  data-bid="b_bmcmwqi9">4K厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'4D厅', city_id:108}" data-id="7"  data-bid="b_bmcmwqi9">4D厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'60帧厅', city_id:108}" data-id="14" data-bid="b_bmcmwqi9">60帧厅</a>
+            </li>
+            <li class="">
+              <a data-act="tag-click" data-val="{TagName:'巨幕厅', city_id:108}" data-id="6" data-bid="b_bmcmwqi9">巨幕厅</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 影院列表 -->
+    <div class="cinemas-list">
+      <h2 class="cinemas-list-header">影院列表</h2>
+
+
+
+    </div>
+    <div class="movies-pager">
+      <div id="page"></div>
+    </div>
+
+  </div>
+
+  </body></html>

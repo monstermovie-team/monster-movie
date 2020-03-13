@@ -47,11 +47,11 @@
 						<!-- 确认密码框 -->
 						<div class="form-field form-field--pwd2">
 							<label>确认密码</label>
-							<input type="password" class="f-text J-pwd2" id="confirmPassword">
+							<input type="password" class="f-text J-pwd2">
 						</div>
 						<!-- 注册按钮 -->
 						<div class="form-field">
-							<input type="button" class="btn" value="注册" style="width: 260px;" onclick="start()">
+							<input type="button" class="btn" value="注册" style="width: 260px;" onclick="register()">
 						</div>
 					</form>
 				</div>
@@ -72,44 +72,34 @@
 
 		<script src="js/jquery-1.12.4.min.js"></script>
 		<script>
-			function start() {
-				if($("#confirmPassword").val()==$("input[name='customerPassword']").val()){
-					$(".validate-info").css("display","none");
-					register();
-				}else{
-					$(".validate-info").css("display","block");
-					$("#errorTips").text("两次密码不一致");
-				}
-			}
 			function register() {
-				var form = $("#registerForm").serialize();
+				var accounts = $("input[name='customerAccounts']").val();
+				//var form = $("#registerForm").serialize();
 				$.ajax({
 					url : 'register',
-					method : 'post',
-					data : form,
+					method : 'get',
+					data : {"customerName":$("input[name='customerName']").val(),
+						    "customerPassword":$("input[name='customerPassword']").val(),
+					     	"customerAccounts":$("input[name='customerAccounts']").val()},
 					success : function(result){
 						if(result.code == 200){
-							// $(".validate-info").css("display","none");
-							// alert("注册成功");
-							// location.href="login.html";
-							addUserRole();
+							//$(".validate-info").css("display","none");
+							alert("注册成功");
+							//location.href="login.html";
+							// $.ajax({
+							// 	url : 'addCustomerUserRole',
+							// 	type : 'post',
+							// 	data : "customerAccounts="+accounts,
+							// 	success : function(result){
+							// 		if(result.code == 200){
+							// 			alert("注册成功");
+							// 		}
+							// 	}
+							// });
 						}else {
 							alert(result.message);
-							$(".validate-info").css("display","block");
-							$("#errorTips").text(result.message);
-						}
-					}
-				});
-			}
-			function addUserRole() {
-				var accounts = $("input[name='customerAccounts']").val();
-				$.ajax({
-					url : 'addCustomerUserRole',
-					method : 'post',
-					data : "customerAccounts="+accounts,
-					success : function(result){
-						if(result.code == 200){
-							alert("注册成功");
+							// $(".validate-info").css("display","block");
+							// $("#errorTips").text(result.message);
 						}
 					}
 				});

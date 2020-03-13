@@ -1,0 +1,39 @@
+.main-page{
+	width: 1200px;
+	margin: 0 auto;
+	}
+.zone-page{
+	    border: 1px solid #e5e5e5;
+	    padding:20px;
+	    margin:40px;
+}
+.brand-page{
+	padding: 10px 0!important;
+	width: 80%; 
+	display: -webkit-flex;
+	flex-wrap: wrap;
+}
+.brand-content{
+	margin-left: 10px;
+	display: -webkit-flex;
+	justify-content:space-between;
+	align-items :center;
+}
+
+.aa{
+	 color: #333;
+	 font-size: 14px;
+	 margin-left: 5px;
+	 margin-right: 5px;
+}
+.link-one{
+	    border-radius: 14px;
+	    padding: 3px 9px;
+	    display: inline-block;
+	    margin-left: 12px;
+		background: #f34d41;
+		color: #fff;
+}
+	
+	
+	

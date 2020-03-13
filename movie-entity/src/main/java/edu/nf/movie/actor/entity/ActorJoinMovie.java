@@ -23,13 +23,4 @@ public class ActorJoinMovie {
      */
     private int movieId;
 
-    /**
-     * 关联电影
-     */
-    private List<MovieInfo> monitorInfo;
-
-    /**
-     * 关联演员
-     */
-    private List<ActorInfo> actorInfo;
 }

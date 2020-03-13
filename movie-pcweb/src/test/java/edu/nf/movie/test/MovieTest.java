@@ -32,7 +32,7 @@ public class MovieTest {
 
     @Test
     public void testListMovieByStatic() {
-        PageInfo<MovieInfo> pageInfo = movieService.movieInfoListByState(1, 5,2);
+        PageInfo<MovieInfo> pageInfo = movieService.movieInfoListByState(1, 5,1);
         pageInfo.getList().forEach(movieInfo -> System.out.println(movieInfo.getMovieName()));
     }
 
@@ -40,5 +40,36 @@ public class MovieTest {
     public void testMovieType() {
         List<MovieType> pageInfo = movieService.movieTypeList();
         pageInfo.forEach(movieInfo -> System.out.println(movieInfo.getMovieTypeMessage()));
+    }
+
+    @Test
+    public void testfindMovie(){
+        MovieInfo movieInfo=movieService.findMovie(1);
+        System.out.println(movieInfo.getMoviesType().getMovieTypeMessage());
+
+    }
+
+    @Test
+    public void testMoviePoster(){
+        String s=movieService.moviePoster(1);
+        System.out.println(s);
+    }
+
+    @Test
+    public void testMovieListPoster(){
+        List<String> list=movieService.listMoviePoster(1);
+        for (String s : list) {
+            System.out.println(s);
+        }
+    }
+
+    @Test
+    public void testListMovieActor(){
+        List<MovieInfo> list=movieService.listMovieActor(1);
+        for (MovieInfo m : list) {
+            System.out.println(m.getMovieId());
+            System.out.println(m.getMovieName());
+            System.out.println(m.getMovieImage().getMovieImagePath());
+        }
     }
 }

@@ -1,6 +1,9 @@
 package edu.nf.movie.actor.entity;
 
+import edu.nf.movie.movie.entity.MovieInfo;
 import lombok.Data;
+
+import java.util.List;
 
 /**
  * @author 我们狠可爱
@@ -50,8 +53,23 @@ public class ActorInfo {
      */
     private String actorGraduation;
     /**
-     * 演员姓名
+     * 演员奖项
      */
     private String actorPrize;
+
+    /**
+     * 关联的电影
+     */
+    private MovieInfo movieInfo;
+
+    /**
+     * 关联图片
+     */
+    private ActorImage actorImages;
+
+    /**
+     * 关联演员与用户管理表
+     */
+    private ActorJoinMovie actorJoinMovies;
 
 }

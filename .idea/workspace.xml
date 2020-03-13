@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e09b13cf-d94c-40fa-8712-a1ceddfeba94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/customer/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/customer/dao/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/customer/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/customer/dao/CustomerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/CustomerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/CustomerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/CustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/CustomerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/PasswordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/PasswordUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/PasswordUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/PasswordUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="010b216c-3491-494e-a9f0-0dbd7f2093a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/cinemaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/cinemaMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/cinema/dao/CinemaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/cinema/dao/CinemaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/cinemaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/cinemaMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/CinemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/CinemaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CinemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CinemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/actorIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/actorIntroduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/movieIntroduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/movieIntroduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/CinemaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/CinemaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/CinemaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/CinemaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +26,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="mapper" />
-        <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -52,25 +34,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/FtpUtil.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="F:\study\maven-repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="F:\study\apache-maven-3.6.1\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1Yk9LQHentGR7VXLAQIsMfVZXP3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -78,51 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/最终项目/big_dog/big_dog" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RebelAgentSelection">
-    <selection>jr</selection>
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="edu.nf.movie" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.nf.movie.customer.pcweb.advice" />
-      <recent name="edu.nf.movie.customer.pcweb.interceptors" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\java\edu\nf\movie\customer\pcweb\controller" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-util\src\main\java\edu\nf\movie\util" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\resources\static\css" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\resources\static" />
-      <recent name="G:\S3S152\毕业团队项目\monster-movie\movie-entity\src\main\java\edu\nf\movie\actor\entity" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.MonsterMovieApplication">
-    <configuration name="PasswordUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.util.PasswordUtils" />
-      <module name="movie-util" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nf.movie.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerTest.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CinemaTest.testListMovie">
+    <configuration name="CinemaTest.testListMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movie-pcweb" />
       <extension name="coverage">
         <pattern>
@@ -131,48 +62,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
-      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CustomerTest" />
-      <option name="METHOD_NAME" value="testRegister" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CinemaTest" />
+      <option name="METHOD_NAME" value="testListMovie" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerTest.testUpoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="movie-pcweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nf.movie.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
-      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CustomerTest" />
-      <option name="METHOD_NAME" value="testUpoad" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonsterMovieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="movie-pcweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nf.movie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.nf.movie.MonsterMovieApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.CinemaTest.testListMovie" />
+      <item itemvalue="Spring Boot.Unnamed" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MonsterMovieApplication" />
-        <item itemvalue="JUnit.CustomerTest.testUpoad" />
-        <item itemvalue="Application.PasswordUtils" />
-        <item itemvalue="JUnit.CustomerTest.testRegister" />
+        <item itemvalue="JUnit.CinemaTest.testListMovie" />
       </list>
     </recent_temporary>
   </component>
@@ -192,165 +103,60 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="付金鑫123">
-      <created>1583415845941</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1583415845941</updated>
-    </task>
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e09b13cf-d94c-40fa-8712-a1ceddfeba94" name="Default Changelist" comment="" />
-      <created>1583487127672</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1583487127672</updated>
-      <workItem from="1583487129114" duration="1189000" />
-      <workItem from="1583629718781" duration="2484000" />
-      <workItem from="1583646248590" duration="188000" />
-      <workItem from="1583649461971" duration="4688000" />
-      <workItem from="1583668700492" duration="2168000" />
-      <workItem from="1583741684799" duration="12739000" />
-      <workItem from="1583802472640" duration="3144000" />
-      <workItem from="1583812949616" duration="126000" />
-      <workItem from="1583842197488" duration="1851000" />
-      <workItem from="1583888377029" duration="10218000" />
-      <workItem from="1583900439040" duration="3440000" />
-      <workItem from="1583911546739" duration="2951000" />
-      <workItem from="1583975284730" duration="6502000" />
-      <workItem from="1583982420596" duration="2078000" />
-      <workItem from="1583984565395" duration="637000" />
-      <workItem from="1583985815081" duration="3560000" />
-      <workItem from="1583989464333" duration="3029000" />
-      <workItem from="1584063565085" duration="1393000" />
-    </task>
-    <task id="LOCAL-00002" summary="qianf">
-      <created>1583487298084</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1583487298084</updated>
-    </task>
-    <task id="LOCAL-00003" summary="修改">
-      <created>1583487452726</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1583487452726</updated>
-    </task>
-    <task id="LOCAL-00004" summary="修改">
-      <created>1583650052313</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1583650052313</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="测试" />
-    <MESSAGE value="付金鑫123" />
-    <MESSAGE value="qianf" />
-    <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1583977830435">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="275" y="26" key="#Project_Structure" timestamp="1583904289358">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1583977830435" />
-    <state x="732" y="407" width="456" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583652068039">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="275" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1583904289358" />
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583915842808">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="732" y="407" width="456" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1583652068039" />
-    <state x="484" y="0" key="CommitChangelistDialog2" timestamp="1583650045531">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583915842808" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1583936369699">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583487451174" />
-    <state x="484" y="41" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415844847" />
-    <state x="484" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583650045531" />
-    <state x="651" y="175" width="440" height="645" key="FileChooserDialogImpl" timestamp="1583989490064">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583936369699" />
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583915842207">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583487222334" />
-    <state x="651" y="175" width="440" height="645" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583989490064" />
-    <state width="1877" height="235" key="GridCell.Tab.0.bottom" timestamp="1583991658247">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1583915842207" />
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom" timestamp="1583936612810">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658247" />
-    <state width="1877" height="235" key="GridCell.Tab.0.center" timestamp="1583991658247">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
+    <state width="1323" height="363" key="GridCell.Tab.0.center" timestamp="1583936612810">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658247" />
-    <state width="1877" height="235" key="GridCell.Tab.0.left" timestamp="1583991658247">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
+    <state width="1323" height="363" key="GridCell.Tab.0.left" timestamp="1583936612810">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658247" />
-    <state width="1877" height="235" key="GridCell.Tab.0.right" timestamp="1583991658247">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
+    <state width="1323" height="363" key="GridCell.Tab.0.right" timestamp="1583936612810">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658247" />
-    <state width="1877" height="235" key="GridCell.Tab.1.bottom" timestamp="1583991658248">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
+    <state width="1306" height="358" key="GridCell.Tab.1.bottom" timestamp="1583936566854">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658248" />
-    <state width="1877" height="235" key="GridCell.Tab.1.center" timestamp="1583991658247">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1306" height="358" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
+    <state width="1306" height="358" key="GridCell.Tab.1.center" timestamp="1583936566854">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658247" />
-    <state width="1877" height="235" key="GridCell.Tab.1.left" timestamp="1583991658247">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1306" height="358" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
+    <state width="1306" height="358" key="GridCell.Tab.1.left" timestamp="1583936566853">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658247" />
-    <state width="1877" height="235" key="GridCell.Tab.1.right" timestamp="1583991658247">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1306" height="358" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583936566853" />
+    <state width="1306" height="358" key="GridCell.Tab.1.right" timestamp="1583936566854">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583991658247" />
-    <state width="1877" height="363" key="GridCell.Tab.2.bottom" timestamp="1583654649066">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1306" height="358" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1583904330130">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583654649066" />
-    <state width="1877" height="363" key="GridCell.Tab.2.center" timestamp="1583654649066">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583654649066" />
-    <state width="1877" height="363" key="GridCell.Tab.2.left" timestamp="1583654649066">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583654649066" />
-    <state width="1877" height="363" key="GridCell.Tab.2.right" timestamp="1583654649066">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583654649066" />
-    <state x="259" y="7" key="SettingsEditor" timestamp="1583914308879">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583487224564" />
-    <state x="259" y="7" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583914308879" />
-    <state x="552" y="263" key="Vcs.Push.Dialog.v2" timestamp="1583650121611">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583487458958" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583415864907" />
-    <state x="552" y="263" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583650121611" />
-    <state x="514" y="279" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583650859323">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="514" y="279" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1583650859323" />
-    <state x="647" y="295" width="626" height="490" key="find.popup" timestamp="1583914208974">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="647" y="295" width="626" height="490" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583914208974" />
-    <state x="650" y="323" key="git4idea.merge.GitPullDialog" timestamp="1583650075031">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583415854947" />
-    <state x="650" y="323" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583650075031" />
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583904330130" />
   </component>
 </project>

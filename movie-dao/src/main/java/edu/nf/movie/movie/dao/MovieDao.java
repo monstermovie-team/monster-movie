@@ -48,9 +48,12 @@ public interface MovieDao {
     List<String> listMoviePoster(Integer movieId);
 
     /**
-     * 加载该电影的演职人员
-     * 芊富
-     * @// TODO: 2020/3/6
+     * 加载演员相关电影
+     * @param actorId
+     * @return
      */
+    List<MovieInfo> listMovieActor(Integer actorId);
+
+
 
 }
