@@ -19,4 +19,16 @@ public interface CustomerService extends UserDetailsService {
      * 添加关联表信息
      */
     void addCustomerUserRole(String customerAccounts);
+
+    /**
+     * 修改用户信息
+     * @param customerInfo
+     */
+    void updateCustomerInfo(CustomerInfo customerInfo);
+
+    /**
+     * 修改用户头像
+     * @param customerPhoto
+     */
+    void updateCustomerPhoto(String customerPhoto,Integer customerId);
 }

@@ -47,11 +47,11 @@
 						<!-- 确认密码框 -->
 						<div class="form-field form-field--pwd2">
 							<label>确认密码</label>
-							<input type="password" name="password2" class="f-text J-pwd2">
+							<input type="password" class="f-text J-pwd2" id="confirmPassword">
 						</div>
 						<!-- 注册按钮 -->
 						<div class="form-field">
-							<input type="button" class="btn" value="注册" style="width: 260px;" onclick="register()">
+							<input type="button" class="btn" value="注册" style="width: 260px;" onclick="start()">
 						</div>
 					</form>
 				</div>
@@ -72,33 +72,44 @@
 
 		<script src="js/jquery-1.12.4.min.js"></script>
 		<script>
+			function start() {
+				if($("#confirmPassword").val()==$("input[name='customerPassword']").val()){
+					$(".validate-info").css("display","none");
+					register();
+				}else{
+					$(".validate-info").css("display","block");
+					$("#errorTips").text("两次密码不一致");
+				}
+			}
 			function register() {
-				var accounts = $("input[name='customerAccounts']").val();
 				var form = $("#registerForm").serialize();
-				alert(form);
 				$.ajax({
 					url : 'register',
-					type : 'post',
+					method : 'post',
 					data : form,
 					success : function(result){
 						if(result.code == 200){
-							//$(".validate-info").css("display","none");
-							alert("注册成功");
-							//location.href="login.html";
-							// $.ajax({
-							// 	url : 'addCustomerUserRole',
-							// 	type : 'post',
-							// 	data : "customerAccounts="+accounts,
-							// 	success : function(result){
-							// 		if(result.code == 200){
-							// 			alert("注册成功");
-							// 		}
-							// 	}
-							// });
+							// $(".validate-info").css("display","none");
+							// alert("注册成功");
+							// location.href="login.html";
+							addUserRole();
 						}else {
 							alert(result.message);
-							// $(".validate-info").css("display","block");
-							// $("#errorTips").text(result.message);
+							$(".validate-info").css("display","block");
+							$("#errorTips").text(result.message);
+						}
+					}
+				});
+			}
+			function addUserRole() {
+				var accounts = $("input[name='customerAccounts']").val();
+				$.ajax({
+					url : 'addCustomerUserRole',
+					method : 'post',
+					data : "customerAccounts="+accounts,
+					success : function(result){
+						if(result.code == 200){
+							alert("注册成功");
 						}
 					}
 				});

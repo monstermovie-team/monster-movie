@@ -26,7 +26,7 @@
 
     <resultMap id="MovieRegion" type="edu.nf.movie.movie.entity.MovieRegion">
         <id property="movieRegionId" column="mr_id"/>
-        <result property="MovieRegionMessage" column="mr_message"/>
+        <result property="movieRegionMessage" column="mr_message"/>
     </resultMap>
 
     <resultMap id="MovieYear" type="edu.nf.movie.movie.entity.MovieYear">
