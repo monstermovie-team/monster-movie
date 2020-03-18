@@ -3,17 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e09b13cf-d94c-40fa-8712-a1ceddfeba94" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/FileUploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/FileUploadServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/FileUploadServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/MovieService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/StoreService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/store/service/impl/StoreServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/FtpUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/FtpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/META-INF/movie-dao.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/META-INF/movie-entity.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/target/classes/META-INF/movie-util.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +24,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="F:\study\maven-repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="F:\study\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="F:\Apache Maven\repo" />
+        <option name="userSettingsFile" value="F:\Apache Maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -68,6 +60,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RunManager" selected="Spring Boot.Unnamed">
     <configuration name="CinemaTest.testListMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -129,6 +124,7 @@
       <workItem from="1584078087360" duration="999000" />
       <workItem from="1584145591931" duration="2064000" />
       <workItem from="1584149761399" duration="3689000" />
+      <workItem from="1584533330301" duration="1671000" />
     </task>
     <servers />
   </component>
@@ -156,46 +152,47 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1584078142236" />
-    <state x="740" y="298" key="FileChooserDialogImpl" timestamp="1584149885872">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="526" y="201" key="FileChooserDialogImpl" timestamp="1584533384746">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584533384746" />
     <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1584149885872" />
-    <state width="1323" height="363" key="GridCell.Tab.0.bottom" timestamp="1583936612810">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584533562411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1323" height="363" key="GridCell.Tab.0.center" timestamp="1583936612810">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584533562411" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1584533562411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1323" height="363" key="GridCell.Tab.0.left" timestamp="1583936612810">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584533562411" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1584533562410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1323" height="363" key="GridCell.Tab.0.right" timestamp="1583936612810">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584533562410" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1584533562411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1306" height="358" key="GridCell.Tab.1.bottom" timestamp="1583936566854">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584533562411" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1584533562411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
-    <state width="1306" height="358" key="GridCell.Tab.1.center" timestamp="1583936566854">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584533562411" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1584533562411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
-    <state width="1306" height="358" key="GridCell.Tab.1.left" timestamp="1583936566853">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584533562411" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1584533562411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583936566853" />
-    <state width="1306" height="358" key="GridCell.Tab.1.right" timestamp="1583936566854">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584533562411" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1584533562411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
-    <state x="261" y="13" key="SettingsEditor" timestamp="1584078184163">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584533562411" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1584533386231">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583904330130" />
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584533386231" />
     <state x="261" y="13" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1584078184163" />
     <state x="552" y="276" key="Vcs.Push.Dialog.v2" timestamp="1584067906445">
       <screen x="0" y="0" width="1920" height="1080" />
