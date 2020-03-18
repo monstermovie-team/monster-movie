@@ -20,7 +20,7 @@
 
 <!--    //mi.movie_name,img.mi_path-->
     <resultMap id="orderMap" type="edu.nf.movie.cinema.entity.OrderForm">
-        <id property="tId" column="t_id"/>
+        <id property="orId" column="t_id"/>
         <result property="cinemaName" column="t_studios_name"/>
         <result property="gmDate" column="gm_date"/>
         <result property="orderNo" column="order_no"/>
@@ -46,7 +46,7 @@
     </select>
 
     <select id="getOrderList" resultMap="orderMap" parameterType="java.lang.Integer">
-SELECT DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
+SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
 LEFT JOIN movie_info mi
 on ot.movie_id=mi.movie_id
 LEFT JOIN movie_image img
@@ -55,7 +55,7 @@ where ot.user_uuid=${uId}
     </select>
 
     <select id="getOrder" resultMap="orderMap" parameterType="java.lang.Integer">
-        SELECT DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
+SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
 LEFT JOIN movie_info mi
 on ot.movie_id=mi.movie_id
 LEFT JOIN movie_image img
@@ -70,4 +70,6 @@ where ot.t_id=${tId}
     ON m.area_id=a.area_id
      where m.mt_name='${cinemaName}'
     </select>
+
+
 </mapper>

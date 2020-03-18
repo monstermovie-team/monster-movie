@@ -38,11 +38,11 @@ public class CinemaTest {
 //        List<OrderForm> orderList = cinemaService.getOrderList(1);
 //        orderList.forEach(orderForm -> System.out.println(orderForm.getGmDate()+orderForm.getOrderNo()+orderForm.getGmDate()+orderForm.getToPrice()
 //        +orderForm.getBfTimetable()));
-//        OrderForm order = cinemaService.getOrder(4);
-//        System.out.println(order.getMovieName());
-//        System.out.println(order.getGmDate());
-        MovieTheatre nameCinema = cinemaService.getNameCinema("朵森电影院");
-        System.out.println(nameCinema.getAreaAddress());
+        OrderForm order = cinemaService.getOrder(4);
+        System.out.println(order.getMovieName());
+        System.out.println(order.getGmDate());
+//        MovieTheatre nameCinema = cinemaService.getNameCinema("朵森电影院");
+//        System.out.println(nameCinema.getAreaAddress());
     }
 
 

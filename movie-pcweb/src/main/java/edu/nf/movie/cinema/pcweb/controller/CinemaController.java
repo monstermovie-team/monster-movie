@@ -43,9 +43,9 @@ public class CinemaController<arrs> extends BaseController {
         List<OrderForm> orderList = cinemaService.getOrderList(uId);
         return success(orderList);
     }
-    @GetMapping("order_form")
-    public ResultVO<OrderForm> getOrder(Integer tId){
-        OrderForm order = cinemaService.getOrder(tId);
+    @GetMapping("/order_form")
+    public ResultVO<OrderForm> getOrder(Integer orId){
+        OrderForm order = cinemaService.getOrder(orId);
         return success(order);
     }
 

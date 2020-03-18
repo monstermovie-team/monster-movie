@@ -13,7 +13,7 @@ import java.util.Date;
 @Data
 public class OrderForm {
 
-    private Integer tId; //订单Id
+    private Integer orId; //订单Id
     private String gmDate; //购买时间
     private Integer orderNo; //订单编号
     private String cinemaName; //影院名称
