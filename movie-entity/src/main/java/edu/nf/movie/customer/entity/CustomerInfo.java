@@ -1,5 +1,6 @@
 package edu.nf.movie.customer.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -42,6 +43,7 @@ public class CustomerInfo implements UserDetails {
     /**
      * 用户出生日期
      */
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     private Date customerBirthday;
     /**
      * 用户兴趣
