@@ -36,8 +36,25 @@ public interface CinemaDao {
      */
     List<MyService> getServiceList(@Param("csId")Integer csId);
 
-
+    /**
+     *根据用户Id查订单
+     * @param uId
+     * @return
+     */
     List<OrderForm> getOrderList(@Param("uId") Integer uId);
 
+    /**
+     *根据订单Id查订单详情
+     * @param tId
+     * @return
+     */
+    OrderForm getOrder(@Param("tId")Integer tId);
+
+    /**
+     * 根据影院名称查影院信息
+     * @param cinemaName
+     * @return
+     */
+    MovieTheatre getNameCinema(@Param("cinemaName") String cinemaName);
 
 }

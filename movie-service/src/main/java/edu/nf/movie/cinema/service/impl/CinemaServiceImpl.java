@@ -43,4 +43,16 @@ public class CinemaServiceImpl implements CinemaService {
         List<OrderForm> orderList = cinemaDao.getOrderList(uId);
         return orderList;
     }
+
+    @Override
+    public OrderForm getOrder(Integer tId) {
+        OrderForm order = cinemaDao.getOrder(tId);
+        return order;
+    }
+
+    @Override
+    public MovieTheatre getNameCinema(String cinemaName) {
+        MovieTheatre nameCinema = cinemaDao.getNameCinema(cinemaName);
+        return nameCinema;
+    }
 }

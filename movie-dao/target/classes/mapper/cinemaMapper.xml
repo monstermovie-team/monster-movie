@@ -20,15 +20,15 @@
 
 <!--    //mi.movie_name,img.mi_path-->
     <resultMap id="orderMap" type="edu.nf.movie.cinema.entity.OrderForm">
-        <id property="tId" column="t_id"/>
-        <result property="tStudiosName" column="t_studios_name"/>
-        <result property="tDate" column="t_date"/>
+        <id property="orId" column="t_id"/>
+        <result property="cinemaName" column="t_studios_name"/>
+        <result property="gmDate" column="gm_date"/>
         <result property="orderNo" column="order_no"/>
-        <result property="tTimetable" column="t_timetable"/>
-        <result property="tCinemaHall" column="t_cinema_hall"/>
-        <result property="tSeat" column="t_seat"/>
-        <result property="tNum" column="t_num"/>
-        <result property="tPrice"  column="t_price"/>
+        <result property="bfTimetable" column="bf_date"/>
+        <result property="cinemaHall" column="t_cinema_hall"/>
+        <result property="upSeat" column="t_seat"/>
+        <result property="toNum" column="t_num"/>
+        <result property="toPrice"  column="t_price"/>
         <result property="movieName"  column="movie_name"/>
         <result property="miPath" column="mi_path"/>
     </resultMap>
@@ -46,11 +46,30 @@
     </select>
 
     <select id="getOrderList" resultMap="orderMap" parameterType="java.lang.Integer">
-        SELECT ot.t_date,ot.order_no,ot.t_studios_name,ot.t_timetable,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
+SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
 LEFT JOIN movie_info mi
 on ot.movie_id=mi.movie_id
 LEFT JOIN movie_image img
 on mi.movie_id=img.mi_movie_id
 where ot.user_uuid=${uId}
     </select>
+
+    <select id="getOrder" resultMap="orderMap" parameterType="java.lang.Integer">
+SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
+LEFT JOIN movie_info mi
+on ot.movie_id=mi.movie_id
+LEFT JOIN movie_image img
+on mi.movie_id=img.mi_movie_id
+where ot.t_id=${tId}
+    </select>
+
+    
+    <select id="getNameCinema" resultMap="MTMap" parameterType="java.lang.String">
+     SELECT m.mt_id,m.mt_name,m.mt_number,a.area_county ,a.area_address FROM movie_theatre m
+    left JOIN area_info a
+    ON m.area_id=a.area_id
+     where m.mt_name='${cinemaName}'
+    </select>
+
+
 </mapper>

@@ -4,6 +4,8 @@ import edu.nf.movie.customer.entity.CustomerInfo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @author BoomShaGa1aGa
  * @date 2020-02-29
@@ -48,4 +50,5 @@ public interface CustomerDao {
      * @param customerInfo
      */
     void updateCustomerPhoto(CustomerInfo customerInfo);
+
 }

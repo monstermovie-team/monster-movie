@@ -21,4 +21,8 @@ public interface CinemaService {
     List<MyService> getServicList(Integer csId);
 
     List<OrderForm> getOrderList(Integer uId);
+
+    OrderForm getOrder(Integer tId);
+
+    MovieTheatre getNameCinema(String cinemaName);
 }
