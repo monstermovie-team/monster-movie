@@ -3,6 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="edu.nf.movie.store.dao.StoreDao">
     <resultMap id="storeMap" type="edu.nf.movie.store.entity.StoreInfo">
+        <id property="productId"  column="product_id"/>
         <result property="productCore" column="product_core"/>
         <result property="productName" column="product_name"/>
         <result property="categoryName" column="category_name"/>
@@ -13,9 +14,23 @@
         <result property="production_date" column="production_date"/>
         <result property="shelf_life" column="shelf_life"/>
         <result property="storeInfo" column="descript"/>
+        <result property="imgAddress" column="pic_url"/>
     </resultMap>
 
     <select id="listStoreInfo" resultMap="storeMap">
-        select product_core,product_name,category_name,price,weight,height,width,production_date,shelf_life,descript from product_info
+       select product_core,product_name,category_name,price,weight,height,width,production_date,pic_url,shelf_life,descript
+       FROM product_info
+    </select>
+
+    <select id="listStoreInfoByName" resultMap="storeMap" parameterType="string">
+        select product_core,product_name,category_name,price,weight,height,width,production_date,pic_url,shelf_life,descript
+        from product_info
+        where category_name= #{param3}
+    </select>
+
+    <select id="listStoreInfoById" resultMap="storeMap" parameterType="string">
+        select product_core,product_name,category_name,price,weight,height,width,production_date,pic_url,shelf_life,descript
+        from product_info
+        where product_core= #{param1}
     </select>
 </mapper>

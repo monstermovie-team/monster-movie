@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.comment.dao.CommentDao">
+    <resultMap id="commentMap" type="edu.nf.movie.comment.entity.CommentInfo">
+        <id column="mc_id" property="mc_id"/>
+        <result column="movie_id" property="movie_id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="mc_text" property="mc_text"/>
+        <result column="mc_rating" property="mc_rating"/>
+        <result column="mc_date" property="mc_date"/>
+        <result column="mc_scroe" property="mc_scroe"/>
+<!--        <association property="movieInfo" resultMap="MovieMap"/>-->
+<!--        <association property="commentJoinCustomer" resultMap="CommentJoinCustomerMap"/>-->
+    </resultMap>
+
+
+
+<!--    <resultMap id="CommentJoinCustomerMap" type="edu.nf.movie.comment.entity.CommentJoinCustomer">-->
+<!--        <result property="mc_id" column="mc_id"/>-->
+<!--        <result property="mc_id" column="mc_id"/>-->
+<!--    </resultMap>-->
+
+    <select id="ListCommentInfo" resultMap="commentMap" parameterType="int">
+       SELECT mc_id, movie_id, user_id, mc_text, mc_rating,mc_date,mc_scroe
+       from movie_comment
+       WHERE movie_id=#{param1}
+       ORDER BY mc_rating limit 10
+    </select>
+    <insert id="addCommentInfo" parameterType="edu.nf.movie.comment.entity.CommentInfo">
+        insert INTO movie_comment(mc_id,movie_id, user_id, mc_text,mc_date,mc_scroe)
+        VALUES(#{mc_id},#{movie_id},#{user_id},#{mc_text},sysdate(),#{mc_scroe})
+    </insert>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>

@@ -5,6 +5,7 @@ import edu.nf.movie.movie.entity.MovieInfo;
 import edu.nf.movie.movie.entity.MovieRegion;
 import edu.nf.movie.movie.entity.MovieType;
 import edu.nf.movie.movie.entity.MovieYear;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -53,5 +54,25 @@ public interface MovieService {
      */
     List<MovieInfo> listMovieActor(Integer actorId);
 
+
+    /**
+     * 加载电影排行榜
+     * @return
+     */
+    List<MovieInfo> listMovieList();
+
+    /**
+     * 加载电影排行榜
+     * 最受期待榜
+     * @return
+     */
+    List<MovieInfo>listMovieListByExpect();
+
+    /**
+     * 加载电影排行榜
+     * Top100
+     * @return
+     */
+    PageInfo<MovieInfo>listMovieListTop100(Integer pageNum,Integer pageSize);
 
 }

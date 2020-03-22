@@ -20,6 +20,7 @@
         <association property="actorInfo" resultMap="ActorMap"/>
         <association property="actorJoinMovie" resultMap="ActorJoinMovie"/>
         <association property="movieImage" resultMap="MovieImage"/>
+        <association property="commentInfo" resultMap="commentMap"/>
     </resultMap>
 
     <resultMap id="ActorMap" type="edu.nf.movie.actor.entity.ActorInfo">
@@ -66,6 +67,16 @@
         <result property="movieImageId" column="mi_movie_id"/>
         <result property="movieImagePath" column="mi_path"/>
         <result property="movieImageType" column="mi_type"/>
+    </resultMap>
+
+    <resultMap id="commentMap" type="edu.nf.movie.comment.entity.CommentInfo">
+        <id column="mc_id" property="mc_id"/>
+        <result column="movie_id" property="movie_id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="mc_text" property="mc_text"/>
+        <result column="mc_rating" property="mc_rating"/>
+        <result column="mc_date" property="mc_date"/>
+        <result column="mc_scroe" property="mc_scroe"/>
     </resultMap>
 
 
@@ -128,5 +139,47 @@
             left join actor_info ai on ai.actor_id=ajm.actor_id where ai.actor_id =#{actorId} and mo.mi_type=1
     </select>
 
+    <select id="listMovieList" resultMap="MovieMap">
+       select mi.movie_id,mi.movie_name,mo.mi_path,avg(co.mc_scroe) as mc_scroe
+			from movie_info mi
+            left join movie_image mo
+			on mo.mi_movie_id=mi.movie_id
+            left join actor_join_movie ajm
+			on ajm.movie_id=mi.movie_id
+            left join actor_info ai
+			on ai.actor_id=ajm.actor_id
+			LEFT JOIN  movie_comment co
+			on mi.movie_id=co.movie_id
+			WHERE mi.movie_state=1
+			GROUP BY mi.movie_id,mi.movie_name,mo.mi_path ORDER BY mc_scroe DESC LIMIT 10
+    </select>
 
+    <select id="listMovieListByExpect" resultMap="MovieMap">
+            select mi.movie_id,mi.movie_name,mo.mi_path,mi.movie_want_to_see
+			from movie_info mi
+            left join movie_image mo
+			on mo.mi_movie_id=mi.movie_id
+            left join actor_join_movie ajm
+			on ajm.movie_id=mi.movie_id
+            left join actor_info ai
+			on ai.actor_id=ajm.actor_id
+			LEFT JOIN  movie_comment co
+			on mi.movie_id=co.movie_id
+			WHERE mi.movie_state=1
+			GROUP BY mi.movie_id,mi.movie_name,mo.mi_path ORDER BY movie_want_to_see DESC LIMIT 10
+    </select>
+
+    <select id="listMovieListTop100" resultMap="MovieMap">
+        select mi.movie_id,mi.movie_name,mo.mi_path,avg(co.mc_scroe) as mc_scroe
+			from movie_info mi
+            left join movie_image mo
+			on mo.mi_movie_id=mi.movie_id
+            left join actor_join_movie ajm
+			on ajm.movie_id=mi.movie_id
+            left join actor_info ai
+			on ai.actor_id=ajm.actor_id
+			LEFT JOIN  movie_comment co
+			on mi.movie_id=co.movie_id
+			GROUP BY mi.movie_id,mi.movie_name,mo.mi_path ORDER BY mc_scroe DESC
+    </select>
 </mapper>
