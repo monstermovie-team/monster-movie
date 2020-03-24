@@ -268,65 +268,8 @@
     </div>
     <!-- 相关资讯一模块 -->
     <div class="mod-content">
-              <dl class="news-list">
-  <dd class="news-item" data-act="new-click" data-val="{newsid:568857}">
-    <div class="news-img">
-      <a href="javascript:void(0); " target="_blank">
-        <!-- 模块一图片 -->
-        <img class="news-img-default" src="img/a.jpg">
-        <img class="news-img-detail" src="img/a.jpg">
-      </a>
-    </div>
-    <div class="news-main">
-      <div class="news-title">
-        <!-- 模块一标题 -->
-        <a href="javascript:void(0);" target="_blank">《叶问4》票房破11亿，成为马来西亚开埠以来最高票房华语电影</a>
-      </div>
-      <div class="news-info">
-        <span class="news-source">怪兽资讯</span><!-- 观看次数
-        --><span><i class="news-icon news-icon-views"></i>6618</span><!--
-        --><span><i class="news-icon news-icon-comments"></i>0</span>
-      </div>
-    </div>
-  </dd>
-  <!-- 相关资讯二模块 -->
-  <dd class="news-item" data-act="new-click" data-val="{newsid:562684}">
-    <div class="news-img">
-      <a href="https://maoyan.com/films/news/562684" target="_blank">
-        <img class="news-img-default" src="img/a.jpg">
-        <img class="news-img-detail" src="img/a.jpg">
-      </a>
-    </div>
-    <div class="news-main">
-      <div class="news-title">
-        <a href="https://maoyan.com/films/news/562684" target="_blank">《叶问4》国内票房破10亿，刷新中国功夫片票房纪录</a>
-      </div>
-      <div class="news-info">
-        <span class="news-source">怪兽新闻</span><!--
-        --><span><i class="news-icon news-icon-views"></i>6422</span><!--
-        --><span><i class="news-icon news-icon-comments"></i>13</span>
-      </div>
-    </div>
-  </dd>
-  <!-- 相关资讯三模块 -->
-  <dd class="news-item" data-act="new-click" data-val="{newsid:535947}">
-    <div class="news-img">
-      <a href="https://maoyan.com/films/news/535947" target="_blank">
-        <img class="news-img-default" src="img/a.jpg">
-        <img class="news-img-detail" src="img/a.jpg">
-      </a>
-    </div>
-    <div class="news-main">
-      <div class="news-title">
-        <a href="https://maoyan.com/films/news/535947" target="_blank">《叶问4》内地票房破9亿，问鼎2019年华语片海外票房冠军</a>
-      </div>
-      <div class="news-info">
-        <span class="news-source">怪兽资讯</span><!--
-        --><span><i class="news-icon news-icon-views"></i>6254</span><!--
-        --><span><i class="news-icon news-icon-comments"></i>4</span>
-      </div>
-    </div>
-  </dd>
+              <dl class="news-list" id="listInformation">
+
 </dl>
 
 
@@ -629,6 +572,47 @@
                   }
               }
           });
+
+
+          //获取最新资讯
+          $.ajax({
+              url : 'listNowInformation',
+              method : 'get',
+              success : function(result){
+                  if(result.code == 200){
+                      console.log(result.data);
+                      $.each(result.data,function (index,obj) {
+                          $("#listInformation").append(
+                              '<dd class="news-item">' +
+                              '    <div class="news-img">' +
+                              '      <a href="information.html?id='+ obj.informationId +'" target="_blank">' +
+                              '        <img class="news-img-default" src="'+ obj.informationImage.informationPath +'">' +
+                              '        <img class="news-img-detail" src="'+ obj.informationImage.informationPath +'">' +
+                              '      </a>' +
+                              '    </div>' +
+                              '    <div class="news-main">' +
+                              '      <div class="news-title">' +
+                              '        <a href="information.html?id='+ obj.informationId +'" target="_blank">'+ obj.informationTitle +'</a>' +
+                              '      </div>' +
+                              '      <div class="news-info">' +
+                              '        <span class="news-source">怪兽资讯</span>' +
+                              '        <span><i class="news-icon news-icon-views"></i>'+ obj.informationLooknum +'</span>' +
+                              '        <span><i class="news-icon news-icon-comments"></i>'+ obj.informationTime +'</span>' +
+                              '      </div>' +
+                              '    </div>' +
+                              '  </dd>'
+                          )
+                      })
+                  }else {
+                      alert(result.message);
+                  }
+              }
+          });
+
+
+
+
+
       /**
        *电影评论
        */

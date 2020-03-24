@@ -65,9 +65,9 @@
     </select>
 
     <select id="listUserComment" resultMap="consultationCommentMap" parameterType="integer">
-        select cc.cc_id,cc.information_id,cc.user_id,cc.cc_text,cc.cc_image,cc.cc_date,cu.cu_id,cu.cu_name,cu.cu_photo
+        select cc.cc_id,cc.information_id,cc.user_id,cc.cc_text,cc.cc_image,cc.cc_date,cu.cu_id,cu.cu_name,cu.cu_photo,cu.cu_state
         from consultation_comment cc left join customer_user cu on cc.user_id=cu.cu_id
-        where cc.information_id =#{informationId} order by  cc.cc_date desc
+        where cc.information_id =#{informationId} and cu.cu_state=1 order by  cc.cc_date desc
 
     </select>
 
