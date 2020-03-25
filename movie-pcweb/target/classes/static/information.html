@@ -9,6 +9,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/commentImg.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
 
@@ -59,25 +60,20 @@
                             <!--                  <li data-src="img/xgdj4.gif"> <img src="img/xgdj4.gif"> <b class="tm-photos-arrow"></b> </li>-->
                         </ul>
                         <div class="tm-m-photo-viewer">
-                            <img src="http://101.37.28.124:8080/monster_movie/information_images/dbj3.jpg">
+                            <img src="img/a.jpg">
                             <a class="tm-m-photo-viewer-navleft"><i></i></a>
                             <a class="tm-m-photo-viewer-navright"><i></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="news-action" >
-      <span class="news-action-block like-news">
-        <span class="like-icon"></span>&nbsp;&nbsp;
-        <span class="like-news-count" >
-          31
-        </span>
-      </span>
-                    <div style="display: inline-block; position: relative;"><div class="news-action-block share-banner">
-                        <span class="share-banner-icon"></span>&nbsp;&nbsp;分 享
-                    </div><div style="position: absolute; top: 42px; left: 0px; z-index: 10; display: none;">
-
-                    </div></div>
+                <div class="news-action" id="dz">
+<!--      <span class="news-action-block like-news">-->
+<!--        <span class="fa fa-thumbs-up fa-fw"></span>-->
+<!--        <span class="like-news-count" >-->
+<!--          31-->
+<!--        </span>-->
+<!--      </span>-->
                 </div>
                 <!-- 评论 -->
                 <div class="module">
@@ -184,11 +180,11 @@
                             '    <div class="comment-info">' +
                             '      <div class="comment-action">' +
                             '          <a href="javascript:" class="comment-report" >举报</a>' +
-                            '          <span class="like-comment" >' +
-                            '            <span class="like-icon"></span>' +
-                            '            &nbsp;' +
-                            '            <span class="like-comment-count" >   0     </span>' +
-                            '          </span>' +
+                            // '          <span class="like-comment" >' +
+                            // '            <span class="like-icon"></span>' +
+                            // '            &nbsp;' +
+                            // '            <span class="like-comment-count" >   0     </span>' +
+                            // '          </span>' +
                             '      </div>' +
                             '      <div class="comment-nickname"> '+ obj.customerInfo.customerName +' </div>' +
                             '      <div class="comment-time"> '+ obj.ccDate +' </div>' +
@@ -234,6 +230,28 @@
         });
 
 
+        //加载点赞
+        $.ajax({
+            url : 'findNotUp',
+            method : 'get',
+            data: {'informationId': informationId},
+            success : function(result){
+                if(result.code == 200){
+                    alert(selectDZ())
+                        // $('#dz').append(
+                        //     '<span class="news-action-block like-news">' +
+                        //     '        <span class="fa fa-thumbs-up fa-fw"></span>' +
+                        //     '        <span class="like-news-count" > '+dz()+' </span>' +
+                        //     '      </span>'
+                        // )
+
+
+                }else {
+                    alert(result.message);
+                }
+            }
+        });
+
 
 
 
@@ -254,6 +272,36 @@
             var str=obj.replace(reg,"<p>");
             return str;
         }
+
+        //获取点赞总数
+        function selectDZ() {
+            var da=null;
+            $.ajax({
+                url : 'selectDZ',
+                method : 'get',
+                data: {'informationId': informationId},
+                success : function(result){
+                    if(result.code == 200){
+                         da=result.data.count.toString();
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            });
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     });

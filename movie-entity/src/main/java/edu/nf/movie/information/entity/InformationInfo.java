@@ -31,6 +31,7 @@ public class InformationInfo {
      */
     private Integer informationLooknum;
 
+
     /**
      * 一对一图片海报
      */
