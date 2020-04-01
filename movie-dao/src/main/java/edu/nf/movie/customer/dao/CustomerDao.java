@@ -48,4 +48,6 @@ public interface CustomerDao {
      * @param customerInfo
      */
     void updateCustomerPhoto(CustomerInfo customerInfo);
+
+
 }
