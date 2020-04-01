@@ -230,33 +230,6 @@
         });
 
 
-        //加载点赞
-        $.ajax({
-            url : 'findNotUp',
-            method : 'get',
-            data: {'informationId': informationId},
-            success : function(result){
-                if(result.code == 200){
-                    alert(selectDZ())
-                        // $('#dz').append(
-                        //     '<span class="news-action-block like-news">' +
-                        //     '        <span class="fa fa-thumbs-up fa-fw"></span>' +
-                        //     '        <span class="like-news-count" > '+dz()+' </span>' +
-                        //     '      </span>'
-                        // )
-
-
-                }else {
-                    alert(result.message);
-                }
-            }
-        });
-
-
-
-
-
-
         $(".tm-m-photos").commentImg({
             activeClass: 'tm-current', //缩略图当前状态class,默认'current'
             nextButton: '.tm-m-photo-viewer-navright', //向后翻页按钮，默认'.next'
@@ -272,34 +245,6 @@
             var str=obj.replace(reg,"<p>");
             return str;
         }
-
-        //获取点赞总数
-        function selectDZ() {
-            var da=null;
-            $.ajax({
-                url : 'selectDZ',
-                method : 'get',
-                data: {'informationId': informationId},
-                success : function(result){
-                    if(result.code == 200){
-                         da=result.data.count.toString();
-                    }else {
-                        alert(result.message);
-                    }
-                }
-            });
-        }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
