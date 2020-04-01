@@ -9,66 +9,9 @@
 
   <link rel="stylesheet" href="css/cinemas-list.d5916a9a.css">
   <link rel="stylesheet" href="css/cinema.css">
-  <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.pagination.js"></script>
-<link rel="stylesheet" href="css/pagination.css">
-<script>
-  $(function() {
-    $.ajax({
-      url: 'cinema_list',
-      type: 'get',
-      data : {'pageNum' : pageNum, 'pageSize' : 5,'State':1},
-      success: function (result) {
-        if(result.code == 200){
-          $.each(result.data,function(i,v){
-            $(".cinemas-list").append("<div class=\"cinema-cell\">\n" +
-                    "    <div class=\"cinema-info\">\n" +
-                    "    <a href=\"cinema-details.html\" class=\"cinema-name\" >"+v.mtName+"</a>\n" +
-                    "<p class=\"cinema-address\">"+v.areaId+"</p>\n" +
-                    "</div>\n" +
-                    "\n" +
-                    "<div class=\"buy-btn\">\n" +
-                    "    <a href=\"cinema-details.html\">选座购票</a>\n" +
-                    "    </div>\n" +
-                    "\n" +
-                    "    <div class=\"price\">\n" +
-                    "    <span>暂无参考价</span>\n" +
-                    "    </div>\n" +
-                    "    </div>");
+  <link rel="stylesheet" href="css/pagination.css">
 
-          })
-        }
-      }
-    });
-  });
-
-
-  function page(pageInfo){
-    $("#page").pagination(pageInfo.total, { //第一个参数指定共多少条记录
-      items_per_page:5, // 每页显示多少条记录
-      next_text:"下一页", //下一页按钮图标
-      prev_text:"上一页", //上一页按钮图标
-      num_display_entries:5,//主体页数
-      num_edge_entries: 2, //边缘页数
-      callback: function(index){//定义一个回调函数，用于每次点击页码发起分页查询请求
-        //index为当前页码，只不过下标是从0开始，因此需要+1操作
-        var pageNum = ++index;
-        $.ajax({
-          url : 'cinema_list',
-          method : 'get',
-          data : {'pageNum' : pageNum, 'pageSize' : 5,'State':1},
-          success : function(result){
-            //渲染表格
-            addMovie(result.data);
-          }
-        });
-      }
-    });
-  }
-</script>
-  <script type="text/javascript"src="js/cinma.js"></script>
-  <script crossorigin="anonymous" src="js/stat.88d57c80.js"></script><script async="" defer="" charset="utf-8" src="js/web.js"></script>
-  <div id="my-cinema">
+ <div id="my-cinema">
     <!-- 选择列表 -->
     <div class="tags-panel">
       <ul class="tags-lines">
@@ -158,12 +101,64 @@
       <h2 class="cinemas-list-header">影院列表</h2>
 
 
-
     </div>
     <div class="movies-pager">
       <div id="page"></div>
     </div>
 
   </div>
+<script>
+  $(function() {
+    $.ajax({
+      url: 'cinema_list',
+      type: 'get',
+      data : {'pageNum' : pageNum, 'pageSize' : 5,'State':1},
+      success: function (result) {
+        if(result.code == 200){
+          $.each(result.data,function(i,v){
+            $(".cinemas-list").append("<div class=\"cinema-cell\">\n" +
+                    "    <div class=\"cinema-info\">\n" +
+                    "    <a href=\"cinema-details.html\" class=\"cinema-name\" >"+v.mtName+"</a>\n" +
+                    "<p class=\"cinema-address\">"+v.areaId+"</p>\n" +
+                    "</div>\n" +
+                    "\n" +
+                    "<div class=\"buy-btn\">\n" +
+                    "    <a href=\"cinema-details.html\">选座购票</a>\n" +
+                    "    </div>\n" +
+                    "\n" +
+                    "    <div class=\"price\">\n" +
+                    "    <span>暂无参考价</span>\n" +
+                    "    </div>\n" +
+                    "    </div>");
 
+          })
+        }
+      }
+    });
+  });
+
+
+  function page(pageInfo){
+    $("#page").pagination(pageInfo.total, { //第一个参数指定共多少条记录
+      items_per_page:5, // 每页显示多少条记录
+      next_text:"下一页", //下一页按钮图标
+      prev_text:"上一页", //上一页按钮图标
+      num_display_entries:5,//主体页数
+      num_edge_entries: 2, //边缘页数
+      callback: function(index){//定义一个回调函数，用于每次点击页码发起分页查询请求
+        //index为当前页码，只不过下标是从0开始，因此需要+1操作
+        var pageNum = ++index;
+        $.ajax({
+          url : 'cinema_list',
+          method : 'get',
+          data : {'pageNum' : pageNum, 'pageSize' : 5,'State':1},
+          success : function(result){
+            //渲染表格
+            addMovie(result.data);
+          }
+        });
+      }
+    });
+  }
+</script>
   </body></html>
