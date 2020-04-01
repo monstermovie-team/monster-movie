@@ -16,6 +16,9 @@
         <collection property="roles" resultMap="roleMap"/>
     </resultMap>
 
+
+    
+    
     <resultMap id="roleMap" type="edu.nf.movie.customer.entity.CustomerRole">
         <id property="customerRoleId" column="cr_id"/>
         <result property="customerRoleName" column="cr_name"/>
@@ -38,5 +41,18 @@
     <insert id="addCustomerUserRole">
         insert into customer_user_role(cu_id, cr_id) values(#{param1}, #{param2})
     </insert>
+
+    <select id="findCustomerIdByAccounts" resultMap="CustomerMap" parameterType="java.lang.String">
+        select cu_id from customer_user where cu_accounts=#{accounts}
+    </select>
+
+    <update id="updateCustomerInfo" parameterType="edu.nf.movie.customer.entity.CustomerInfo">
+        update customer_user set cu_name=#{customerName},cu_sex=#{customerSex},cu_birthday=#{customerBirthday},
+        cu_interest=#{customerInterest},cu_sign=#{customerSign} where cu_id = #{customerId}
+    </update>
+
+    <update id="updateCustomerPhoto" parameterType="edu.nf.movie.customer.entity.CustomerInfo">
+        update customer_user set cu_photo=#{customerPhoto} where cu_id=#{customerId}
+    </update>
 
 </mapper>

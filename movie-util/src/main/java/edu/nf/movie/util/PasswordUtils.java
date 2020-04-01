@@ -3,6 +3,7 @@ package edu.nf.movie.util;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 /**
+ * 密码加密工具类
  * @author wangl
  * @date 2019/12/26
  */

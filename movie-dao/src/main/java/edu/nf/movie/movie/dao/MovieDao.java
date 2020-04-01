@@ -54,6 +54,23 @@ public interface MovieDao {
      */
     List<MovieInfo> listMovieActor(Integer actorId);
 
+    /**
+     * 加载电影排行榜
+     * 热映口碑榜
+     * @return
+     */
+    List<MovieInfo> listMovieList();
+    /**
+     * 加载电影排行榜
+     * 最受期待榜
+     * @return
+     */
+    List<MovieInfo>listMovieListByExpect();
 
-
+    /**
+     * 加载电影排行榜
+     * Top100
+     * @return
+     */
+    List<MovieInfo>listMovieListTop100(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize);
 }

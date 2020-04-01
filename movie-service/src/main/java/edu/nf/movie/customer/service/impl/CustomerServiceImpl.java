@@ -5,6 +5,7 @@ import edu.nf.movie.customer.entity.CustomerInfo;
 import edu.nf.movie.customer.entity.CustomerRole;
 import edu.nf.movie.customer.service.CustomerService;
 import edu.nf.movie.customer.service.exception.UserNotFoundException;
+import edu.nf.movie.exception.DataException;
 import edu.nf.movie.util.PasswordUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -33,16 +34,30 @@ public class CustomerServiceImpl implements CustomerService {
         //设置用户状态
         customerInfo.setCustomerState(true);
         //密码加密
-        PasswordUtils.encodePassword(customerInfo.getPassword());
+        PasswordUtils.encodePassword(customerInfo.getCustomerPassword());
         customerDao.addCustomer(customerInfo);
     }
 
     @Override
     public void addCustomerUserRole(String customerAccounts) {
         //根据账户查询id
-        CustomerInfo customerInfo = customerDao.findCustomerByAccounts(customerAccounts);
+        CustomerInfo customerInfo = customerDao.findCustomerIdByAccounts(customerAccounts);
         customerDao.addCustomerUserRole(customerInfo.getCustomerId(),1);
     }
+
+    @Override
+    public void updateCustomerInfo(CustomerInfo customerInfo) {
+        customerDao.updateCustomerInfo(customerInfo);
+    }
+
+    @Override
+    public void updateCustomerPhoto(String customerPhoto,Integer customerId) {
+        CustomerInfo customerInfo = new CustomerInfo();
+        customerInfo.setCustomerPhoto(customerPhoto);
+        customerInfo.setCustomerId(customerId);
+        customerDao.updateCustomerPhoto(customerInfo);
+    }
+
 
     @Override
     public UserDetails loadUserByUsername(String accounts) throws UsernameNotFoundException {

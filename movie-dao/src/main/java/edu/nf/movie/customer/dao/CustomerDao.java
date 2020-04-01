@@ -4,6 +4,8 @@ import edu.nf.movie.customer.entity.CustomerInfo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @author BoomShaGa1aGa
  * @date 2020-02-29
@@ -15,7 +17,7 @@ public interface CustomerDao {
     /**
      * @param accounts 账号
      * @return
-     * 根据账号查询用户
+     * 根据账号查询用户（关联查询）
      */
     CustomerInfo findCustomerByAccounts(String accounts);
 
@@ -29,4 +31,24 @@ public interface CustomerDao {
      * 添加关联表信息
      */
     void addCustomerUserRole(Integer customerId,Integer roleId);
+
+    /**
+     * 根据账号查询用户id
+     * @param accounts
+     * @return
+     */
+    CustomerInfo findCustomerIdByAccounts(String accounts);
+
+    /**
+     * 修改用户信息(不修改头像)
+     * @param customerInfo
+     */
+    void updateCustomerInfo(CustomerInfo customerInfo);
+
+    /**
+     * 修改用户头像
+     * @param customerInfo
+     */
+    void updateCustomerPhoto(CustomerInfo customerInfo);
+
 }

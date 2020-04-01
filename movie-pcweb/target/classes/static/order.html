@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html><!--<![endif]--><head>
+  <title>猫眼电影 - 一网打尽好电影</title>
+  </head>
+ 
+
+  
+  <script async="" src="https://s0.meituan.net/bs/js/?f=mta-js:mta.min.js"></script><script src="https://hm.baidu.com/hm.js?703e94591e87be68cc8da0da7cbd0be2"></script><script>"use strict";!function(){var i=0<arguments.length&&void 0!==arguments[0]?arguments[0]:"_Owl_",n=window;n[i]||(n[i]={isRunning:!1,isReady:!1,preTasks:[],dataSet:[],use:function(i,t){this.isReady&&n.Owl&&n.Owl[i](t),this.preTasks.push({api:i,data:[t]})},add:function(i){this.dataSet.push(i)},run:function(){var t=this;if(!this.isRunning){this.isRunning=!0;var i=n.onerror;n.onerror=function(){this.isReady||this.add({type:"jsError",data:arguments}),i&&i.apply(n,arguments)}.bind(this),(n.addEventListener||n.attachEvent)("error",function(i){t.isReady||t.add({type:"resError",data:[i]})},!0)}}},n[i].run())}();</script>
+
+  <link rel="stylesheet" href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/common.d1d257d3.css">
+<link rel="stylesheet" href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/profile-profile.772600de.css">
+  <script crossorigin="anonymous" src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/stat.88d57c80.js"></script><script async="" defer="" charset="utf-8" src="//analytics.meituan.com/source/stable/web.js"></script>
+  <script>if(window.devicePixelRatio >= 2) { document.write('<link rel="stylesheet" href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/image-2x.8ba7074d.css"/>') }</script>
+<meta name="lx:autopv" content="off"><meta name="lx:appnm" content="movie"><meta name="lx:category" content="movie"></head>
+<body>
+
+<div class="header-placeholder"></div>
+
+
+    <div class="container" id="app">
+<div class="content">
+  <div class="main">
+    <div class="info-content clearfix">
+      <div class="user-profile-nav">
+        <h1>个人中心</h1>
+        <a href="/profile/orders" class="orders active">我的订单</a>
+        <a href="/profile" class="profile ">基本信息</a>
+      </div>
+
+<div class="orders-container">
+  <div class="profile-title">我的订单</div>
+
+</div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="mask3">
+    <div class="modal-container" style="display:none">
+    <div class="modal">
+      <span class="icon"></span>
+
+      <p class="tip">您确定要删除该订单嘛？删除后，不可恢复～</p>
+
+        <div class="short btn ok-btn">确定</div>
+        <div class="short btn cancel-btn">取消</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mask1">
+    <div class="modal-container" style="display:none">
+    <div class="modal">
+      <span class="icon"></span>
+
+      <p class="tip">请注意，注销账号会清空所有订单信息、影评、积分、<br>账户余额等信息且无法找回，是否继续？</p>
+
+        <div class="short btn ok-btn">确定</div>
+        <div class="short btn cancel-btn">取消</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mask2">
+    <div class="modal-container" style="display:none">
+    <div class="modal">
+      <span class="icon"></span>
+
+      <p class="tip">请联系客服10105335</p>
+
+        <div class="ok-btn btn">我知道了</div>
+    </div>
+  </div>
+
+</div>
+
+    </div>
+
+</body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function() {
+            $.ajax(
+                {
+                    url: 'order_list',
+                    type: 'get',
+                    data: {"uId": 1},
+                    success: function (rs) {
+                        $.each(rs.data, function (i,obj) {
+                            $(".orders-container").append("   <div class=\"order-box\" >\n" +
+                                "      <div class=\"order-header\">\n" +
+                                "        <span class=\"order-date\">"+obj.gmDate+"</span>\n" +
+                                "        <span class=\"order-id\">订单号:"+obj.orderNo+"</span>\n" +
+                                "          <span class=\"del-order\" ></span>\n" +
+                                "      </div>\n" +
+                                "      <div class=\"order-body\">\n" +
+                                "        <div class=\"poster\">\n" +
+                                "          <img  src="+obj.miPath+" style=\"height:91px;width:66px;\">\n" +
+                                "        </div>\n" +
+                                "        <div class=\"order-content\">\n" +
+                                "          <div class=\"movie-name\">"+obj.movieName+"</div>\n" +
+                                "          <div class=\"cinema-name\">"+obj.cinemaName+"</div>\n" +
+                                "          <div class=\"hall-ticket\">\n" +
+                                "            <span>"+obj.cinemaHall+"</span>\n" +
+                                "              <span>"+obj.upSeat+"</span>\n" +
+                                "          </div>\n" +
+                                "          <div class=\"show-time\">"+obj.bfTimetable+"</div>\n" +
+                                "        </div>\n" +
+                                "        <div class=\"order-price\">"+obj.toPrice+"</div>\n" +
+                                "        <div class=\"order-status\">\n" +
+                                "          已完成\n" +
+                                "        </div>\n" +
+                                "        <div class=\"actions\">\n" +
+                                "          <div>\n" +
+                                "            <a href=\"order_message.html?cinemaName="+obj.cinemaName+"&orId="+obj.orId+"\" class=\"order-detail\" data-act=\"orders-detail-click\" data-bid=\"b_y190atas\">查看详情</a>\n" +
+                                "          </div>\n" +
+                                "        </div>\n" +
+                                "      </div>\n" +
+                                "    </div>");
+                        })
+                    }
+                }
+            );
+        });
+    </script>
+    <script crossorigin="anonymous" src="//www.dpfile.com/app/owl/static/owl_1.7.11.js"></script>
+    <script>
+      Owl.start({
+        project: 'com.sankuai.movie.fe.mywww',
+        pageUrl: location.href.split('?')[0].replace(/\/\d+/g, '/:id'),
+        devMode: false
+      })
+    </script>
+    <script src="//s0.meituan.net/bs/?f=myfe/canary:mojo-0.1.2.js"></script>
+    <script>
+      MAInit({
+        appkey: 'com.sankuai.movie.fe.mywww',
+        app_name: 'maoyan-pc-web',
+        app_version: '1.0.0',
+      })
+    </script>
+    <!--[if IE 8]><script crossorigin="anonymous" src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/es5-shim.bbad933f.js"></script><![endif]-->
+    <!--[if IE 8]><script crossorigin="anonymous" src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/es5-sham.d6ea26f4.js"></script><![endif]-->
+    <script crossorigin="anonymous" src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/common.3c7410fb.js"></script>
+<script crossorigin="anonymous" src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/profile-profile.490c7f94.js"></script>
+
+
+<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p><p class="last-btn">复制</p><iframe src=""></iframe></div></body></html>
+</html>

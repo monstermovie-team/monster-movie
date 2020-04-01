@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>资讯信息</title>
+
+
+    <link rel="stylesheet" href="css/information4.css">
+    <link rel="stylesheet" href="css/information3.css">
+    <link rel="stylesheet" href="css/information2.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/commentImg.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+
+
+
+<div class="container" id="app">
+    <div class="news-page">
+
+        <div class="news-related">
+
+
+
+            <div class="module">
+                <div class="mod-title">
+                    <h2>热门资讯</h2>
+                </div>
+                <div class="mod-content">
+                    <div class="popular-container">
+                        <ul id="hotInformation">
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="news-main" >
+
+            <div class="news-title" >
+                <div id="informationContent">
+
+                </div>
+
+                <!-- 图集模块 -->
+                <div class="module" >
+                    <div class="mod-title">
+                        <h2>图集</h2>
+                        <a class="more" href="javascript:void(0);">全部</a>
+                    </div>
+                    <div class="tm-m-photos" >
+                        <ul class="tm-m-photos-thumb" id="listInformationImage">
+                            <!--                  <li data-src="img/aa.jpg"> <img src="img/aa.jpg"> <b class="tm-photos-arrow"></b> </li>-->
+                            <!--                  <li data-src="img/02.png"> <img src="img/02.png"> <b class="tm-photos-arrow"></b> </li>-->
+                            <!--                  <li data-src="img/03.png"> <img src="img/03.png"> <b class="tm-photos-arrow"></b> </li>-->
+                            <!--                  <li data-src="img/xgdj4.gif"> <img src="img/xgdj4.gif"> <b class="tm-photos-arrow"></b> </li>-->
+                        </ul>
+                        <div class="tm-m-photo-viewer">
+                            <img src="img/a.jpg">
+                            <a class="tm-m-photo-viewer-navleft"><i></i></a>
+                            <a class="tm-m-photo-viewer-navright"><i></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-action" id="dz">
+<!--      <span class="news-action-block like-news">-->
+<!--        <span class="fa fa-thumbs-up fa-fw"></span>-->
+<!--        <span class="like-news-count" >-->
+<!--          31-->
+<!--        </span>-->
+<!--      </span>-->
+                </div>
+                <!-- 评论 -->
+                <div class="module">
+                    <div class="mod-title">
+                        <h2>最新评论</h2>
+                    </div>
+                    <div class="mod-content">
+                        <dl class="comments-list" id="listUser">
+
+                        </dl>
+                        <div class="loading-banner">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div></div>
+
+
+</div>
+
+
+<script>
+
+    $(function () {
+
+        //获取movie.html传过来的ID
+        var url = window.location.search;
+        if (url.indexOf("?") != -1) {    //判断是否有参数
+            var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
+            strs = str.split("=");   //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）
+            informationId=strs[1];
+        }
+
+
+
+
+
+        //获取资讯信息
+        $.ajax({
+            url : 'informationContent',
+            method : 'get',
+            data: {'informationId': informationId},
+            success : function(result){
+                if(result.code == 200){
+                    console.log(result.data);
+                    $("#informationContent").append(
+                        '<div class="news-title" >' +
+                        '      <h1>'+ result.data.informationTitle +'</h1>' +
+                        '      <div class="news-subtitle">' +
+                        '        怪兽电影&nbsp;&nbsp;' +
+                        '        '+ result.data.informationTime +'&nbsp;&nbsp;' +
+                        '        <span class="news-icon-views"></span>' + result.data.informationLooknum +
+                        '      </div>' +
+                        '    </div>' +
+                        '    <div class="news-content">' +
+                        '    <p class="image-wrapper" >'+ replaceObj(result.data.informationText) +'</p>' +
+                        '    </div>'
+                    )
+                }else {
+                    alert(result.message);
+                }
+            }
+        });
+
+
+
+
+        //加载资讯图集
+        $.ajax({
+            url : 'listInformationImage',
+            method : 'get',
+            data: {'informationId': informationId},
+            success : function(result){
+                if(result.code == 200){
+                    console.log(result.data);
+                    $.each(result.data,function (index,obj) {
+                        $("#listInformationImage").append(
+                            '<li data-src="'+ obj.informationPath +'"> <img src="'+ obj.informationPath +'"> <b class="tm-photos-arrow"></b> </li>'
+                        )
+                    })
+                }else {
+                    alert(result.message);
+                }
+            }
+        });
+
+        //用户评论
+        $.ajax({
+            url :'listUserComments',
+            method : 'get',
+            data: {'informationId': informationId},
+            success : function(result){
+                if(result.code == 200){
+                    console.log(result.data);
+                    $.each(result.data,function (index,obj) {
+                        $("#listUser").append(
+                            '<dd class="comment-item">' +
+                            '  <div class="comment-avatar">' +
+                            '    <img src="'+ obj.customerInfo.customerPhoto +'">' +
+                            // '    <div class="level level-v4"></div>' +
+                            '  </div>' +
+                            '  <div class="comment-main">' +
+                            '    <div class="comment-info">' +
+                            '      <div class="comment-action">' +
+                            '          <a href="javascript:" class="comment-report" >举报</a>' +
+                            // '          <span class="like-comment" >' +
+                            // '            <span class="like-icon"></span>' +
+                            // '            &nbsp;' +
+                            // '            <span class="like-comment-count" >   0     </span>' +
+                            // '          </span>' +
+                            '      </div>' +
+                            '      <div class="comment-nickname"> '+ obj.customerInfo.customerName +' </div>' +
+                            '      <div class="comment-time"> '+ obj.ccDate +' </div>' +
+                            '    </div>' +
+                            '    <div class="comment-content">'+ obj.ccText +' </div>' +
+                            '  </div>' +
+                            '</dd>'
+                        )
+                    })
+                }else {
+                    alert(result.message);
+                }
+            }
+        });
+
+        //加载热门资讯
+        $.ajax({
+            url : 'listHotInformation',
+            method : 'get',
+            success : function(result){
+                if(result.code == 200){
+                    console.log(result.data);
+                    $.each(result.data,function (index,obj) {
+                        $("#hotInformation").append(
+                            '<li class="top1-list">' +
+                            '              <div>' +
+                            '                  <div class="top-info-thumb">' +
+                            '                      <a href="information.html?id='+ obj.informationId +'" target="_blank">' +
+                            '                          <img src="'+ obj.informationImage.informationPath +'" alt="">' +
+                            '                      </a>' +
+                            '                  </div>' +
+                            '                  <p class="top1-news-content">' +
+                            '                      <a href="javascript:void(0); " class="two-line" title="" target="_blank"> '+ obj.informationTitle +' </a>' +
+                            '                  </p>' +
+                            '              </div>' +
+                            '          </li>'
+                        )
+                    })
+                }else {
+                    alert(result.message);
+                }
+            }
+        });
+
+
+        //加载点赞
+        $.ajax({
+            url : 'findNotUp',
+            method : 'get',
+            data: {'informationId': informationId},
+            success : function(result){
+                if(result.code == 200){
+                    alert(selectDZ())
+                        // $('#dz').append(
+                        //     '<span class="news-action-block like-news">' +
+                        //     '        <span class="fa fa-thumbs-up fa-fw"></span>' +
+                        //     '        <span class="like-news-count" > '+dz()+' </span>' +
+                        //     '      </span>'
+                        // )
+
+
+                }else {
+                    alert(result.message);
+                }
+            }
+        });
+
+
+
+
+
+
+        $(".tm-m-photos").commentImg({
+            activeClass: 'tm-current', //缩略图当前状态class,默认'current'
+            nextButton: '.tm-m-photo-viewer-navright', //向后翻页按钮，默认'.next'
+            prevButton: '.tm-m-photo-viewer-navleft', //向前翻页按钮，默认'.prev'
+            imgNavBox: '.tm-m-photos-thumb', //缩略图容器，默认'.photos-thumb'
+            imgViewBox: '.tm-m-photo-viewer' //浏览图容器，默认'.photo-viewer'
+        });
+
+
+        //数据进行换行
+        function replaceObj(obj) {
+            var reg = /[。;；]/g;
+            var str=obj.replace(reg,"<p>");
+            return str;
+        }
+
+        //获取点赞总数
+        function selectDZ() {
+            var da=null;
+            $.ajax({
+                url : 'selectDZ',
+                method : 'get',
+                data: {'informationId': informationId},
+                success : function(result){
+                    if(result.code == 200){
+                         da=result.data.count.toString();
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            });
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+</script>
+</body></html>
