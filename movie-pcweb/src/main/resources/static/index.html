@@ -40,6 +40,11 @@
             </div>
         </div>
 
+      <form action="https://maoyan.com/query" target="_blank" class="search-form" data-actform="search-click">
+          <input name="kw" class="search" type="search" maxlength="32" placeholder="找影视剧、影人、影院" autocomplete="off">
+          <input class="submit" type="submit" value="">
+      </form>
+
         <div class="app-download">
           <a href="https://maoyan.com/app" target="_blank">
             <span class="iphone-icon"></span>
@@ -124,6 +129,7 @@
   </div>
 </div>
 <script>
+    load();
     function load() {
         $("#load").load('homepage.html');
     }
