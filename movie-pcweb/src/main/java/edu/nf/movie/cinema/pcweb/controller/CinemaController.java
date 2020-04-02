@@ -1,10 +1,7 @@
 package edu.nf.movie.cinema.pcweb.controller;
 
-import com.github.pagehelper.PageInfo;
-
 import edu.nf.movie.cinema.entity.MovieTheatre;
-import edu.nf.movie.cinema.entity.MyService;
-import edu.nf.movie.cinema.entity.OrderForm;
+import edu.nf.movie.order.entity.OrderForm;
 import edu.nf.movie.cinema.service.CinemaService;
 import edu.nf.movie.customer.pcweb.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,31 +25,31 @@ public class CinemaController<arrs> extends BaseController {
 //        PageInfo<MovieTheatre> cinemaList = cinemaService.getCinemaList(pageNum, pageSize);
 //        return success(cinemaList);
 //    }
-    @GetMapping("/message_list")
-    public ResultVO<MovieTheatre> getMessage(Integer mId){
-        MovieTheatre cinemaMessage = cinemaService.getCinemaMessage(mId);
-        return success(cinemaMessage);
-    }
-    @GetMapping("/service_list")
-    public ResultVO<List<MyService>> getServiceList(Integer csId){
-        List<MyService> servicList = cinemaService.getServicList(csId);
-        return success(servicList);
-    }
-    @GetMapping("/order_list")
-    public ResultVO<List<OrderForm>> getOrderList(Integer uId){
-        List<OrderForm> orderList = cinemaService.getOrderList(uId);
-        return success(orderList);
-    }
-    @GetMapping("/order_form")
-    public ResultVO<OrderForm> getOrder(Integer orId){
-        OrderForm order = cinemaService.getOrder(orId);
-        return success(order);
-    }
-
-    @GetMapping("/cinema_message")
-    public  ResultVO<MovieTheatre> getNameCinema(String cinemaName){
-        MovieTheatre nameCinema = cinemaService.getNameCinema(cinemaName);
-        return success(nameCinema);
-    }
+//    @GetMapping("/message_list")
+//    public ResultVO<MovieTheatre> getMessage(Integer mId){
+//        MovieTheatre cinemaMessage = cinemaService.getCinemaMessage(mId);
+//        return success(cinemaMessage);
+//    }
+//    @GetMapping("/service_list")
+//    public ResultVO<List<MyService>> getServiceList(Integer csId){
+//        List<MyService> servicList = cinemaService.getServicList(csId);
+//        return success(servicList);
+//    }
+//    @GetMapping("/order_list")
+//    public ResultVO<List<OrderForm>> getOrderList(Integer uId){
+//        List<OrderForm> orderList = cinemaService.getOrderList(uId);
+//        return success(orderList);
+//    }
+//    @GetMapping("/order_form")
+//    public ResultVO<OrderForm> getOrder(Integer orId){
+//        OrderForm order = cinemaService.getOrder(orId);
+//        return success(order);
+//    }
+//
+//    @GetMapping("/cinema_message")
+//    public  ResultVO<MovieTheatre> getNameCinema(String cinemaName){
+//        MovieTheatre nameCinema = cinemaService.getNameCinema(cinemaName);
+//        return success(nameCinema);
+//    }
 
 }

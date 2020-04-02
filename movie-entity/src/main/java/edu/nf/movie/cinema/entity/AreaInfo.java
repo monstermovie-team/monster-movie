@@ -12,5 +12,5 @@ public class AreaInfo {
     private String areaProvince;//省级
     private String  areaCity;	//市级
     private String areaCounty;	//县区级
-    private String areaAddress; //具体地址
+
 }

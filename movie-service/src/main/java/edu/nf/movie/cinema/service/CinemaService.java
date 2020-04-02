@@ -1,11 +1,7 @@
 package edu.nf.movie.cinema.service;
 
-import com.github.pagehelper.PageInfo;
-
 import edu.nf.movie.cinema.entity.MovieTheatre;
-import edu.nf.movie.cinema.entity.MyService;
-import edu.nf.movie.cinema.entity.OrderForm;
-import org.apache.ibatis.annotations.Param;
+import edu.nf.movie.order.entity.OrderForm;
 
 import java.util.List;
 
@@ -18,11 +14,7 @@ public interface CinemaService {
 
     MovieTheatre getCinemaMessage(Integer Id);
 
-    List<MyService> getServicList(Integer csId);
+    List<CinemaService> getServicList(Integer csId);
 
-    List<OrderForm> getOrderList(Integer uId);
 
-    OrderForm getOrder(Integer tId);
-
-    MovieTheatre getNameCinema(String cinemaName);
 }

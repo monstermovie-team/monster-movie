@@ -1,10 +1,9 @@
-package edu.nf.movie.cinema.entity;
+package edu.nf.movie.order.entity;
 
 
 
 import lombok.Data;
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
  * @author kunhhy
@@ -12,7 +11,6 @@ import java.util.Date;
  */
 @Data
 public class OrderForm {
-
     private Integer orId; //订单Id
     private String gmDate; //购买时间
     private Integer orderNo; //订单编号
