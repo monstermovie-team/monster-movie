@@ -1,15 +1,19 @@
 package edu.nf.movie.cinema.service.impl;
 
+
 import com.github.pagehelper.PageInfo;
 import edu.nf.movie.cinema.dao.CinemaDao;
-import edu.nf.movie.cinema.entity.MovieTheatre;
-import edu.nf.movie.cinema.entity.MyService;
-import edu.nf.movie.cinema.entity.OrderForm;
+import edu.nf.movie.cinema.entity.AreaInfo;
+import edu.nf.movie.cinema.entity.CinemaInfo;
+import edu.nf.movie.cinema.entity.CinemaServiceInfo;
 import edu.nf.movie.cinema.service.CinemaService;
+import edu.nf.movie.movie.dao.MovieDao;
+import edu.nf.movie.movie.entity.MovieInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 
 /**
  * @author kunhhy
@@ -17,42 +21,23 @@ import java.util.List;
  */
 @Service("CinemaService")
 public class CinemaServiceImpl implements CinemaService {
+
     @Autowired
     private CinemaDao cinemaDao;
 
-//    @Override
-//    public PageInfo<MovieTheatre> getCinemaList(Integer pageNum, Integer pageSize) {
-//        List<MovieTheatre> cinemaList = cinemaDao.getCinemaList(pageNum, pageSize);
-//        return new PageInfo<>(cinemaList);
-//    }
-
     @Override
-    public MovieTheatre getCinemaMessage(Integer Id) {
-        MovieTheatre cinemaMessage = cinemaDao.getCinemaMessage(Id);
-        return cinemaMessage;
+    public PageInfo<CinemaInfo> cinemaInfoList(Integer pageNum, Integer pageSize) {
+        List<CinemaInfo> cinemaInfos = cinemaDao.cinemaInfoList(pageNum,pageSize);
+        return new PageInfo<>(cinemaInfos);
     }
 
     @Override
-    public List<MyService> getServicList(Integer csId) {
-        List<MyService> servicList = cinemaDao.getServiceList(csId);
-        return servicList;
+    public List<AreaInfo> AreaInfoList() {
+        return null;
     }
 
     @Override
-    public List<OrderForm> getOrderList(Integer uId) {
-        List<OrderForm> orderList = cinemaDao.getOrderList(uId);
-        return orderList;
-    }
-
-    @Override
-    public OrderForm getOrder(Integer tId) {
-        OrderForm order = cinemaDao.getOrder(tId);
-        return order;
-    }
-
-    @Override
-    public MovieTheatre getNameCinema(String cinemaName) {
-        MovieTheatre nameCinema = cinemaDao.getNameCinema(cinemaName);
-        return nameCinema;
+    public List<CinemaServiceInfo> CinemaServiceList() {
+        return null;
     }
 }

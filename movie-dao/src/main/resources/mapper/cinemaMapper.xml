@@ -1,72 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
 <mapper namespace="edu.nf.movie.cinema.dao.CinemaDao">
-    <resultMap id="MTMap" type="edu.nf.movie.cinema.entity.MovieTheatre">
-        <id property="mtId" column="cinema_id"/>
-        <result property="mtName" column="cinema_name,"/>
-        <result property="mtNumber" column="cinema_number"/>
-        <result property="imgPath" column="ci_path"/>
-        <result property="cinemaAddress" column="cinema_address"/>
-    </resultMap>
 
-    <resultMap id="serviceMap" type="edu.nf.movie.cinema.entity.MyService">
-        <id property="csId" column="cs_id"></id>
-        <result property="csName" column="cs_name"/>
-        <result property="csDescribe" column="cs_describe"/>
-    </resultMap>
+        <resultMap id="cinemaInfo" type="edu.nf.movie.cinema.entity.CinemaInfo">
+            <id property="cinemaId" column="cinema_id"/>
+            <result property="cinemaName" column="cinema_name"/>
+            <result property="cinemaAddress" column="cinema_address"/>
+            <result property="cinemaNumber" column="cinema_number"/>
+            <result property="cinemaReferencePrice" column="cinema_reference_price"/>
+        </resultMap>
 
+        <resultMap id="cinemaService" type="edu.nf.movie.cinema.entity.CinemaServiceInfo">
+            <id property="csId" column="cs_id"/>
+            <result property="cinemaId" column="cinema_id"/>
+            <result property="csName" column="cs_name"/>
+            <result property="csDescribe" column="cs_describe"/>
+        </resultMap>
 
-<!--    //mi.movie_name,img.mi_path-->
-    <resultMap id="orderMap" type="edu.nf.movie.cinema.entity.OrderForm">
-        <id property="orId" column="t_id"/>
-        <result property="cinemaName" column="t_studios_name"/>
-        <result property="gmDate" column="gm_date"/>
-        <result property="orderNo" column="order_no"/>
-        <result property="bfTimetable" column="bf_date"/>
-        <result property="cinemaHall" column="t_cinema_hall"/>
-        <result property="upSeat" column="t_seat"/>
-        <result property="toNum" column="t_num"/>
-        <result property="toPrice"  column="t_price"/>
-        <result property="movieName"  column="movie_name"/>
-        <result property="miPath" column="mi_path"/>
-    </resultMap>
+        <resultMap id="areaInfo" type="edu.nf.movie.cinema.entity.AreaInfo">
+            <id property="areaId" column="area_id"/>
+            <result property="areaProvince" column="area_province"/>
+            <result property="areaCity" column="area_city"/>
+            <result property="areaCounty" column="area_county"/>
+        </resultMap>
 
-    <select id="getCinemaMessage"  resultMap="MTMap"  parameterType="java.lang.Integer">
-   SELECT c.cinema_id,c.cinema_name,c.cinema_number,c.cinema_address,i.ci_path from cinema_info c left JOIN cinema_imags i
-on c.cinema_id = i.mt_id
-where c.cinema_id = ${mId}
-    </select>
-
-    <select id="getServiceList" resultMap="serviceMap" parameterType="java.lang.Integer">
-      SELECT cs_id,cs_name,cs_describe FROM cinema_service
-    where cinema_id = ${csId}
-    </select>
-
-    <select id="getOrderList" resultMap="orderMap" parameterType="java.lang.Integer">
-SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
-LEFT JOIN movie_info mi
-on ot.movie_id=mi.movie_id
-LEFT JOIN movie_image img
-on mi.movie_id=img.mi_movie_id
-where ot.user_uuid=${uId}
-    </select>
-
-    <select id="getOrder" resultMap="orderMap" parameterType="java.lang.Integer">
-SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
-LEFT JOIN movie_info mi
-on ot.movie_id=mi.movie_id
-LEFT JOIN movie_image img
-on mi.movie_id=img.mi_movie_id
-where ot.t_id=${tId}
-    </select>
-
-    
-    <select id="getNameCinema" resultMap="MTMap" parameterType="java.lang.String">
-      SELECT cinema_id,cinema_name,cinema_number,cinema_address FROM cinema_info
-     where cinema_name='${cinemaName}'
-    </select>
-
-
+        <select id="cinemaInfoList" resultMap="cinemaInfo">
+            select cinema_name,cinema_address,cinema_number,cinema_reference_price from cinema_info
+        </select>
 </mapper>
