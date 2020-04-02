@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb8482b0-e202-4ad5-88fd-d25899cf06c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/actor/entity/ActorImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/actor/entity/ActorInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/actor/entity/ActorJoinMovie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/AreaInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/CinemaImages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/MovieTheatre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/MyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/OrderForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/comment/entity/CommentInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/comment/entity/CommentJoinCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/information/entity/ConsultationComment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/information/entity/InformationImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/information/entity/InformationInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieRegion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieYear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/store/entity/StoreCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/store/entity/StoreInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/UploadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/UploadUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/FileNameUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/FileNameUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/PasswordUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/PasswordUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/target/classes/edu/nf/movie/util/UploadUtil.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\Repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZyfED7kOq35qk7W5UdXIlDlhkD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CinemaTest.testListMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CinemaTest" />
+      <option name="METHOD_NAME" value="testListMovie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CinemaTest.testListMovie" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="影院信息">
+      <created>1585807686672</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585807686672</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb8482b0-e202-4ad5-88fd-d25899cf06c4" name="Default Changelist" comment="" />
+      <created>1585816141612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585816141612</updated>
+      <workItem from="1585816151350" duration="479000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="影院信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="影院信息" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1585807685670">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585807685670" />
+    <state width="1323" height="324" key="GridCell.Tab.0.bottom" timestamp="1585816689830">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="324" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585816689830" />
+    <state width="1323" height="324" key="GridCell.Tab.0.center" timestamp="1585816689829">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="324" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585816689829" />
+    <state width="1323" height="324" key="GridCell.Tab.0.left" timestamp="1585816689828">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="324" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585816689828" />
+    <state width="1323" height="324" key="GridCell.Tab.0.right" timestamp="1585816689829">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="324" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585816689829" />
+    <state x="186" y="29" key="SettingsEditor" timestamp="1585816361180">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="186" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1585816361180" />
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2" timestamp="1585807811822">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1585807811822" />
+    <state x="353" y="186" key="git4idea.merge.GitPullDialog" timestamp="1585807690820">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="353" y="186" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1585807690820" />
+  </component>
+</project>
