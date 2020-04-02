@@ -32,12 +32,14 @@ public class CinemaServiceImpl implements CinemaService {
     }
 
     @Override
-    public List<AreaInfo> AreaInfoList() {
-        return null;
+    public CinemaInfo getCinemaId(Integer mId) {
+        CinemaInfo cinemaId = cinemaDao.getCinemaId(mId);
+        return cinemaId;
     }
 
     @Override
-    public List<CinemaServiceInfo> CinemaServiceList() {
-        return null;
+    public List<CinemaServiceInfo> getCinemaServiceList(Integer cinemaId) {
+        List<CinemaServiceInfo> cinemaServiceList = cinemaDao.getCinemaServiceList(cinemaId);
+        return cinemaServiceList;
     }
-}
+    }

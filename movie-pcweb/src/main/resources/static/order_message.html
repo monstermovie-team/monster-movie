@@ -73,14 +73,14 @@
                           "      </thead>\n" +
                           "      <tbody>\n" +
                           "      <tr>\n" +
-                          "        <td class=\"movie-name\"> "+rs.data.movieName+"</td>\n" +
-                          "        <td class=\"showtime\">"+rs.data.bfTimetable+"+</td>\n" +
-                          "        <td class=\"cinema-name\">"+rs.data.cinemaName+"</td>\n" +
+                          "        <td class=\"movie-name\"> "+rs.data.movieInfo.movieName+"</td>\n" +
+                          "        <td class=\"showtime\">"+rs.data.timetable+"+</td>\n" +
+                          "        <td class=\"cinema-name\">"+rs.data.studiosName +"</td>\n" +
                           "        <td>\n" +
                           "          <span class=\"hall\">"+rs.data.cinemaHall+"</span>\n" +
                           "          <div class=\"seats\">\n" +
                           "            <div>\n" +
-                          "              <span class=\"\">"+rs.data.upSeat+"</span>\n" +
+                          "              <span class=\"\">"+rs.data.seat+"</span>\n" +
                           "            </div>\n" +
                           "            <div>\n" +
                           "            </div>\n" +
@@ -89,7 +89,7 @@
                           "      </tr>\n" +
                           "      </tbody>\n" +
                           "    </table>");
-                  price=rs.data.toPrice;
+                  price=rs.data.price;
               }
             }
     );
@@ -102,9 +102,9 @@
               $(".message-cinema").append(" <div class=\"order-bottom\">\n" +
                   "      <div class=\"clearfix\">\n" +
                   "      <div class=\"cinema-info\">\n" +
-                  "      <p class=\"name\">"+rs.data.mtName+"</p>\n" +
+                  "      <p class=\"name\">"+rs.data.cinemaName+"</p>\n" +
                   "  <p class=\"address\">"+rs.data.cinemaAddress+"</p>\n" +
-                  "  <p class=\"phone\">"+rs.data.mtNumber+"</p>\n" +
+                  "  <p class=\"phone\">"+rs.data.cinemaNumber+"</p>\n" +
                   "  </div>\n" +
                   "\n" +
                   "  <div class=\"price-box\">\n" +
