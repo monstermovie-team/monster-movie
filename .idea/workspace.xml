@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e09b13cf-d94c-40fa-8712-a1ceddfeba94" name="Default Changelist" comment="">
+    <list default="true" id="c49e3e72-3a38-4dea-ae8f-686e91605d18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -9,223 +9,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Maven\Repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../Maven/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1Z3qMUBe8u9Dz5x6bOhlsqm6gL6" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
-  <component name="RunManager" selected="Spring Boot.Unnamed">
-    <configuration name="CinemaTest.testListMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="movie-pcweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nf.movie.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
-      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CinemaTest" />
-      <option name="METHOD_NAME" value="testListMovie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="movie-pcweb" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.nf.movie.MonsterMovieApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.CinemaTest.testListMovie" />
-      <item itemvalue="Spring Boot.Unnamed" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.CinemaTest.testListMovie" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e09b13cf-d94c-40fa-8712-a1ceddfeba94" name="Default Changelist" comment="" />
-      <created>1584078078070</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1584078078070</updated>
-      <workItem from="1584078087360" duration="999000" />
-      <workItem from="1584145591931" duration="2064000" />
-      <workItem from="1584149761399" duration="3689000" />
-      <workItem from="1584525070941" duration="888000" />
-      <workItem from="1584763595739" duration="508000" />
-      <workItem from="1584878660245" duration="2547000" />
-      <workItem from="1585101672539" duration="627000" />
-      <workItem from="1585744646435" duration="853000" />
-      <workItem from="1585748714871" duration="597000" />
-    </task>
-    <task id="LOCAL-00001" summary="4.1">
-      <created>1585749073460</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1585749073460</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="4.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.1" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="26" key="#Project_Structure" timestamp="1583904289358">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1583904289358" />
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585101698245">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585101698245" />
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1583936369699">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583936369699" />
-    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583915842207">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1583915842207" />
-    <state x="690" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584078142236">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="690" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1584078142236" />
-    <state x="266" y="30" width="775" height="643" key="CommitChangelistDialog2" timestamp="1585749071274">
+    <state x="353" y="186" key="git4idea.merge.GitPullDialog" timestamp="1585796945052">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="266" y="30" width="775" height="643" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585749071274" />
-    <state x="526" y="201" key="FileChooserDialogImpl" timestamp="1584763622914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584763622914" />
-    <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1584149885872" />
-    <state width="1323" height="184" key="GridCell.Tab.0.bottom" timestamp="1585749311560">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1323" height="184" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585749311560" />
-    <state width="1323" height="184" key="GridCell.Tab.0.center" timestamp="1585749311560">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1323" height="184" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585749311560" />
-    <state width="1323" height="184" key="GridCell.Tab.0.left" timestamp="1585749311560">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1323" height="184" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585749311560" />
-    <state width="1323" height="184" key="GridCell.Tab.0.right" timestamp="1585749311560">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583936612810" />
-    <state width="1323" height="184" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585749311560" />
-    <state width="1323" height="184" key="GridCell.Tab.1.bottom" timestamp="1585749311561">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
-    <state width="1323" height="184" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585749311561" />
-    <state width="1323" height="184" key="GridCell.Tab.1.center" timestamp="1585749311561">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
-    <state width="1323" height="184" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1585749311561" />
-    <state width="1323" height="184" key="GridCell.Tab.1.left" timestamp="1585749311561">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583936566853" />
-    <state width="1323" height="184" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1585749311561" />
-    <state width="1323" height="184" key="GridCell.Tab.1.right" timestamp="1585749311561">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1306" height="358" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583936566854" />
-    <state width="1323" height="184" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1585749311561" />
-    <state x="186" y="9" key="SettingsEditor" timestamp="1584763634177">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584763634177" />
-    <state x="261" y="13" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1584078184163" />
-    <state x="393" y="196" key="Vcs.Push.Dialog.v2" timestamp="1585749088991">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="393" y="186" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584525081965" />
-    <state x="393" y="196" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1585749088991" />
-    <state x="552" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1584067906445" />
-    <state x="353" y="186" key="git4idea.merge.GitPullDialog" timestamp="1585749078376">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="353" y="186" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1585749078376" />
+    <state x="353" y="186" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1585796945052" />
   </component>
 </project>
