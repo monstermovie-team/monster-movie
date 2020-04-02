@@ -40,8 +40,8 @@ where c.cinema_id=1${mId}
     </select>
 
     <select id="getServiceList" resultMap="serviceMap" parameterType="java.lang.Integer">
-        SELECT cs_id,cs_name,cs_describe FROM cinema_service
-    where mt_id =${csId}
+      SELECT cs_id,cs_name,cs_describe FROM cinema_service
+    where cinema_id = =${csId}
     </select>
 
     <select id="getOrderList" resultMap="orderMap" parameterType="java.lang.Integer">

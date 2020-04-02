@@ -29,10 +29,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerDao customerDao;
 
-//    @Override
-//    public CustomerInfo findCustomerInfo(String customerAccounts) {
-//        return customerDao.findCustomerByAccounts(customerAccounts);
-//    }
+    @Override
+    public CustomerInfo findCustomerInfo(String customerAccounts) {
+        return customerDao.findCustomerByAccounts(customerAccounts);
+    }
 
     @Override
     public void addCustomer(CustomerInfo customerInfo) {
