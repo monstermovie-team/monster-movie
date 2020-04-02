@@ -25,6 +25,12 @@
             <result property="areaCounty" column="area_county"/>
         </resultMap>
 
+        <resultMap id="imgMap" type="edu.nf.movie.cinema.entity.CinemaImages">
+            <id property="ciId" column="ci_id"/>
+            <result property="ciPath" column="ci_path"/>
+            <result property="cinemaId" column="mt_id"/>
+        </resultMap>
+
         <select id="cinemaInfoList" resultMap="cinemaInfo">
             select cinema_name,cinema_address,cinema_number,cinema_reference_price from cinema_info
         </select>

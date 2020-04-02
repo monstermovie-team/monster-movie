@@ -2,7 +2,7 @@ package edu.nf.movie.order.service;
 
 
 import edu.nf.movie.cinema.entity.CinemaInfo;
-import edu.nf.movie.order.entity.OrderForm;
+import edu.nf.movie.order.entity.OrderTicket;
 
 import java.util.List;
 
@@ -12,10 +12,9 @@ import java.util.List;
  */
 public interface OrderService {
 
+    List<OrderTicket> getOrderList( Integer uId);
 
-    List<OrderForm> getOrderList(Integer uId);
-
-    OrderForm getOrder(Integer tId);
+    OrderTicket getOrder(Integer tId);
 
     CinemaInfo getNameCinema(String cinemaName);
 }

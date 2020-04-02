@@ -2,19 +2,44 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="edu.nf.movie.order.dao.OrderDao">
-    <resultMap id="orderMap" type="edu.nf.movie.order.entity.OrderForm">
-        <id property="orId" column="t_id"/>
-        <result property="cinemaName" column="t_studios_name"/>
-        <result property="gmDate" column="gm_date"/>
+    <resultMap id="orderMap" type="edu.nf.movie.order.entity.OrderTicket">
+        <id property="tId" column="t_id"/>
+        <result property="studiosName" column="t_studios_name"/>
+        <result property="date" column="date"/>
         <result property="orderNo" column="order_no"/>
-        <result property="bfTimetable" column="bf_date"/>
+        <result property="timetable" column="timetable"/>
         <result property="cinemaHall" column="t_cinema_hall"/>
-        <result property="upSeat" column="t_seat"/>
-        <result property="toNum" column="t_num"/>
-        <result property="toPrice"  column="t_price"/>
-        <result property="movieName"  column="movie_name"/>
-        <result property="miPath" column="mi_path"/>
+        <result property="seat" column="t_seat"/>
+        <result property="num" column="t_num"/>
+        <result property="price"  column="t_price"/>
+        <result property="qrcode" column="t_qrcode"/>
+        <result property="conductor" column="t_conductor"/>
+        <result property="userId" column="user_uuid"></result>
+        <result property="movieId" column="movie_id"/>
+        <association property="movieInfo" resultMap="MovieMap"/>
+        <association property="movieImage" resultMap="MovieImage"></association>
     </resultMap>
+
+    <resultMap id="MovieImage" type="edu.nf.movie.movie.entity.MovieImage">
+        <id property="movieId" column="mi_id"/>
+        <result property="movieImageId" column="mi_movie_id"/>
+        <result property="movieImagePath" column="mi_path"/>
+        <result property="movieImageType" column="mi_type"/>
+    </resultMap>
+
+    <resultMap id="MovieMap" type="edu.nf.movie.movie.entity.MovieInfo">
+    <id property="movieId" column="movie_id"/>
+    <result property="movieName" column="movie_name"/>
+    <result property="movieEnglishName" column="movie_english_name"/>
+    <result property="movieWantToSee" column="movie_want_to_see"/>
+    <result property="movieType" column="movie_type"/>
+    <result property="movieRegion" column="movie_region"/>
+    <result property="movieYear" column="movie_year"/>
+    <result property="movieState" column="movie_state"/>
+    <result property="movieTime" column="movie_time"/>
+    <result property="movieIntroduce" column="movie_introduce"/>
+    </resultMap>
+
     <resultMap id="cinemaInfoMap" type="edu.nf.movie.cinema.entity.CinemaInfo">
         <id property="cinemaId" column="cinema_id"/>
         <result property="cinemaName" column="cinema_name"/>
@@ -23,12 +48,12 @@
     </resultMap>
 
     <select id="getOrderList" resultMap="orderMap" parameterType="java.lang.Integer">
-SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
+		 SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as timetable ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
 LEFT JOIN movie_info mi
 on ot.movie_id=mi.movie_id
 LEFT JOIN movie_image img
 on mi.movie_id=img.mi_movie_id
-where ot.user_uuid=${uId}
+where ot.user_uuid= ${uId}
     </select>
 
     <select id="getOrder" resultMap="orderMap" parameterType="java.lang.Integer">

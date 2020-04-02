@@ -1,7 +1,7 @@
 package edu.nf.movie.order.dao;
 
 import edu.nf.movie.cinema.entity.CinemaInfo;
-import edu.nf.movie.order.entity.OrderForm;
+import edu.nf.movie.order.entity.OrderTicket;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -18,14 +18,16 @@ public interface OrderDao {
      * @param uId
      * @return
      */
-    List<OrderForm> getOrderList(@Param("uId") Integer uId);
+    List<OrderTicket> getOrderList(@Param("uId") Integer uId);
+
+
 
     /**
      *根据订单Id查订单详情
      * @param tId
      * @return
      */
-    OrderForm getOrder(@Param("tId")Integer tId);
+    OrderTicket getOrder(@Param("tId")Integer tId);
 
     /**
      * 根据影院名称查影院信息
