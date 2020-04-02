@@ -10,6 +10,14 @@
   <link href="./css/vendor.aade76778e378ed7f66df3e175becfd4.css" rel="stylesheet">
   <link href="./css/detail.aa4171576cadfe555a33806d30ee79ae.css" rel="stylesheet">
   <style type="text/css">.amap-container{cursor:url(https://webapi.amap.com/theme/v1.3/openhand.cur),default;}.amap-drag{cursor:url(https://webapi.amap.com/theme/v1.3/closedhand.cur),default;}
+  .gslogo{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
   </style>
   <script type="text/javascript" src="./js/api.js"></script>
 </head>
@@ -18,9 +26,7 @@
 <div id="app">
   <div data-v-7becb7b9="" class="nav-header-wrapper">
     <div data-v-7becb7b9="" class="nav-header">
-      <div data-v-7becb7b9="" class="nav-header-logo"></div>
-      <div data-v-7becb7b9="" class="icon nav-header-tv-icon"></div>
-      <div data-v-7becb7b9="" class="nav-header-mainsite">主站</div>
+      <div data-v-7becb7b9="" class="gslogo" onclick="location.href='index.html'"></div>
       <div data-v-7becb7b9="" class="nav-header-search-bar-wrapper">
         <input data-v-7becb7b9="" placeholder="活动、嘉宾、场馆" type="text" name="" class="nav-header-search-bar">
         <div data-v-7becb7b9="" class="icon search-icon">
@@ -29,7 +35,7 @@
       </div>
       <div data-v-7becb7b9="" class="user-info">
         <a data-v-7becb7b9="" target="_blank" href="https://account.bilibili.com/site/home.html" class="user-center-link">
-<!--          <div data-v-7becb7b9="" class="profile-img" style="background-image: url(img/MPrzeiHP1583310813453.jpeg@350w_466h.jpeg);"></div>-->
+          <!--          <div data-v-7becb7b9="" class="profile-img" style="background-image: url(img/MPrzeiHP1583310813453.jpeg@350w_466h.jpeg);"></div>-->
         </a>
       </div>
       <div data-v-7becb7b9="" class="order-and-icon-wrapper">
@@ -235,7 +241,7 @@
               <a target="_blank" href="https://www.bilibili.com/html/friends-links.html">友情链接</a>
             </div>
             <div class="cards">
-              <a target="_blank" href="https://bmall.bilibili.com/#!/">哔哩哔哩周边</a>
+              <a target="_blank" href="https://bmall.bilibili.com/#!/">怪兽电影周边</a>
             </div>
             <div class="cards">
               <a target="_blank" href="https://www.bilibili.com/html/contact.html">联系我们</a>
@@ -396,9 +402,9 @@
               '<li class="title">数量：</li>'+
               '<li class="num-content">'+
               '<div class="ticket-count">'+
-              '<div class="count-reduce  active"></div>'+
+              '<div class="count-reduce  active" onclick="loseOne()"></div>'+
               '<div class="count-number">1</div>'+
-              '<div class="count-plus active"></div>'+
+              '<div class="count-plus active" onclick="addOne()"></div>'+
               '</div>'+
               '</li>'+
               '</ul>'+
@@ -440,18 +446,16 @@
     })
 
   }
-
-  function addCart(){
-    $.ajax({
-      url:"addStoreInfo",
-      method:"post",
-      data:$("#cartInfo").serialize(),
-      success:function (result) {
-        if (result.code==200){
-          alert("添加成功");
-        }
-      }
-    })
+  var num=1;
+  function addOne() {
+    $(".count-number").empty();
+    num+=1;
+    $(".count-number").append(num);
+  }
+  function loseOne() {
+    $(".count-number").empty();
+    num-=1;
+    $(".count-number").append(num);
   }
 
   function addCart(){

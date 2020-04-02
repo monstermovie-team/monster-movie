@@ -10,41 +10,35 @@
         <result column="mc_rating" property="mc_rating"/>
         <result column="mc_date" property="mc_date"/>
         <result column="mc_scroe" property="mc_scroe"/>
-<!--        <association property="movieInfo" resultMap="MovieMap"/>-->
-<!--        <association property="commentJoinCustomer" resultMap="CommentJoinCustomerMap"/>-->
+        <collection property="customerInfo" resultMap="CustomerMap"/>
+    </resultMap>
+
+    <resultMap id="CustomerMap" type="edu.nf.movie.customer.entity.CustomerInfo">
+        <id property="customerId" column="cu_id"/>
+        <result property="customerName" column="cu_name"/>
+        <result property="customerAccounts" column="cu_accounts"/>
+        <result property="customerPassword" column="cu_password"/>
+        <result property="customerPhoto" column="cu_photo"/>
+        <result property="customerSex" column="cu_sex"/>
+        <result property="customerBirthday" column="cu_birthday"/>
+        <result property="customerInterest" column="cu_interest"/>
+        <result property="customerSign" column="cu_sign"/>
+        <result property="customerState" column="cu_state"/>
     </resultMap>
 
 
-
-<!--    <resultMap id="CommentJoinCustomerMap" type="edu.nf.movie.comment.entity.CommentJoinCustomer">-->
-<!--        <result property="mc_id" column="mc_id"/>-->
-<!--        <result property="mc_id" column="mc_id"/>-->
-<!--    </resultMap>-->
-
     <select id="ListCommentInfo" resultMap="commentMap" parameterType="int">
-       SELECT mc_id, movie_id, user_id, mc_text, mc_rating,mc_date,mc_scroe
-       from movie_comment
-       WHERE movie_id=#{param1}
-       ORDER BY mc_rating limit 10
+       SELECT mc.mc_id, mc.movie_id, mc.user_id, mc.mc_text, mc.mc_rating,mc.mc_date,mc.mc_scroe,cu.			 cu_name,cu.cu_photo,cu.cu_state
+       from movie_comment mc LEFT JOIN customer_user cu
+	   on cu.cu_id=mc.user_id
+       WHERE mc.movie_id=#{param1} AND cu.cu_state=1
+       ORDER BY mc.mc_rating desc limit 10
     </select>
+
+
+
     <insert id="addCommentInfo" parameterType="edu.nf.movie.comment.entity.CommentInfo">
-        insert INTO movie_comment(mc_id,movie_id, user_id, mc_text,mc_date,mc_scroe)
-        VALUES(#{mc_id},#{movie_id},#{user_id},#{mc_text},sysdate(),#{mc_scroe})
+        insert INTO movie_comment(movie_id, user_id, mc_text,mc_date,mc_scroe)
+        VALUES(#{movie_id},#{user_id},#{mc_text},sysdate(),#{mc_scroe})
     </insert>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </mapper>

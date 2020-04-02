@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="./css/comment.min.css" type="text/css">
     <link href="./css/vendor.aade76778e378ed7f66df3e175becfd4.css" rel="stylesheet">
     <link href="./css/confirmOrder.34c52e65649768a8a40cbb11f6ae3042.css" rel="stylesheet">
+    <style>
+        .gslogo{
+            cursor: pointer;
+            width: 150px;
+            height: 50px;
+            background-image: url(img/logo.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
 </head>
 
 <body>
 <div id="app">
     <div data-v-7becb7b9="" class="nav-header-wrapper">
         <div data-v-7becb7b9="" class="nav-header">
-            <div data-v-7becb7b9="" class="nav-header-logo"></div>
-            <div data-v-7becb7b9="" class="icon nav-header-tv-icon"></div>
-            <div data-v-7becb7b9="" class="nav-header-mainsite">主站</div>
+            <div data-v-7becb7b9="" class="gslogo" onclick="location.href='index.html'"></div>
             <div data-v-7becb7b9="" class="nav-header-search-bar-wrapper">
                 <input data-v-7becb7b9="" placeholder="活动、嘉宾、场馆" type="text" name="" class="nav-header-search-bar">
                 <div data-v-7becb7b9="" class="icon search-icon">
@@ -26,7 +34,7 @@
             <div data-v-7becb7b9="" class="order-and-icon-wrapper">
                 <div data-v-7becb7b9="" class="icon order-icon">
                 </div>
-                <div data-v-7becb7b9="" class="order-center" onclick="linkCart()">购物车</div>
+                <div data-v-7becb7b9="" class="order-center" id="link">购物车</div>
             </div>
         </div>
     </div>
@@ -47,7 +55,7 @@
                             <a target="_blank" href="https://www.bilibili.com/html/friends-links.html">友情链接</a>
                         </div>
                         <div class="cards">
-                            <a target="_blank" href="https://bmall.bilibili.com/#!/">哔哩哔哩周边</a>
+                            <a target="_blank" href="https://bmall.bilibili.com/#!/">怪兽电影周边</a>
                         </div>
                         <div class="cards">
                             <a target="_blank" href="https://www.bilibili.com/html/contact.html">联系我们</a>
@@ -163,6 +171,9 @@
             storeId=strs[1];
         }
 
+        $("#link").on("click",function () {
+            location.href="shopping_trolley.html";
+        })
         $.ajax({
             url:"storeInfoById/"+storeId,
             method:"get",
@@ -172,10 +183,11 @@
         })
 
 
+
         function loadStore(result) {
             $.each(result.data,function (index,obj) {
                 $(".detail-content-wrapper").append(
-                '<div class="confirmorder-container">'+
+                    '<div class="confirmorder-container">'+
                     '<h1>订单信息</h1>'+
                     '<div class="project-info">'+
                     '<table>'+
@@ -193,12 +205,12 @@
                     '<img src='+obj.imgAddress+'></div>'+
                     '<div class="content-right">'+
                     '<h1>'+obj.productName+'</h1>'+
-                '<p>杭州创意设计中心</p> <p class="ticket-name">'+
-                '<span title="8月8日">8月8日</span>'+
-                '<span></span> <span title="'+obj.category_name+'">'+obj.descript+'</span>'+
-                '</p>'+
-                '<div class="ticket-type clearfix">'+
-                    '<span></span>'+obj.category_name+''+
+                    '<p>杭州创意设计中心</p> <p class="ticket-name">'+
+                    '<span title="8月8日">8月8日</span>'+
+                    '<span></span> <span title="'+obj.shelf_life+'">'+obj.shelf_life+'</span>'+
+                    '</p>'+
+                    '<div class="ticket-type clearfix">'+
+                    '<span></span>'+obj.categoryName+''+
                     '</div>'+
                     '</div>'+
                     '</div>'+
@@ -208,8 +220,8 @@
                     '</td>'+
                     '<td>'+
                     '<div>1张</div>'+
-                '</td>'+
-                '<td class="total">'+
+                    '</td>'+
+                    '<td class="total">'+
                     '<p>￥'+obj.price+'</p>'+
                     '<p>(不含运费)</p>'+
                     '</td>'+
@@ -227,28 +239,24 @@
                     '</div>'+
                     '<div class="total-container clearfix">'+
                     '<div>商品总额<span>'+obj.price+'</span></div>'+
-                '<div>应付金额<span class="total">￥'+obj.price+'</span></div>'+
-                '</div>'+
-                '<div class="confirm-bottom">'+
+                    '<div>应付金额<span class="total">￥'+obj.price+'</span></div>'+
+                    '</div>'+
+                    '<div class="confirm-bottom">'+
                     '<div class="check-lists">'+
                     '<div class="service-term">'+
                     '<span class="check-icon checked"></span>我已阅读并同意'+
                     '<span class="term-content">《怪兽商城购买服务协议》</span>'+
-                '<span class="term-content">《会员购服务协议》</span>'+
-                '</div>'+
-                '</div>'+
-                '<div class="confirm-paybtn active">下一步支付,￥'+obj.price+'</div>'+
-                '</div>'+
-                '</div>'
-            )
+                    '<span class="term-content">《会员购服务协议》</span>'+
+                    '</div>'+
+                    '</div>'+
+                    '<div class="confirm-paybtn active">下一步支付,￥'+obj.price+'</div>'+
+                    '</div>'+
+                    '</div>'
+                )
             })
 
         }
 
-
-        function linkCart() {
-            location.href="shopping_trolley.html";
-        }
     })
 
 </script>
