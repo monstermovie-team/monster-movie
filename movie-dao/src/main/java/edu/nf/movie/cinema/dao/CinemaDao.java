@@ -18,7 +18,19 @@ import java.util.List;
 public interface CinemaDao {
     List<CinemaInfo> cinemaInfoList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize);
 
-    List<AreaInfo> AreaInfoList();
 
-    List<CinemaServiceInfo> CinemaServiceList();
+    /**
+     *根据电影id查出电影信息
+     * @param mId
+     * @return
+     */
+    CinemaInfo getCinemaId(@Param("mId") Integer mId);
+   // List<AreaInfo> AreaInfoList();
+
+    /**
+     * 根据id查服务
+     * @param cinemaId
+     * @return
+     */
+    List<CinemaServiceInfo> getCinemaServiceList(@Param("cinemaId") Integer cinemaId);
 }

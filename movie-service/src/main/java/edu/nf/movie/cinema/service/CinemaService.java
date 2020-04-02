@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import edu.nf.movie.cinema.entity.AreaInfo;
 import edu.nf.movie.cinema.entity.CinemaInfo;
 import edu.nf.movie.cinema.entity.CinemaServiceInfo;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,7 +16,8 @@ import java.util.List;
 public interface CinemaService {
     PageInfo<CinemaInfo> cinemaInfoList(Integer pageNum, Integer pageSize);
 
-    List<AreaInfo> AreaInfoList();
+    CinemaInfo getCinemaId( Integer mId);
+//    List<AreaInfo> AreaInfoList();
 
-    List<CinemaServiceInfo> CinemaServiceList();
+    List<CinemaServiceInfo> getCinemaServiceList( Integer cinemaId);
 }

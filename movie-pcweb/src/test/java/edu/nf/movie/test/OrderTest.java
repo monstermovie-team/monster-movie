@@ -28,7 +28,7 @@ public class OrderTest {
 //        OrderForm order = orderService.getOrder(4);
 //        System.out.println(order.getCinemaName());
         List<OrderTicket> orderList = orderService.getOrderList(1);
-        orderList.forEach(orderTicket -> System.out.println(orderTicket.getMovieImage().getMovieImagePath()));
+        orderList.forEach(orderTicket -> System.out.println(orderTicket.getOrderId()));
         OrderTicket order = orderService.getOrder(4);
         System.out.println(order.getPrice());
         CinemaInfo cinema = orderService.getNameCinema("朵森电影院");

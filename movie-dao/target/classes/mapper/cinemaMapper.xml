@@ -34,4 +34,14 @@
         <select id="cinemaInfoList" resultMap="cinemaInfo">
             select cinema_name,cinema_address,cinema_number,cinema_reference_price from cinema_info
         </select>
+        <select id="getCinemaId" resultMap="cinemaInfo">
+             SELECT c.cinema_id,c.cinema_name,c.cinema_number,c.cinema_address,i.ci_path from cinema_info c left JOIN cinema_imags i
+on c.cinema_id = i.mt_id
+where c.cinema_id =${mId}
+        </select>
+
+        <select id="getCinemaServiceList" resultMap="cinemaService">
+             SELECT cs_id,cs_name,cs_describe FROM cinema_service
+    where cinema_id = ${cinemaId}
+        </select>
 </mapper>

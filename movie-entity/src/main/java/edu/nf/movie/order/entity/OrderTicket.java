@@ -11,7 +11,7 @@ import lombok.Data;
  */
 @Data
 public class OrderTicket {
-    private Integer tId;
+    private Integer orderId;
     private  Integer orderNo;
     private  String studiosName;
     private  String timetable;

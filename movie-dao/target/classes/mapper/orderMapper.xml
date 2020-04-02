@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="edu.nf.movie.order.dao.OrderDao">
     <resultMap id="orderMap" type="edu.nf.movie.order.entity.OrderTicket">
-        <id property="tId" column="t_id"/>
+        <id property="orderId" column="t_id"/>
         <result property="studiosName" column="t_studios_name"/>
         <result property="date" column="date"/>
         <result property="orderNo" column="order_no"/>
@@ -57,7 +57,7 @@ where ot.user_uuid= ${uId}
     </select>
 
     <select id="getOrder" resultMap="orderMap" parameterType="java.lang.Integer">
-SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as gm_date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as bf_date ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
+SELECT ot.t_id,DATE_FORMAT(ot.t_date,'%Y-%c-%d')as date,ot.order_no,ot.t_studios_name,DATE_FORMAT(ot.t_timetable,'%Y-%c-%d %h:%i:%s')as timetable ,ot.t_cinema_hall,ot.t_seat,ot.t_num,ot.t_price,mi.movie_name,img.mi_path from order_ticket ot
 LEFT JOIN movie_info mi
 on ot.movie_id=mi.movie_id
 LEFT JOIN movie_image img
@@ -70,4 +70,5 @@ where ot.t_id=${tId}
       SELECT cinema_id,cinema_name,cinema_number,cinema_address FROM cinema_info
      where cinema_name='${cinemaName}'
     </select>
+
 </mapper>
