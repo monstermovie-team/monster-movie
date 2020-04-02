@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="090ee6c8-9e98-4eaa-9d56-196ca6bb457b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/dlhaibao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/order1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/dlhaibao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/order1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/common.d1d257d3.css" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/common.d1d257d3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/common.d1d257d3.css" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/common.d1d257d3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/personalcenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/personalcenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/personalcenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/personalcenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,16 +41,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/comment/service/impl/CommentServiceImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\Fu\Desktop\Study\repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Study/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="C:\Users\Fu\Desktop\Study\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="F:\study\maven-repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="F:\study\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -59,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../book-project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,7 +84,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -80,11 +95,11 @@
       <recent name="edu.nf.movie.information.pcweb.vo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\resources\static\img" />
       <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static\css" />
       <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static\img" />
       <recent name="C:\Users\Fu\Desktop\怪兽电影\monstermovie\movie-pcweb\src\main\resources\static" />
       <recent name="G:\S3S152\毕业团队项目\monstermovie\movie-pcweb\src\main\resources\static" />
-      <recent name="G:\S3S152\毕业团队项目\monstermovie\movie-pcweb\src\main\resources\static\css" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Unnamed">
@@ -226,6 +241,7 @@
       <workItem from="1585039300515" duration="2597000" />
       <workItem from="1585107945268" duration="12380000" />
       <workItem from="1585759703306" duration="323000" />
+      <workItem from="1585797296632" duration="5725000" />
     </task>
     <task id="LOCAL-00001" summary="更新资讯">
       <created>1584535031802</created>
@@ -295,63 +311,75 @@
     </state>
     <state x="256" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585057034901" />
     <state x="360" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585759546048" />
-    <state x="739" y="287" key="FileChooserDialogImpl" timestamp="1585759754704">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="740" y="298" key="FileChooserDialogImpl" timestamp="1585802150941">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584533384746" />
     <state x="739" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585759754704" />
-    <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1584149885872" />
-    <state width="1877" height="531" key="GridCell.Tab.0.bottom" timestamp="1585760235448">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1585802150941" />
+    <state width="1877" height="121" key="GridCell.Tab.0.bottom" timestamp="1585802449140">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235448" />
-    <state width="1877" height="531" key="GridCell.Tab.0.center" timestamp="1585760235448">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449140" />
+    <state width="1877" height="121" key="GridCell.Tab.0.center" timestamp="1585802449140">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235448" />
-    <state width="1877" height="531" key="GridCell.Tab.0.left" timestamp="1585760235448">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449140" />
+    <state width="1877" height="121" key="GridCell.Tab.0.left" timestamp="1585802449140">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235448" />
-    <state width="1877" height="531" key="GridCell.Tab.0.right" timestamp="1585760235448">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449140" />
+    <state width="1877" height="121" key="GridCell.Tab.0.right" timestamp="1585802449140">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235448" />
-    <state width="1877" height="531" key="GridCell.Tab.1.bottom" timestamp="1585760235449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449140" />
+    <state width="1877" height="121" key="GridCell.Tab.1.bottom" timestamp="1585802449141">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235449" />
-    <state width="1877" height="531" key="GridCell.Tab.1.center" timestamp="1585760235448">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449141" />
+    <state width="1877" height="121" key="GridCell.Tab.1.center" timestamp="1585802449140">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235448" />
-    <state width="1877" height="531" key="GridCell.Tab.1.left" timestamp="1585760235448">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449140" />
+    <state width="1877" height="121" key="GridCell.Tab.1.left" timestamp="1585802449140">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235448" />
-    <state width="1877" height="531" key="GridCell.Tab.1.right" timestamp="1585760235449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449140" />
+    <state width="1877" height="121" key="GridCell.Tab.1.right" timestamp="1585802449140">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1323" height="113" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585126063108" />
     <state width="1877" height="531" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585760235449" />
-    <state x="261" y="13" key="SettingsEditor" timestamp="1585759757889">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="121" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585802449140" />
+    <state x="261" y="13" key="SettingsEditor" timestamp="1585799884459">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585056195402" />
     <state x="261" y="13" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585759757889" />
-    <state x="261" y="13" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1584078184163" />
-    <state x="393" y="186" key="Vcs.Push.Dialog.v2" timestamp="1585057040556">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="261" y="13" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1585799884459" />
+    <state x="552" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585793874754">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="393" y="186" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585057040556" />
-    <state x="552" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1584067906445" />
+    <state x="552" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1585793874754" />
+    <state x="647" y="295" width="626" height="490" key="find.popup" timestamp="1585799728571">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="647" y="295" width="626" height="490" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1585799728571" />
     <state x="349" y="154" key="git4idea.merge.GitPullDialog" timestamp="1584687001153">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

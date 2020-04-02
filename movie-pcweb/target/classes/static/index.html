@@ -32,10 +32,12 @@
 
         <div class="user-info">
             <div class="user-avatar J-login">
-              <img src="img/7dd82a16316ab32c8359debdb04396ef2897.png">
+              <img id="touxiang" src="img/7dd82a16316ab32c8359debdb04396ef2897.png">
               <span class="caret"></span>
               <ul class="user-menu no-login-menu">
-                <li><a href="javascript:void 0">登录</a></li>
+                  <li id="lilog"><a href="javascript:void(0)" id="login">登录</a></li>
+                  <li style="display: none;" id="lipersonnal"><a href="javascript:void(0)" id="personalcenter">个人中心</a></li>
+                  <li style="display: none;" id="lilogout"><a href="log_out" id="logout">登出</a></li>
               </ul>
             </div>
         </div>
@@ -44,7 +46,7 @@
           <input name="kw" class="search" type="search" maxlength="32" placeholder="找影视剧、影人、影院" autocomplete="off">
           <input class="submit" type="submit" value="">
       </form>
-      
+
         <div class="app-download">
           <a href="https://maoyan.com/app" target="_blank">
             <span class="iphone-icon"></span>
@@ -129,9 +131,37 @@
   </div>
 </div>
 <script>
+    load();
+    loadInfo();
     function load() {
         $("#load").load('homepage.html');
     }
+
+    function loadInfo(){
+        $.ajax({
+           url:'getCustomerInfo',
+           method:'get',
+           success:function(result){
+               if(result.data!=null){
+                   $("#lilog").css('display','none');
+                   $("#lilogout").css('display','block');
+                   $("#lipersonnal").css('display','block');
+                   $("#liorder").css('display','block');
+                   $("#touxiang").attr('src',result.data.customerPhoto);
+               }else{
+                   alert(result.message);
+               }
+           }
+        });
+    }
+
+    $("#personalcenter").off('click').on('click',function(){
+        location.href='personalcenter.html';
+    });
+
+    $("#login").off('click').on('click',function(){
+        location.href="login.html";
+    });
 </script>
 </body>
 </html>
