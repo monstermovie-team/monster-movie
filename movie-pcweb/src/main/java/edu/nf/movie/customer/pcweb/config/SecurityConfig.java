@@ -75,7 +75,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     //处理登出请求的url
                     .logoutUrl("/log_out")
                     //指定登出之后需要跳转的url
-                    .logoutSuccessUrl("/login.html")
+                    .logoutSuccessUrl("/index.html")
                     //如果登出需要返回自定义信息或json，可以调用logoutSuccessHandler()
                     //并自定义一个LogoutSuccessHandler实现
                     //.logoutSuccessHandler()

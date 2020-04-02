@@ -33,14 +33,14 @@ public class CinemaTest {
 //        PageInfo<MovieTheatre> pageInfo = cinemaService.getCinemaList(1, 5);
 //        pageInfo.getList().forEach(cinema -> System.out.println(cinema.getMtName()));
 
-//       MovieTheatre cinemaMessage = cinemaService.getCinemaMessage(1);
-//       System.out.println(  cinemaMessage.getMtName());
+       MovieTheatre cinemaMessage = cinemaService.getCinemaMessage(1);
+       System.out.println( cinemaMessage.getCinemaAddress());
 //        List<OrderForm> orderList = cinemaService.getOrderList(1);
 //        orderList.forEach(orderForm -> System.out.println(orderForm.getGmDate()+orderForm.getOrderNo()+orderForm.getGmDate()+orderForm.getToPrice()
 //        +orderForm.getBfTimetable()));
-        OrderForm order = cinemaService.getOrder(4);
-        System.out.println(order.getMovieName());
-        System.out.println(order.getGmDate());
+//        OrderForm order = cinemaService.getOrder(4);
+//        System.out.println(order.getMovieName());
+//        System.out.println(order.getGmDate());
 //        MovieTheatre nameCinema = cinemaService.getNameCinema("朵森电影院");
 //        System.out.println(nameCinema.getAreaAddress());
     }

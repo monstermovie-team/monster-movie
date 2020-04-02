@@ -34,5 +34,11 @@ public interface CustomerService extends UserDetailsService {
      */
     void updateCustomerPhoto(String customerPhoto,Integer customerId);
 
+    /**
+     * 根据账号查询用户信息
+     * @param customerAccounts
+     * @return
+     */
+    CustomerInfo findCustomerInfo(String customerAccounts);
 
 }

@@ -30,6 +30,11 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerDao customerDao;
 
     @Override
+    public CustomerInfo findCustomerInfo(String customerAccounts) {
+        return customerDao.findCustomerByAccounts(customerAccounts);
+    }
+
+    @Override
     public void addCustomer(CustomerInfo customerInfo) {
         //设置用户状态
         customerInfo.setCustomerState(true);

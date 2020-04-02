@@ -25,7 +25,7 @@ public interface CinemaDao {
 
 
     /**
-     * 根据电影id查出电影信息
+     * 根据电影id查出电影院信息
      */
     MovieTheatre getCinemaMessage(@Param("mId") Integer mId);
 

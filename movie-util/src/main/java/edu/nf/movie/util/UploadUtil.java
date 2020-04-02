@@ -16,7 +16,7 @@ import org.apache.http.impl.client.HttpClients;
 
 
 public class UploadUtil {
-	
+
 	public static int upload(String url, InputStream input, String fileName) {
 		try(CloseableHttpClient httpClient = HttpClients.createDefault()){
 			HttpPost post = new HttpPost(url);
@@ -37,12 +37,12 @@ public class UploadUtil {
 			throw new RuntimeException(e);
 		}
 	}
-	
+
 	public static void download(String url, OutputStream out) {
 		try(CloseableHttpClient httpClient = HttpClients.createDefault()){
 			HttpGet get = new HttpGet(url);
 			CloseableHttpResponse response = httpClient.execute(get);
-			if(HttpStatus.SC_OK==response.getStatusLine().getStatusCode()){  
+			if(HttpStatus.SC_OK==response.getStatusLine().getStatusCode()){
 					InputStream is = response.getEntity().getContent();
 					byte[] bytes = new byte[1024];
 					int len = 0;

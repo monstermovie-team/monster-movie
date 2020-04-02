@@ -32,10 +32,12 @@
 
         <div class="user-info">
             <div class="user-avatar J-login">
-              <img src="img/7dd82a16316ab32c8359debdb04396ef2897.png">
+              <img id="touxiang" src="img/7dd82a16316ab32c8359debdb04396ef2897.png">
               <span class="caret"></span>
               <ul class="user-menu no-login-menu">
-                <li><a href="javascript:void 0">登录</a></li>
+                  <li id="lilog"><a href="javascript:void(0)" id="login">登录</a></li>
+                  <li style="display: none;" id="lipersonnal"><a href="javascript:void(0)" id="personalcenter">个人中心</a></li>
+                  <li style="display: none;" id="lilogout"><a href="log_out" id="logout">登出</a></li>
               </ul>
             </div>
         </div>
@@ -103,9 +105,9 @@
     <a href="javascript:void 0" target="_blank">网络文化经营许可证 京网文（2019）3837-369号 </a>
   </p>
   <p class="friendly-links  credentials">
-    <a href="javascript:void 0" target="_blank">怪兽用户服务协议 </a>
+    <a href="javascript:void 0" target="_blank">猫眼用户服务协议 </a>
     <span></span>
-    <a href="javascript:void 0" target="_blank">怪兽平台交易规则总则 </a>
+    <a href="javascript:void 0" target="_blank">猫眼平台交易规则总则 </a>
     <span></span>
     <a href="javascript:void 0" target="_blank">隐私政策 </a>
   </p>
@@ -130,9 +132,36 @@
 </div>
 <script>
     load();
+    loadInfo();
     function load() {
         $("#load").load('homepage.html');
     }
+
+    function loadInfo(){
+        $.ajax({
+           url:'getCustomerInfo',
+           method:'get',
+           success:function(result){
+               if(result.data!=null){
+                   $("#lilog").css('display','none');
+                   $("#lilogout").css('display','block');
+                   $("#lipersonnal").css('display','block');
+                   $("#liorder").css('display','block');
+                   $("#touxiang").attr('src',result.data.customerPhoto);
+               }else{
+                   alert(result.message);
+               }
+           }
+        });
+    }
+
+    $("#personalcenter").off('click').on('click',function(){
+        location.href='personalcenter.html';
+    });
+
+    $("#login").off('click').on('click',function(){
+        location.href="login.html";
+    });
 </script>
 </body>
 </html>
