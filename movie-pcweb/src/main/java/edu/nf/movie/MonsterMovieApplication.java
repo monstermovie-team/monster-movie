@@ -19,8 +19,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
                             "edu.nf.movie.comment.dao",
                             "edu.nf.movie.order.dao"})
 public class MonsterMovieApplication {
-
-
     public static void main(String[] args) {
         SpringApplication.run(MonsterMovieApplication.class);
     }
