@@ -1,28 +1,22 @@
-<!DOCTYPE html>
-<!-- saved from url=(0035)https://maoyan.com/films?showType=2 -->
-<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>即将上映_电影票预售_影片关注_电影推荐-猫眼电影</title>
-
-  <link rel="stylesheet" href="css/common.d1d257d3.css">
+<link rel="stylesheet" href="css/common.d1d257d3.css">
 <link rel="stylesheet" href="css/movie-list.22f5a22a.css">
  <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/jquery.pagination.js"></script>
   <link rel="stylesheet" href="css/pagination.css">
-<body>
 <div class="subnav">
-  <ul class="navbar" id="navbar">
+  <ul class="navbar">
     <li>
-      <a class="active" href="javascript:void(0);" onclick="updateMovieState(1,this)">正在热映</a>
+      <a class="active" value="index" href="javascript:void(0);" onclick="updateMovieState(1,this)">正在热映</a>
     </li>
     <li>
-      <a href="javascript:void(0);" onclick="updateMovieState(2,this)">即将上映</a>
+      <a value="" href="javascript:void(0);" onclick="updateMovieState(2,this)">即将上映</a>
     </li>
     <li>
-      <a href="javascript:void(0);" onclick="updateMovieState(3,this)">经典影片</a>
+      <a value="" href="javascript:void(0);" onclick="updateMovieState(3,this)">经典影片</a>
     </li>
   </ul>
 </div>
-    <div class="container" id="app">
+<div class="container" id="app">
 <div class="movies-channel">
   <div class="tags-panel">
     <ul class="tags-lines">
@@ -235,7 +229,8 @@
   }
 
   function updateMovieState(state,id){
-    $("a.active").removeAttr("class");
+    $("a[value='index']").removeAttr("class");
+    $("a[value='index']").attr("value","");
     $.ajax({
       url : 'movie_list_by_State',
       method : 'get',
@@ -244,6 +239,7 @@
         if(result.code == 200){
           addMovie(result.data);
           page(result.data);
+          $(id).attr("value","index");
           $(id).addClass("active");
         }else {
           alert(result.message);
@@ -252,5 +248,3 @@
     });
   }
 </script>
-</body>
-</html>

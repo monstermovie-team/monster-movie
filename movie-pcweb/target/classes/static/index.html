@@ -10,7 +10,7 @@
 
 <div class="header">
   <div class="header-inner">
-          <h1><a href="index.html" class="logo"></a></h1>
+          <a href="index.html" class="logo"></a>
         <div class="city-container" data-val="{currentcityid:108 }">
             <div class="city-selected">
                 <div class="city-name">
@@ -19,14 +19,13 @@
                 </div>
             </div>
          </div>
-
         <div class="nav">
             <ul class="navbar">
-                <li><a href="#" data-act="home-click" class="active">首页</a></li>
-                <li><a href="#" data-act="movies-click">电影</a></li>
-                <li><a href="#" data-act="cinemas-click">影院</a></li>
-                <li><a href="#" data-act="board-click">榜单</a></li>
-                <li><a href="#">商城</a></li>
+                <li><a value="jump" href="index.html" data-act="home-click" class="active">首页</a></li>
+                <li><a value="" href="javascript:void 0" onclick="jump('movie.html',this)">电影</a></li>
+                <li><a value="" href="javascript:void 0" onclick="jump('cinema-list.html',this)">影院</a></li>
+                <li><a value="" href="javascript:void 0">榜单</a></li>
+                <li><a value="" href="javascript:void 0">商城</a></li>
             </ul>
         </div>
 
@@ -134,7 +133,7 @@
     load();
     loadInfo();
     function load() {
-        $("#load").load('cinema-list.html');
+        $("#load").load('homepage.html');
     }
 
     function loadInfo(){
@@ -162,6 +161,13 @@
     $("#login").off('click').on('click',function(){
         location.href="login.html";
     });
+ function jump(html,id) {
+     $("a[value='jump']").removeAttr("class");
+     $("a[value='jump']").attr("value","");
+     $(id).addClass("active");
+     $(id).attr("value","jump");
+     $("#load").load(html);
+ }
 </script>
 </body>
 </html>
