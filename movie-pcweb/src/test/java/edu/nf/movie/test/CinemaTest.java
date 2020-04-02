@@ -1,5 +1,6 @@
 package edu.nf.movie.test;
 
+import com.github.pagehelper.PageInfo;
 import edu.nf.movie.cinema.entity.CinemaInfo;
 import edu.nf.movie.cinema.entity.CinemaServiceInfo;
 import edu.nf.movie.cinema.service.CinemaService;
@@ -25,6 +26,8 @@ public class CinemaTest {
 
     @Test
     public void testListMovie() {
+        PageInfo<CinemaInfo> cinemaInfoPageInfo = cinemaService.cinemaInfoList(1,5);
+        cinemaInfoPageInfo.getList().forEach(cinemaInfo -> System.out.println(cinemaInfo.getCinemaId()));
         CinemaInfo cinemaId = cinemaService.getCinemaId(1);
         System.out.println(cinemaId.getCinemaName());
         List<CinemaServiceInfo> cinemaServiceList = cinemaService.getCinemaServiceList(1);

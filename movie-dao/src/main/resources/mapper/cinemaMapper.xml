@@ -9,6 +9,7 @@
             <result property="cinemaAddress" column="cinema_address"/>
             <result property="cinemaNumber" column="cinema_number"/>
             <result property="cinemaReferencePrice" column="cinema_reference_price"/>
+            <association property="cinemaImages" resultMap="imgMap"></association>
         </resultMap>
 
         <resultMap id="cinemaService" type="edu.nf.movie.cinema.entity.CinemaServiceInfo">
@@ -32,15 +33,15 @@
         </resultMap>
 
         <select id="cinemaInfoList" resultMap="cinemaInfo">
-            select cinema_name,cinema_address,cinema_number,cinema_reference_price from cinema_info
+            select cinema_id,cinema_name,cinema_address,cinema_number,cinema_reference_price from cinema_info
         </select>
-        <select id="getCinemaId" resultMap="cinemaInfo">
-             SELECT c.cinema_id,c.cinema_name,c.cinema_number,c.cinema_address,i.ci_path from cinema_info c left JOIN cinema_imags i
+        <select id="getCinemaId" resultMap="cinemaInfo" parameterType="java.lang.Integer">
+              SELECT c.cinema_id,c.cinema_name,c.cinema_number,c.cinema_address,i.ci_path from cinema_info c left JOIN cinema_imags i
 on c.cinema_id = i.mt_id
 where c.cinema_id =${mId}
         </select>
 
-        <select id="getCinemaServiceList" resultMap="cinemaService">
+        <select id="getCinemaServiceList" resultMap="cinemaService" parameterType="java.lang.Integer">
              SELECT cs_id,cs_name,cs_describe FROM cinema_service
     where cinema_id = ${cinemaId}
         </select>

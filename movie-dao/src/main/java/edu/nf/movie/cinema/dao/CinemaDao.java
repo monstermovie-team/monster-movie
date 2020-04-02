@@ -16,6 +16,13 @@ import java.util.List;
  */
 @Repository
 public interface CinemaDao {
+
+    /**
+     * \分页查询电影列表
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
     List<CinemaInfo> cinemaInfoList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize);
 
 
