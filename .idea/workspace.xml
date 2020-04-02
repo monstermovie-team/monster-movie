@@ -2,46 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb8482b0-e202-4ad5-88fd-d25899cf06c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaHall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaServiceInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/CinemaHall.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/CinemaInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/CinemaServiceInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/actor/dao/ActorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/actor/dao/ActorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/cinemaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/cinemaMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/actor/dao/ActorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/actor/dao/ActorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/cinema/dao/CinemaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/cinema/dao/CinemaDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/cinemaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/mapper/cinemaMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/AreaInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/AreaInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaImages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MovieTheatre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/MyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/cinema/entity/OrderForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/AreaInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/AreaInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/CinemaImages.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/CinemaImages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/MovieTheatre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/MyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/cinema/entity/OrderForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/CinemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/CinemaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/cinema-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/movie/entity/MovieInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/movie/entity/MovieInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CinemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/test/java/edu/nf/movie/test/CinemaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/cinema/pcweb/controller/CinemaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/cinema/pcweb/controller/CinemaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/cinema-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/cinema-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/movie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/CinemaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/test-classes/edu/nf/movie/test/CinemaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/CinemaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/CinemaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/cinema/service/CinemaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/cinema/service/CinemaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/movie.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -170,15 +156,25 @@
       <option name="project" value="LOCAL" />
       <updated>1585816706041</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="最新版本">
+      <created>1585828409447</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585828409447</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="影院信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="影院信息" />
+    <MESSAGE value="最新版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="最新版本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585827966419">
@@ -193,59 +189,60 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585820246892" />
-    <state x="415" y="0" key="CommitChangelistDialog2" timestamp="1585828276026">
+    <state x="415" y="0" key="CommitChangelistDialog2" timestamp="1585828408454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585816704959" />
-    <state x="415" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585828276026" />
-    <state width="1877" height="749" key="GridCell.Tab.0.bottom" timestamp="1585828138196">
+    <state x="415" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585828408454" />
+    <state width="1877" height="749" key="GridCell.Tab.0.bottom" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="324" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585818464957" />
-    <state width="1877" height="749" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
-    <state width="1877" height="749" key="GridCell.Tab.0.center" timestamp="1585828138196">
+    <state width="1877" height="749" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
+    <state width="1877" height="749" key="GridCell.Tab.0.center" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="324" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585818464957" />
-    <state width="1877" height="749" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
-    <state width="1877" height="749" key="GridCell.Tab.0.left" timestamp="1585828138196">
+    <state width="1877" height="749" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
+    <state width="1877" height="749" key="GridCell.Tab.0.left" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="324" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585818464957" />
-    <state width="1877" height="749" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
-    <state width="1877" height="749" key="GridCell.Tab.0.right" timestamp="1585828138196">
+    <state width="1877" height="749" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
+    <state width="1877" height="749" key="GridCell.Tab.0.right" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="324" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585818464957" />
-    <state width="1877" height="749" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
-    <state width="1877" height="749" key="GridCell.Tab.1.bottom" timestamp="1585828138196">
+    <state width="1877" height="749" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
+    <state width="1877" height="749" key="GridCell.Tab.1.bottom" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="749" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
-    <state width="1877" height="749" key="GridCell.Tab.1.center" timestamp="1585828138196">
+    <state width="1877" height="749" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
+    <state width="1877" height="749" key="GridCell.Tab.1.center" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="749" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
-    <state width="1877" height="749" key="GridCell.Tab.1.left" timestamp="1585828138196">
+    <state width="1877" height="749" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
+    <state width="1877" height="749" key="GridCell.Tab.1.left" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="749" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
-    <state width="1877" height="749" key="GridCell.Tab.1.right" timestamp="1585828138196">
+    <state width="1877" height="749" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
+    <state width="1877" height="749" key="GridCell.Tab.1.right" timestamp="1585833700003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="749" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585828138196" />
+    <state width="1877" height="749" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585833700003" />
     <state x="186" y="29" key="SettingsEditor" timestamp="1585816361180">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="186" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1585816361180" />
-    <state x="387" y="163" key="Vcs.Push.Dialog.v2" timestamp="1585819425660">
+    <state x="387" y="163" key="Vcs.Push.Dialog.v2" timestamp="1585828453219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="120" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1585816727921" />
-    <state x="387" y="163" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585819425660" />
-    <state x="353" y="186" key="git4idea.merge.GitPullDialog" timestamp="1585816710992">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="387" y="163" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585828453219" />
+    <state x="496" y="252" key="git4idea.merge.GitPullDialog" timestamp="1585828419532">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="353" y="186" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1585816710992" />
+    <state x="496" y="252" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585828419532" />
   </component>
 </project>
