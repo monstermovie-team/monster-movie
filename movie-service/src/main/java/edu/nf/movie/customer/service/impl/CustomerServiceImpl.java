@@ -5,6 +5,7 @@ import edu.nf.movie.customer.entity.CustomerInfo;
 import edu.nf.movie.customer.entity.CustomerRole;
 import edu.nf.movie.customer.service.CustomerService;
 import edu.nf.movie.customer.service.exception.UserNotFoundException;
+import edu.nf.movie.exception.DataException;
 import edu.nf.movie.util.PasswordUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -27,6 +28,11 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     private CustomerDao customerDao;
+
+//    @Override
+//    public CustomerInfo findCustomerInfo(String customerAccounts) {
+//        return customerDao.findCustomerByAccounts(customerAccounts);
+//    }
 
     @Override
     public void addCustomer(CustomerInfo customerInfo) {
@@ -56,6 +62,7 @@ public class CustomerServiceImpl implements CustomerService {
         customerInfo.setCustomerId(customerId);
         customerDao.updateCustomerPhoto(customerInfo);
     }
+
 
     @Override
     public UserDetails loadUserByUsername(String accounts) throws UsernameNotFoundException {

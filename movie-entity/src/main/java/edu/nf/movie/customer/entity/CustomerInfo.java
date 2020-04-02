@@ -1,6 +1,7 @@
 package edu.nf.movie.customer.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import edu.nf.movie.information.entity.ConsultationComment;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

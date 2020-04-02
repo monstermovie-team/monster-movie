@@ -4,10 +4,10 @@
 
 <mapper namespace="edu.nf.movie.cinema.dao.CinemaDao">
     <resultMap id="MTMap" type="edu.nf.movie.cinema.entity.MovieTheatre">
-        <id property="mtId" column="mt_id"/>
-        <result property="mtName" column="mt_name"/>
-        <result property="mtNumber" column="mt_number"/>
-        <result property="areaCounty" column="area_county"/>
+        <id property="mtId" column="cinema_id"/>
+        <result property="mtName" column="cinema_name,"/>
+        <result property="mtNumber" column="c.cinema_number"/>
+        <result property="imgPath" column="ci_path"/>
         <result property="areaAddress" column="area_address"/>
     </resultMap>
 
@@ -34,15 +34,14 @@
     </resultMap>
 
     <select id="getCinemaMessage"  resultMap="MTMap"  parameterType="java.lang.Integer">
-   SELECT m.mt_id,m.mt_name,m.mt_number,a.area_county ,a.area_address FROM movie_theatre m
-    left JOIN area_info a
-    ON m.area_id=a.area_id
-     where m.mt_id = ${mId}
+   SELECT c.cinema_id,c.cinema_name,c.cinema_number,i.ci_path from cinema_info c left JOIN cinema_imags i
+on c.cinema_id = i.mt_id
+where c.cinema_id=1${mId}
     </select>
 
     <select id="getServiceList" resultMap="serviceMap" parameterType="java.lang.Integer">
-        SELECT cs_id,cs_name,cs_describe FROM cinema_service
-    where mt_id =${csId} and cs_status=0
+      SELECT cs_id,cs_name,cs_describe FROM cinema_service
+    where cinema_id = =${csId}
     </select>
 
     <select id="getOrderList" resultMap="orderMap" parameterType="java.lang.Integer">

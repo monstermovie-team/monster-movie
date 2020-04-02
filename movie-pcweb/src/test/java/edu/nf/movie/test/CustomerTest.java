@@ -14,6 +14,7 @@ import javax.servlet.http.Part;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.List;
 
 /**
  * @author BoomShaGa1aGa
@@ -45,4 +46,5 @@ public class CustomerTest {
 //            throw new RuntimeException("上传失败");
 //        }
 //    }
+
 }

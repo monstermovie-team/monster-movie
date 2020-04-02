@@ -11,6 +11,10 @@ import java.math.BigDecimal;
 @Data
 public class StoreInfo {
     /**
+     * 主键
+     */
+    private Integer productId;
+    /**
      * 商品编码
      */
     private String productCore;
@@ -50,4 +54,6 @@ public class StoreInfo {
      * 商品描述
      */
     private String storeInfo;
+
+    private String imgAddress;
 }

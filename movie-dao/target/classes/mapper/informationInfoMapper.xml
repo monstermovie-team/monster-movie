@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.information.dao.InformationDao">
+    <resultMap id="informationMap" type="edu.nf.movie.information.entity.InformationInfo">
+        <id property="informationId" column="information_id"/>
+        <result property="informationTitle" column="information_title"/>
+        <result property="informationText" column="information_text"/>
+        <result property="informationTime" column="information_time"/>
+        <result property="informationLooknum" column="information_looknum"/>
+        <collection property="informationImage" resultMap="informationImageMap"/>
+    </resultMap>
+
+    <resultMap id="informationImageMap" type="edu.nf.movie.information.entity.InformationImage">
+        <id property="informationImageId" column="ii_id"/>
+        <result property="informationId" column="information_id"/>
+        <result property="informationPath" column="ii_path"/>
+        <result property="informationImageType" column="ii_type"/>
+    </resultMap>
+
+    <!--  评论map  -->
+    <resultMap id="consultationCommentMap" type="edu.nf.movie.information.entity.ConsultationComment">
+        <id property="ccId" column="cc_id"/>
+        <result property="informationId" column="information_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="ccText" column="cc_text"/>
+        <result property="ccImage" column="cc_image"/>
+        <result property="ccRating" column="cc_rating"/>
+        <result property="ccDate" column="cc_date"/>
+        <collection property="customerInfo" resultMap="CustomerMap"/>
+    </resultMap>
+
+    <resultMap id="CustomerMap" type="edu.nf.movie.customer.entity.CustomerInfo">
+        <id property="customerId" column="cu_id"/>
+        <result property="customerName" column="cu_name"/>
+        <result property="customerAccounts" column="cu_accounts"/>
+        <result property="customerPassword" column="cu_password"/>
+        <result property="customerPhoto" column="cu_photo"/>
+        <result property="customerSex" column="cu_sex"/>
+        <result property="customerBirthday" column="cu_birthday"/>
+        <result property="customerInterest" column="cu_interest"/>
+        <result property="customerSign" column="cu_sign"/>
+        <result property="customerState" column="cu_state"/>
+    </resultMap>
+
+    <select id="listNowInformation" resultMap="informationMap">
+        select i.information_id,i.information_title,i.information_text,i.information_time,i.information_looknum,ii.ii_path
+        from information_info i left join information_image ii on i.information_id=ii.information_id
+        where ii.ii_type=1 order by i.information_id desc limit 3
+    </select>
+
+    <select id="listHotInformation" resultMap="informationMap">
+        select i.information_id,i.information_title,i.information_text,i.information_time,i.information_looknum,ii.ii_path
+        from information_info i left join information_image ii on i.information_id=ii.information_id
+        where ii.ii_type=1 order by i.information_looknum desc limit 10
+    </select>
+
+    <select id="informationContent" resultMap="informationMap" parameterType="integer">
+        select information_id,information_title,information_text,information_time,information_looknum
+        from information_info where information_id =#{informationId}
+    </select>
+
+    <select id="listInformationImage" resultMap="informationImageMap" parameterType="integer">
+        select ii_id,ii_path from information_image where information_id =#{informationId} and ii_type=2 limit 4
+    </select>
+
+    <select id="listUserComment" resultMap="consultationCommentMap" parameterType="integer">
+        select cc.cc_id,cc.information_id,cc.user_id,cc.cc_text,cc.cc_image,cc.cc_date,cu.cu_id,cu.cu_name,cu.cu_photo,cu.cu_state
+        from consultation_comment cc left join customer_user cu on cc.user_id=cu.cu_id
+        where cc.information_id =#{informationId} and cu.cu_state=1 order by  cc.cc_date desc
+
+    </select>
+
+
+</mapper>
