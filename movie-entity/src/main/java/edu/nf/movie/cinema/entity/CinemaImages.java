@@ -10,5 +10,5 @@ import lombok.Data;
 public class CinemaImages {
         private Integer ciId;//图片id
         private String ciPath;//图片路径
-
+        private Integer cinemaId;
 }

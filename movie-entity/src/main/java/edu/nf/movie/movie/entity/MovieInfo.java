@@ -22,6 +22,7 @@ public class MovieInfo {
     private Integer movieState;//电影状态
     private Integer movieTime;//电影时长
     private String movieIntroduce;//电影介绍
+
     private MovieImage movieImage;
     private MovieType moviesType;
     private MovieRegion moviesRegion;

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html><!--<![endif]--><head>
-  <title>订单详情</title>
-  </head>
+
+
   <link rel="stylesheet" href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/common.d1d257d3.css">
 <link rel="stylesheet" href="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/order-detail.3a8a0a18.css">
   <script crossorigin="anonymous" src="//s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:5788b470/stat.88d57c80.js"></script><script async="" defer="" charset="utf-8" src="//analytics.meituan.com/source/stable/web.js"></script>
   <meta name="lx:autopv" content="off"><meta name="lx:appnm" content="movie"><meta name="lx:category" content="movie"></head>
-<body>
+
 
  <div class="container" id="app">
    <div class="order-container" data-page-type="detail" data-order-id="21494560622" data-unique-status="10">
@@ -22,7 +21,7 @@
 
  </div>
 
-</body>
+
 <script src="js/jquery-3.4.1.min.js"></script>
 <script>
 
@@ -74,14 +73,14 @@
                           "      </thead>\n" +
                           "      <tbody>\n" +
                           "      <tr>\n" +
-                          "        <td class=\"movie-name\"> "+rs.data.movieName+"</td>\n" +
-                          "        <td class=\"showtime\">"+rs.data.bfTimetable+"+</td>\n" +
-                          "        <td class=\"cinema-name\">"+rs.data.cinemaName+"</td>\n" +
+                          "        <td class=\"movie-name\"> "+rs.data.movieInfo.movieName+"</td>\n" +
+                          "        <td class=\"showtime\">"+rs.data.timetable+"+</td>\n" +
+                          "        <td class=\"cinema-name\">"+rs.data.studiosName +"</td>\n" +
                           "        <td>\n" +
                           "          <span class=\"hall\">"+rs.data.cinemaHall+"</span>\n" +
                           "          <div class=\"seats\">\n" +
                           "            <div>\n" +
-                          "              <span class=\"\">"+rs.data.upSeat+"</span>\n" +
+                          "              <span class=\"\">"+rs.data.seat+"</span>\n" +
                           "            </div>\n" +
                           "            <div>\n" +
                           "            </div>\n" +
@@ -90,7 +89,7 @@
                           "      </tr>\n" +
                           "      </tbody>\n" +
                           "    </table>");
-                  price=rs.data.toPrice;
+                  price=rs.data.price;
               }
             }
     );
@@ -103,9 +102,9 @@
               $(".message-cinema").append(" <div class=\"order-bottom\">\n" +
                   "      <div class=\"clearfix\">\n" +
                   "      <div class=\"cinema-info\">\n" +
-                  "      <p class=\"name\">"+rs.data.mtName+"</p>\n" +
-                  "  <p class=\"address\">"+rs.data.areaCounty+""+rs.data.areaAddress+"</p>\n" +
-                  "  <p class=\"phone\">"+rs.data.mtNumber+"</p>\n" +
+                  "      <p class=\"name\">"+rs.data.cinemaName+"</p>\n" +
+                  "  <p class=\"address\">"+rs.data.cinemaAddress+"</p>\n" +
+                  "  <p class=\"phone\">"+rs.data.cinemaNumber+"</p>\n" +
                   "  </div>\n" +
                   "\n" +
                   "  <div class=\"price-box\">\n" +
@@ -122,4 +121,3 @@
 
 
 </script>
-</html>

@@ -16,6 +16,7 @@ import java.util.List;
  */
 @Repository
 public interface MovieDao {
+
     List<MovieInfo> movieInfoList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize);
 
     List<MovieInfo> movieInfoListByState(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize ,Integer State);

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
-  <title>影院</title>
+
   <script src="js/hm.js"></script><script>"use strict";!function(){var i=0<arguments.length&&void 0!==arguments[0]?arguments[0]:"_Owl_",n=window;n[i]||(n[i]={isRunning:!1,isReady:!1,preTasks:[],dataSet:[],use:function(i,t){this.isReady&&n.Owl&&n.Owl[i](t),this.preTasks.push({api:i,data:[t]})},add:function(i){this.dataSet.push(i)},run:function(){var t=this;if(!this.isRunning){this.isRunning=!0;var i=n.onerror;n.onerror=function(){this.isReady||this.add({type:"jsError",data:arguments}),i&&i.apply(n,arguments)}.bind(this),(n.addEventListener||n.attachEvent)("error",function(i){t.isReady||t.add({type:"resError",data:[i]})},!0)}}},n[i].run())}();</script>
 
   <link rel="stylesheet" href="./css/common.d1d257d3.css">
@@ -15,7 +14,7 @@
 	  <div class="wrapper clearfix" id="影院">
 	    <div class="cinema-left">
 	      <div class="avatar-shadow">
-	        <img class="avatar" src="http://101.37.28.124:8080/monster_movie/cinema_images/movie1.jpg" >
+
 	      </div>
 	    </div>
 	
@@ -46,15 +45,16 @@
 			data:{"mId":1},
 			success: function (result) {
 				if(result.code == 200){
+					$("#avatar-shadow").append("<img class=\"avatar\" src="+result.data.imgPath+" >");
 					$("#message").append("<h1 class=\"name text-ellipsis\">"+result.data.mtName+"</h1>\n" +
-							"\t        <div class=\"address text-ellipsis\">"+result.data.areaCounty+" "+result.data.areaAddress+"</div>\n" +
+							"\t        <div class=\"address text-ellipsis\">"+result.data.areaAddress+"</div>\n" +
 							"\t        <div class=\"telphone\">电话："+result.data.mtNumber+"</div>"
 					);
 					$.ajax(
 							{
 								url: 'service_list',
 								type: 'get',
-								data:{"csId":1},
+								data:{"cinemaId":1},
 								success: function (rs) {
 									$.each(rs.data,function(i,v){
 										$(".features-group").append(" <div class=\"feature\">\n" +
@@ -71,4 +71,3 @@
 	});
 
 </script>
-</body></html>
