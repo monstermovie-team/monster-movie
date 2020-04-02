@@ -16,6 +16,9 @@
         <collection property="roles" resultMap="roleMap"/>
     </resultMap>
 
+
+    
+    
     <resultMap id="roleMap" type="edu.nf.movie.customer.entity.CustomerRole">
         <id property="customerRoleId" column="cr_id"/>
         <result property="customerRoleName" column="cr_name"/>
@@ -51,4 +54,5 @@
     <update id="updateCustomerPhoto" parameterType="edu.nf.movie.customer.entity.CustomerInfo">
         update customer_user set cu_photo=#{customerPhoto} where cu_id=#{customerId}
     </update>
+
 </mapper>

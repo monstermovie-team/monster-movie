@@ -1,6 +1,7 @@
 package edu.nf.movie.test;
 
 import com.github.pagehelper.PageInfo;
+import edu.nf.movie.comment.entity.CommentInfo;
 import edu.nf.movie.movie.entity.MovieInfo;
 import edu.nf.movie.movie.entity.MovieType;
 import edu.nf.movie.movie.service.MovieService;
@@ -71,5 +72,24 @@ public class MovieTest {
             System.out.println(m.getMovieName());
             System.out.println(m.getMovieImage().getMovieImagePath());
         }
+    }
+
+    @Test
+    public void testMovieList(){
+        List<MovieInfo> list=movieService.listMovieList();
+        list.forEach(movieInfo -> System.out.println(movieInfo.getCommentInfo().getMc_scroe()));
+    }
+
+
+    @Test
+    public void testMovieListTop100(){
+        PageInfo<MovieInfo> list=movieService.listMovieListTop100(1,10);
+        list.getList().forEach(movieInfo -> System.out.println(movieInfo.getCommentInfo().getMc_scroe()));
+    }
+
+    @Test
+    public void testMovieListByExpect(){
+        List<MovieInfo> list=movieService.listMovieListByExpect();
+        list.forEach(movieInfo -> System.out.println(movieInfo.getMovieName()));
     }
 }

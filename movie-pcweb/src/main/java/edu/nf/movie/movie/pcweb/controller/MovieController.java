@@ -66,4 +66,22 @@ public class MovieController extends BaseController{
         List<MovieInfo> list=movieService.listMovieActor(actorId);
         return success(list);
     }
+
+    @GetMapping("/movie_list_list")
+    public ResultVO<List<MovieInfo>> listMovieList(){
+        List<MovieInfo> list = movieService.listMovieList();
+        return success(list);
+    }
+
+    @GetMapping("/movie_list_expect")
+    public ResultVO<List<MovieInfo>> listMovieListByExpect(){
+        List<MovieInfo> list = movieService.listMovieListByExpect();
+        return success(list);
+    }
+
+    @GetMapping("/movie_list_top100")
+    public ResultVO<PageInfo<MovieInfo>> listMovietop100(Integer pageNum, Integer pageSize){
+        PageInfo<MovieInfo> movieInfos = movieService.listMovieListTop100(pageNum,pageSize);
+        return success(movieInfos);
+    }
 }

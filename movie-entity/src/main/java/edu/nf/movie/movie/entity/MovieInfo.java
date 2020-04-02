@@ -2,6 +2,8 @@ package edu.nf.movie.movie.entity;
 
 import edu.nf.movie.actor.entity.ActorInfo;
 import edu.nf.movie.actor.entity.ActorJoinMovie;
+import edu.nf.movie.comment.entity.CommentInfo;
+import edu.nf.movie.comment.entity.CommentJoinCustomer;
 import lombok.Data;
 
 /**
@@ -27,4 +29,5 @@ public class MovieInfo {
     private MovieState moviesState;
     private ActorInfo actorInfo;
     private ActorJoinMovie actorJoinMovie;
+    private CommentInfo commentInfo;//电影评分
 }

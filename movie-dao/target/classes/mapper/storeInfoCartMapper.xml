@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.store.dao.StoreCartDao">
+<resultMap id="storeCartMap" type="edu.nf.movie.store.entity.StoreCart">
+    <result property="userName" column="user_name"/>
+    <result property="productCore" column="product_core"/>
+    <result property="productName" column="product_name"/>
+    <result property="productNumber" column="product_number"/>
+    <result property="productTotalPrice" column="product_total_price"/>
+</resultMap>
+    <insert id="addStoreCart" parameterType="edu.nf.movie.store.entity.StoreCart">
+        insert  shopping_cart_info(user_name,product_core,product_name,product_number,product_total_price)
+        VALUES(#{userName},#{productCore},#{productName},#{productNumber},#{productTotalPrice})
+    </insert>
+
+    <select id="listStoreCartInfo" resultMap="storeCartMap">
+        select user_name,product_core,product_name,product_number,product_total_price from shopping_cart_info
+    </select>
+</mapper>

@@ -1,6 +1,7 @@
 package edu.nf.movie.movie.service.impl;
 
 import com.github.pagehelper.PageInfo;
+import edu.nf.movie.comment.entity.CommentInfo;
 import edu.nf.movie.exception.DataException;
 import edu.nf.movie.movie.entity.MovieInfo;
 import edu.nf.movie.movie.dao.MovieDao;
@@ -94,5 +95,29 @@ public class MovieServiceImpl implements MovieService {
         }
     }
 
+    @Override
+    public List<MovieInfo> listMovieList() {
+        try {
+            List<MovieInfo> list=movieDao.listMovieList();
+            return list;
+        } catch (Exception e) {
+            throw  new DataException("服务器内部错误，无法加载排行榜");
+        }
+    }
 
+    @Override
+    public List<MovieInfo> listMovieListByExpect() {
+        try {
+            List<MovieInfo> list=movieDao.listMovieListByExpect();
+            return list;
+        } catch (Exception e) {
+            throw  new DataException("服务器内部错误，无法加载排行榜");
+        }
+    }
+
+    @Override
+    public PageInfo<MovieInfo> listMovieListTop100(Integer pageNum, Integer pageSize) {
+        List<MovieInfo> movieInfos = movieDao.listMovieListTop100(pageNum,pageSize);
+        return new PageInfo<>(movieInfos);
+    }
 }
