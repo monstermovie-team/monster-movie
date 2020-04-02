@@ -1,8 +1,6 @@
 package edu.nf.movie.test;
 
-import edu.nf.movie.cinema.entity.MovieTheatre;
 import edu.nf.movie.cinema.service.CinemaService;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,22 +17,5 @@ public class CinemaTest {
 
     @Autowired
     private CinemaService cinemaService;
-
-    @Test
-    public void testListMovie() {
-//        PageInfo<MovieTheatre> pageInfo = cinemaService.getCinemaList(1, 5);
-//        pageInfo.getList().forEach(cinema -> System.out.println(cinema.getMtName()));
-
-
-//        List<OrderForm> orderList = cinemaService.getOrderList(1);
-//        orderList.forEach(orderForm -> System.out.println(orderForm.getGmDate()+orderForm.getOrderNo()+orderForm.getGmDate()+orderForm.getToPrice()
-//        +orderForm.getBfTimetable()));
-//        OrderForm order = cinemaService.getOrder(4);
-//        System.out.println(order.getMovieName());
-//        System.out.println(order.getGmDate());
-//        MovieTheatre nameCinema = cinemaService.getNameCinema("朵森电影院");
-//        System.out.println(nameCinema.getAreaAddress());
-    }
-
 
 }

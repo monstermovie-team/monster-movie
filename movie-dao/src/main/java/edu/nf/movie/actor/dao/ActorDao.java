@@ -2,6 +2,7 @@ package edu.nf.movie.actor.dao;
 
 import edu.nf.movie.actor.entity.ActorInfo;
 import edu.nf.movie.movie.entity.MovieInfo;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ import java.util.List;
  * @author 我们狠可爱
  * @date 2020/3/6
  */
-
+@Repository
 public interface ActorDao {
     /**
      * 通过演员ID来看演员信息
