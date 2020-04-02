@@ -34,7 +34,7 @@ public class CinemaTest {
 //        pageInfo.getList().forEach(cinema -> System.out.println(cinema.getMtName()));
 
        MovieTheatre cinemaMessage = cinemaService.getCinemaMessage(1);
-       System.out.println(  cinemaMessage.getMtName());
+       System.out.println( cinemaMessage.getCinemaAddress());
 //        List<OrderForm> orderList = cinemaService.getOrderList(1);
 //        orderList.forEach(orderForm -> System.out.println(orderForm.getGmDate()+orderForm.getOrderNo()+orderForm.getGmDate()+orderForm.getToPrice()
 //        +orderForm.getBfTimetable()));

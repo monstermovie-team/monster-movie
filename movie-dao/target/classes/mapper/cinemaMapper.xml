@@ -6,9 +6,9 @@
     <resultMap id="MTMap" type="edu.nf.movie.cinema.entity.MovieTheatre">
         <id property="mtId" column="cinema_id"/>
         <result property="mtName" column="cinema_name,"/>
-        <result property="mtNumber" column="c.cinema_number"/>
+        <result property="mtNumber" column="cinema_number"/>
         <result property="imgPath" column="ci_path"/>
-        <result property="areaAddress" column="area_address"/>
+        <result property="cinemaAddress" column="cinema_address"/>
     </resultMap>
 
     <resultMap id="serviceMap" type="edu.nf.movie.cinema.entity.MyService">
@@ -34,14 +34,14 @@
     </resultMap>
 
     <select id="getCinemaMessage"  resultMap="MTMap"  parameterType="java.lang.Integer">
-   SELECT c.cinema_id,c.cinema_name,c.cinema_number,i.ci_path from cinema_info c left JOIN cinema_imags i
+   SELECT c.cinema_id,c.cinema_name,c.cinema_number,c.cinema_address,i.ci_path from cinema_info c left JOIN cinema_imags i
 on c.cinema_id = i.mt_id
-where c.cinema_id=1${mId}
+where c.cinema_id = ${mId}
     </select>
 
     <select id="getServiceList" resultMap="serviceMap" parameterType="java.lang.Integer">
       SELECT cs_id,cs_name,cs_describe FROM cinema_service
-    where cinema_id = =${csId}
+    where cinema_id = ${csId}
     </select>
 
     <select id="getOrderList" resultMap="orderMap" parameterType="java.lang.Integer">
@@ -64,10 +64,8 @@ where ot.t_id=${tId}
 
     
     <select id="getNameCinema" resultMap="MTMap" parameterType="java.lang.String">
-     SELECT m.mt_id,m.mt_name,m.mt_number,a.area_county ,a.area_address FROM movie_theatre m
-    left JOIN area_info a
-    ON m.area_id=a.area_id
-     where m.mt_name='${cinemaName}'
+      SELECT cinema_id,cinema_name,cinema_number,cinema_address FROM cinema_info
+     where cinema_name='${cinemaName}'
     </select>
 
 
