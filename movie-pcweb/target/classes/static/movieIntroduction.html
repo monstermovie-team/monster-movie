@@ -579,7 +579,7 @@
                       console.log(result.data);
                       $.each(result.data,function (index,obj) {
                           $("#listInformation").append(
-                              '<dd class="news-item">' +  
+                              '<dd class="news-item">' +
                               '    <div class="news-img">' +
                               '      <a href="information.html?id='+ obj.informationId +'" target="_blank">' +
                               '        <img class="news-img-default" src="'+ obj.informationImage.informationPath +'">' +
@@ -612,43 +612,43 @@
       /**
        *电影评论
        */
-          $('#function-demo').raty({
-              path: 'img',
-              size: 30,
-              numberMax: 10,
-              starHalf: 'star-half.png',
-              starOff: 'star-off.png',
-              targetKeep: true,
-              precision: true,
-              click: function(score, evt) {
-                  $("#hidden-score").val(Math.round(score));
-                  $("#submit-comment").attr("disabled",false);
-              },
-              mouseover: function(score, evt) {
-                  var sum=score*2;
-                  $('#sumscore').empty();
-                  $('#sumscore').append(Math.round(sum));
-                  if (Math.round(sum)<=2) {
-                      $(".no-score").empty();
-                      $(".no-score").append("　　超级烂")
-                  }else if (Math.round(sum)>2&&Math.round(sum)<=4) {
-                      $(".no-score").empty();
-                      $(".no-score").append("　　比较差")
-                  }else if (Math.round(sum)>4&&Math.round(sum)<=6) {
-                      $(".no-score").empty();
-                      $(".no-score").append("　　一般般")
-                  }else if (Math.round(sum)>6&&Math.round(sum)<=8) {
-                      $(".no-score").empty();
-                      $(".no-score").append("　　比较好")
-                  }else if (Math.round(sum)>8&&Math.round(sum)<=9) {
-                      $(".no-score").empty();
-                      $(".no-score").append("　　棒极了")
-                  }else if (Math.round(sum)>9&&Math.round(sum)<=10) {
-                      $(".no-score").empty();
-                      $(".no-score").append("　　完美")
-                  }
+      $('#function-demo').raty({
+          path: 'img',
+          size: 30,
+          numberMax: 10,
+          starHalf: 'star-half.png',
+          starOff: 'star-off.png',
+          targetKeep: true,
+          precision: true,
+          click: function(score, evt) {
+              $("#hidden-score").val(Math.round(score));
+              $("#submit-comment").attr("disabled",false);
+          },
+          mouseover: function(score, evt) {
+              var sum=score*2;
+              $('#sumscore').empty();
+              $('#sumscore').append(Math.round(sum));
+              if (Math.round(sum)<=2) {
+                  $(".no-score").empty();
+                  $(".no-score").append("　　超级烂")
+              }else if (Math.round(sum)>2&&Math.round(sum)<=4) {
+                  $(".no-score").empty();
+                  $(".no-score").append("　　比较差")
+              }else if (Math.round(sum)>4&&Math.round(sum)<=6) {
+                  $(".no-score").empty();
+                  $(".no-score").append("　　一般般")
+              }else if (Math.round(sum)>6&&Math.round(sum)<=8) {
+                  $(".no-score").empty();
+                  $(".no-score").append("　　比较好")
+              }else if (Math.round(sum)>8&&Math.round(sum)<=9) {
+                  $(".no-score").empty();
+                  $(".no-score").append("　　棒极了")
+              }else if (Math.round(sum)>9&&Math.round(sum)<=10) {
+                  $(".no-score").empty();
+                  $(".no-score").append("　　完美")
               }
-          });
+          }
+      });
 
           $('#score-action').on('click', function() {
               $('#function-demo').raty('score', $('#score-function-demo').val())
@@ -689,33 +689,37 @@
                   method:"post",
                   data:$("#comment-form").serialize(),
                   success:function (result) {
-                      alert(result.code);
+                      if (result.code==200){
+                          $('#myModal').modal('hide');
+                      }
                   }
               })
           })
           $.ajax({
-              url:"listCommentInfo/"+2,
+              url:"listCommentInfo/"+movieId,
               method:"get",
               success:function(result){
+
                   loadComment(result.data);
               }
           })
           var i=0;
           function loadComment(result){
+              $("#comment-list-box").empty();
               $.each(result,function (index,obj) {
                   i++;
                   $("#comment-list-box").append(
                       '<li class="comment-container " data-val="{commentid:21159545}">'+
                       '<div class="portrait-container">'+
                       '<div class="portrait">'+
-                      '<img src="./movie.comment_files/e6f628c45d2a04cd6f90c84a2819c01d29542.jpg@100w_100h_1e_1c" alt="">'+
+                      '<img src='+obj.customerInfo.customerPhoto+' alt="">'+
                       '</div>'+
                       '<i class="level-2-icon"></i>'+
                       '</div>'+
                       '<div class="main">'+
                       '<div class="main-header clearfix">'+
                       '<div class="user">'+
-                      '<span class="name">子星</span>'+
+                      '<span class="name">'+obj.customerInfo.customerName+'</span>'+
                       '<span class="tag">购</span>'+
                       '</div>'+
                       '<div class="time" title="'+obj.mc_date+'">'+
@@ -740,7 +744,6 @@
                       starOn: 'star-on.s.png',
                       readOnly: true, score: obj.mc_scroe
                   });
-
               })
 
           }

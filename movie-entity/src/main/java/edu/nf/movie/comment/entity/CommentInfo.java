@@ -17,6 +17,6 @@ public class CommentInfo {
     private Integer mc_rating;
     private String mc_date;
     private Double mc_scroe;
-//    private CustomerInfo customerInfo;
+    private CustomerInfo customerInfo;
 //    private CommentJoinCustomer commentJoinCustomer;
 }

@@ -1,156 +1,157 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>热映口碑榜 - 怪兽电影 - 一网打尽好电影</title>
+<!--<html>-->
+<!--<head>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+<!--    <title>热映口碑榜 - 怪兽电影 - 一网打尽好电影</title>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<div class="container" id="load">
     <link rel="stylesheet" href="./css/common.d1d257d3.css">
     <link rel="stylesheet" href="./css/board-index.92a06072.css">
-</head>
-<body>
+    <div class="subnav">
+        <ul class="navbar">
+            <li>
+                <a  class="active" href="javascript:void(0);" id="listOne" onclick="movieListList()">热映口碑榜</a>
+            </li>
+            <li>
+                <a class=""  href="javascript:void(0);" id="lisTwo" onclick="listMovieListByExpect()">最受期待榜</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0);" id="listThree">国内票房榜</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0);" id="listFour">北美票房榜</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0);" id="listFive" onclick="listMovieTop100()">TOP100榜</a>
+            </li>
+        </ul>
+    </div>
 
 
-<div class="subnav">
-    <ul class="navbar">
-        <li>
-            <a  class="active" href="javascript:void(0);" id="listOne" onclick="movieListList()">热映口碑榜</a>
-        </li>
-        <li>
-            <a class=""  href="javascript:void(0);" id="lisTwo" onclick="listMovieListByExpect()">最受期待榜</a>
-        </li>
-        <li>
-            <a class="" href="javascript:void(0);" id="listThree">国内票房榜</a>
-        </li>
-        <li>
-            <a class="" href="javascript:void(0);" id="listFour">北美票房榜</a>
-        </li>
-        <li>
-            <a class="" href="javascript:void(0);" id="listFive" onclick="listMovieTop100()">TOP100榜</a>
-        </li>
-    </ul>
-</div>
+    <div class="container" id="app">
+        <div class="content">
+            <div class="wrapper">
+                <div class="main">
+                    <p class="update-time">2020-03-20<span class="has-fresh-text">已更新</span></p>
+                    <p class="board-content">榜单规则：将昨日国内热映的影片，按照评分从高到低排列取前10名，每天上午10点更新。相关数据来源于“猫眼专业版”及“猫眼电影库”。</p>
+                    <dl class="board-wrapper" >
 
-
-<div class="container" id="app">
-    <div class="content">
-        <div class="wrapper">
-            <div class="main">
-                <p class="update-time">2020-03-20<span class="has-fresh-text">已更新</span></p>
-                <p class="board-content">榜单规则：将昨日国内热映的影片，按照评分从高到低排列取前10名，每天上午10点更新。相关数据来源于“猫眼专业版”及“猫眼电影库”。</p>
-                <dl class="board-wrapper" >
-
-                </dl>
-            </div>
-            <div class="movies-pager">
-                <div id="page"></div>
+                    </dl>
+                </div>
+                <div class="movies-pager">
+                    <div id="page"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script>
-        //清空选中样式
-        function clearListClass(){
-            $("#listOne").removeClass("active");
-            $("#listTwo").removeClass("active");
-            $("#listThree").removeClass("active");
-            $("#listFour").removeClass("active");
-            $("#listFive").removeClass("active");
-        }
-        //最受期待榜
-        function listMovieListByExpect(){
-            clearListClass();
-            $("#listTwo").addClass("active");
-            $.ajax({
-                url:"movie_list_expect",
-                method:"get",
-                success:function (result) {
-                    if (result.code==200){
-                        loadMovieListByExpect(result)
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script>
+            //清空选中样式
+            function clearListClass(){
+                $("#listOne").removeClass("active");
+                $("#listTwo").removeClass("active");
+                $("#listThree").removeClass("active");
+                $("#listFour").removeClass("active");
+                $("#listFive").removeClass("active");
+            }
+            //最受期待榜
+            function listMovieListByExpect(){
+                clearListClass();
+                $("#listTwo").addClass("active");
+                $.ajax({
+                    url:"movie_list_expect",
+                    method:"get",
+                    success:function (result) {
+                        if (result.code==200){
+                            loadMovieListByExpect(result)
+                        }
                     }
-                }
-            })
-        }
-        //top100榜
-        function listMovieTop100(){
-            clearListClass();
-            $("#listTwo").addClass("active");
-            $.ajax({
-                url:"movie_list_top100",
-                method:"get",
-                data:{'pageNum':1,'pageSize':18},
-                success:function (result) {
-                    if (result.code==200){
-                        loadMovieListTop100(result)
+                })
+            }
+            //top100榜
+            function listMovieTop100(){
+                clearListClass();
+                $("#listTwo").addClass("active");
+                $.ajax({
+                    url:"movie_list_top100",
+                    method:"get",
+                    data:{'pageNum':1,'pageSize':18},
+                    success:function (result) {
+                        if (result.code==200){
+                            loadMovieListTop100(result)
+                        }
                     }
-                }
-            })
-        }
-        //分页方法
-        function pageInfo(data){
-            $("#page").pagination(data.total, { //第一个参数指定共多少条记录
-                items_per_page : 10, // 每页显示多少条记录
-                next_text : ">", //下一页按钮图标
-                prev_text : "<", //上一页按钮图标
-                num_display_entries : 5,//主体页数
-                num_edge_entries : 2, //边缘页数
-                callback : function(index){//定义一个回调函数，用于每次点击页码发起分页查询请求
-                    var pageNum = ++index;
-                    $.get("movie_list_top100?pageNum="+pageNum+"&pageSize=10", function(result){
-                        loadMovieListTop100(result);
-                    });
-                }
-            });
-        }
+                })
+            }
+            //分页方法
+            function pageInfo(data){
+                $("#page").pagination(data.total, { //第一个参数指定共多少条记录
+                    items_per_page : 10, // 每页显示多少条记录
+                    next_text : ">", //下一页按钮图标
+                    prev_text : "<", //上一页按钮图标
+                    num_display_entries : 5,//主体页数
+                    num_edge_entries : 2, //边缘页数
+                    callback : function(index){//定义一个回调函数，用于每次点击页码发起分页查询请求
+                        var pageNum = ++index;
+                        $.get("movie_list_top100?pageNum="+pageNum+"&pageSize=10", function(result){
+                            loadMovieListTop100(result);
+                        });
+                    }
+                });
+            }
 
-        movieListList();
-        //热映口碑榜
-        function movieListList() {
-            $.ajax({
-                url: "movie_list_list",
-                method: "get",
-                success: function (result) {
-                    if (result.code == 200) {
-                        loadMovieList(result)
+            movieListList();
+            //热映口碑榜
+            function movieListList() {
+                $.ajax({
+                    url: "movie_list_list",
+                    method: "get",
+                    success: function (result) {
+                        if (result.code == 200) {
+                            loadMovieList(result)
+                        }
                     }
-                }
-            })
-        }
+                })
+            }
 
-        function loadActor(thisObj) {
-            //获取电影相关的演员
-            $.ajax({
-                url : 'find_movieJoinActor',
-                method : 'get',
-                data: {'movieId': thisObj.movieId},
-                success : function(result){
-                    $(".star").empty();
-                    $.each(result.data,function (index,obj) {
-                        $(".star").append(obj.actorName+"　")
-                    })
-                }
-            });
-        }
-        //加载榜单
-        function loadMovieList(result) {
-            var i=0;
-            var sce=0;
-            var sum=0;
-            var num=0;
-            var str="";
-            $(".board-wrapper").empty();
-            $.each(result.data,function (index,obj) {
-                i+=1;
-                var str=[];
-                num=parseFloat(obj.commentInfo.mc_scroe);
-                sce=num.toFixed(1);
-                sum=sce*2;
-                str=sum.toString();
-                if (str.length==1){
-                    str+=".0";
-                }
-                $(".board-wrapper").append(
-                    '<dd>'+
-                    '<i class="board-index board-index-'+i+'">'+i+'</i>'+
+            function loadActor(thisObj) {
+                //获取电影相关的演员
+                $.ajax({
+                    url : 'find_movieJoinActor',
+                    method : 'get',
+                    data: {'movieId': thisObj.movieId},
+                    success : function(result){
+                        $(".star").empty();
+                        $.each(result.data,function (index,obj) {
+                            $(".star").append(obj.actorName+"　")
+                        })
+                    }
+                });
+            }
+            //加载榜单
+            function loadMovieList(result) {
+                var i=0;
+                var sce=0;
+                var sum=0;
+                var num=0;
+                var str="";
+                $(".board-wrapper").empty();
+                $.each(result.data,function (index,obj) {
+                    i+=1;
+                    var str=[];
+                    num=parseFloat(obj.commentInfo.mc_scroe);
+                    sce=num.toFixed(1);
+                    sum=sce*2;
+                    str=sum.toString();
+                    if (str.length==1){
+                        str+=".0";
+                    }
+                    $(".board-wrapper").append(
+                        '<dd>'+
+                        '<i class="board-index board-index-'+i+'">'+i+'</i>'+
                         '<a href="https://maoyan.com/films/1277939" title="'+obj.movieName+'" class="image-link" onclick="">'+
                         '<img  class="poster-default">'+
                         '<img alt="'+obj.movieName+'" class="board-img" src='+obj.movieImage.movieImagePath+' width="160" height="220">'+
@@ -160,94 +161,95 @@
                         '<div class="movie-item-info">'+
                         '<p class="name">'+
                         '<a href="#" title="'+obj.movieName+'" onclick="">'+obj.movieName+'</a></p>'+
-                    '<p class="star">主演：</p>'+
-                    '<p class="releasetime">上映时间：2019-09-30</p>'+
-                    '</div>'+
-                    '<div class="movie-item-number score-num">'+
+                        '<p class="star">主演：</p>'+
+                        '<p class="releasetime">上映时间：2019-09-30</p>'+
+                        '</div>'+
+                        '<div class="movie-item-number score-num">'+
                         '<p class="score"><i class="integer">'+str.split('.')[0]+'.</i><i class="fraction">'+str.split('.')[1]+'</i></p>'+
                         '</div>'+
                         '</div>'+
                         '</div>'+
                         '</dd>'
-                )
-                loadActor(obj)
-            })
-        }
-        //top100榜单
-        function loadMovieListTop100(result) {
-            var i=0;
-            var sce=0;
-            var sum=0;
-            var num=0;
-            var str="";
-            $(".board-wrapper").empty();
-            $.each(result.data.list,function (index,obj) {
-                i+=1;
-                var str=[];
-                num=parseFloat(obj.commentInfo.mc_scroe);
-                sce=num.toFixed(1);
-                sum=sce*2;
-                str=sum.toString();
-                if (str.length==1){
-                    str+=".0";
-                }
-                $(".board-wrapper").append(
-                    '<dd>'+
-                    '<i class="board-index board-index-'+i+'">'+i+'</i>'+
-                    '<a href="https://maoyan.com/films/1277939" title="'+obj.movieName+'" class="image-link" onclick="">'+
-                    '<img  class="poster-default">'+
-                    '<img alt="'+obj.movieName+'" class="board-img" src='+obj.movieImage.movieImagePath+' width="160" height="220">'+
-                    '</a>'+
-                    '<div class="board-item-main">'+
-                    '<div class="board-item-content">'+
-                    '<div class="movie-item-info">'+
-                    '<p class="name">'+
-                    '<a href="#" title="'+obj.movieName+'" onclick="">'+obj.movieName+'</a></p>'+
-                    '<p class="star">主演：</p>'+
-                    '<p class="releasetime">上映时间：2019-09-30</p>'+
-                    '</div>'+
-                    '<div class="movie-item-number score-num">'+
-                    '<p class="score"><i class="integer">'+str.split('.')[0]+'.</i><i class="fraction">'+str.split('.')[1]+'</i></p>'+
-                    '</div>'+
-                    '</div>'+
-                    '</div>'+
-                    '</dd>'
-                )
-                loadActor(obj)
-            })
-        }
-        //期待榜单
-        function loadMovieListByExpect(result) {
-            var i=0;
-            $(".board-wrapper").empty();
-            $.each(result.data,function (index,obj) {
-                i+=1;
-                $(".board-wrapper").append(
-                    '<dd>'+
-                    '<i class="board-index board-index-'+i+'">'+i+'</i>'+
-                    '<a href="https://maoyan.com/films/1277939" title="'+obj.movieName+'" class="image-link" onclick="">'+
-                    '<img  class="poster-default">'+
-                    '<img alt="'+obj.movieName+'" class="board-img" src="+obj.movieImage.movieImagePath+" width="160" height="220">'+
-                    '</a>'+
-                    '<div class="board-item-main">'+
-                    '<div class="board-item-content">'+
-                    '<div class="movie-item-info">'+
-                    '<p class="name">'+
-                    '<a href="#" title="'+obj.movieName+'" onclick="">'+obj.movieName+'</a></p>'+
-                    '<p class="star">主演：</p>'+
-                    '<p class="releasetime">上映时间：2019-09-30</p>'+
-                    '</div>'+
-                    '<div class="movie-item-number score-num">'+
-                    '<p class="month-wish">想看人数：<span><span class="stonefont">'+obj.movieWantToSee+'</span></span>人</p>'+
-                    '</div>'+
-                    '</div>'+
-                    '</div>'+
-                    '</dd>'
-                )
-                loadActor(obj)
-            })
-        }
-    </script>
+                    )
+                    loadActor(obj)
+                })
+            }
+            //top100榜单
+            function loadMovieListTop100(result) {
+                var i=0;
+                var sce=0;
+                var sum=0;
+                var num=0;
+                var str="";
+                $(".board-wrapper").empty();
+                $.each(result.data.list,function (index,obj) {
+                    i+=1;
+                    var str=[];
+                    num=parseFloat(obj.commentInfo.mc_scroe);
+                    sce=num.toFixed(1);
+                    sum=sce*2;
+                    str=sum.toString();
+                    if (str.length==1){
+                        str+=".0";
+                    }
+                    $(".board-wrapper").append(
+                        '<dd>'+
+                        '<i class="board-index board-index-'+i+'">'+i+'</i>'+
+                        '<a href="https://maoyan.com/films/1277939" title="'+obj.movieName+'" class="image-link" onclick="">'+
+                        '<img  class="poster-default">'+
+                        '<img alt="'+obj.movieName+'" class="board-img" src='+obj.movieImage.movieImagePath+' width="160" height="220">'+
+                        '</a>'+
+                        '<div class="board-item-main">'+
+                        '<div class="board-item-content">'+
+                        '<div class="movie-item-info">'+
+                        '<p class="name">'+
+                        '<a href="#" title="'+obj.movieName+'" onclick="">'+obj.movieName+'</a></p>'+
+                        '<p class="star">主演：</p>'+
+                        '<p class="releasetime">上映时间：2019-09-30</p>'+
+                        '</div>'+
+                        '<div class="movie-item-number score-num">'+
+                        '<p class="score"><i class="integer">'+str.split('.')[0]+'.</i><i class="fraction">'+str.split('.')[1]+'</i></p>'+
+                        '</div>'+
+                        '</div>'+
+                        '</div>'+
+                        '</dd>'
+                    )
+                    loadActor(obj)
+                })
+            }
+            //期待榜单
+            function loadMovieListByExpect(result) {
+                var i=0;
+                $(".board-wrapper").empty();
+                $.each(result.data,function (index,obj) {
+                    i+=1;
+                    $(".board-wrapper").append(
+                        '<dd>'+
+                        '<i class="board-index board-index-'+i+'">'+i+'</i>'+
+                        '<a href="https://maoyan.com/films/1277939" title="'+obj.movieName+'" class="image-link" onclick="">'+
+                        '<img  class="poster-default">'+
+                        '<img alt="'+obj.movieName+'" class="board-img" src='+obj.movieImage.movieImagePath+' width="160" height="220">'+
+                        '</a>'+
+                        '<div class="board-item-main">'+
+                        '<div class="board-item-content">'+
+                        '<div class="movie-item-info">'+
+                        '<p class="name">'+
+                        '<a href="#" title="'+obj.movieName+'" onclick="">'+obj.movieName+'</a></p>'+
+                        '<p class="star">主演：</p>'+
+                        '<p class="releasetime">上映时间：2019-09-30</p>'+
+                        '</div>'+
+                        '<div class="movie-item-number score-num">'+
+                        '<p class="month-wish">想看人数：<span><span class="stonefont">'+obj.movieWantToSee+'</span></span>人</p>'+
+                        '</div>'+
+                        '</div>'+
+                        '</div>'+
+                        '</dd>'
+                    )
+                    loadActor(obj)
+                })
+            }
+        </script>
+    </div>
 </div>
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->

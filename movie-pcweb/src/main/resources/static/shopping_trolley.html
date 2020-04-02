@@ -79,6 +79,14 @@
             border-left: 0;
             border-right: 0;
         }
+        .gslogo{
+            cursor: pointer;
+            width: 150px;
+            height: 50px;
+            background-image: url(img/logo.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +95,7 @@
         <div data-v-545f1b4f="" class="wrapper">
             <div data-v-545f1b4f="" class="left">
                 <ul data-v-545f1b4f="">
-                    <li data-v-545f1b4f="" class="logo">
+                    <li data-v-545f1b4f="" class="gslogo">
                         <a data-v-545f1b4f="" href="https://show.bilibili.com/platform/home.html"></a>
                     </li>
                     <li>
@@ -260,6 +268,7 @@
     </div>
 </div>
 <script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/jquery.pagination.js"></script>
 <script>
     $.ajax({
         url:"storeCart_list?pageNum=1&pageSize=5",
@@ -282,7 +291,7 @@
                 '<div class="order-header-status">待支付</div>' +
                 '</div>' +
                 '<div class="order-item-body-wrapper">' +
-                '<div class="order-item-img" style="background-image: url(&quot;//i0.hdslb.com/bfs/openplatform/201911/8URZhIAs1573201328894.jpeg@74w_74h.jpeg&quot;);"></div>' +
+                '<div class="order-item-img" style="background-image: url('+obj.imgAddress+');"></div>' +
                 '<div class="order-item-body">' +
                 '<div class="order-item-name-wrapper">' +
                 '<div class="name order-item-title-name" style="-webkit-box-orient: vertical;">'+obj.productName+'</div>' +
