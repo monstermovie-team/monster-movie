@@ -1,3 +1,4 @@
+<script src="js/jquery-1.12.4.min.js"></script>
 <div class="content">
     <div class="aside">
         <div class="ranking-box-wrapper">
@@ -624,12 +625,16 @@
             <div class="panel">
                 <div class="panel-header">
       <span class="panel-title">
-        <span class="textcolor_red"><h2>正在热映（0部）</h2></span>
+        <span class="textcolor_red"><h2> 正在热映 </h2></span>
       </span>
                 </div>
                 <div class="panel-content">
-                    <div class="no-hots">当前城市暂无热映影片信息</div>
+                    <div class="panel-content">
+                        <dl class="movie-list" id="movieList1">
+                            </dl>
 
+
+                    </div>
                 </div>
             </div>
 
@@ -642,188 +647,12 @@
         <span class="panel-arrow panel-arrow-blue"></span>
       </span>
                     <span class="panel-title">
-        <span class="textcolor_blue"><h2>即将上映（115部）</h2></span>
+        <span class="textcolor_blue"><h2> 即将上映 </h2></span>
       </span>
                 </div>
                 <div class="panel-content">
-                    <dl class="movie-list">
-                        <dd>
-                            <div class="movie-item">
-                                <a href="https://maoyan.com/films/1291077" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1291077}">
-                                    <div class="movie-poster">
-                                        <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                        <img alt="东江风云海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/77c2c9bd84c6c076dd6dd077823e82d4433509.jpg@160w_220h_1e_1c">
-                                        <div class="movie-overlay movie-overlay-bg">
-                                            <div class="movie-info">
-                                                <div class="movie-title" title="东江风云">东江风云</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                                <div class="movie-detail movie-detail-strong movie-presale">
-                                    <a class="movie-presale-sep">预告片
-                                    </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1291077}">预 售</a>
-                                </div>
-                                <div class="movie-ver"></div>
-                            </div>
-                            <div class="movie-detail movie-rt">3月5日上映</div>
-
-                        </dd><dd>
-                        <div class="movie-item">
-                            <a href="https://maoyan.com/films/1215749" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1215749}">
-                                <div class="movie-poster">
-                                    <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                    <img alt="五彩缤纷海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/636599af8c1fa5cd31b654d2cc71b0273768541.jpg@160w_220h_1e_1c">
-                                    <div class="movie-overlay movie-overlay-bg">
-                                        <div class="movie-info">
-                                            <div class="movie-title" title="五彩缤纷">五彩缤纷</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                            <div class="movie-detail movie-detail-strong movie-presale">
-                                <a class="movie-presale-sep">预告片
-                                </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1215749}">预 售</a>
-                            </div>
-                            <div class="movie-ver"></div>
-                        </div>
-                        <div class="movie-detail movie-rt">3月6日上映</div>
-
-                    </dd><dd>
-                        <div class="movie-item">
-                            <a href="https://maoyan.com/films/1302494" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1302494}">
-                                <div class="movie-poster">
-                                    <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                    <img alt="调酒师海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/6664cd8c31f1254bc52793a158dc53ff8811971.jpg@160w_220h_1e_1c">
-                                    <div class="movie-overlay movie-overlay-bg">
-                                        <div class="movie-info">
-                                            <div class="movie-title" title="调酒师">调酒师</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                            <div class="movie-detail movie-detail-strong movie-presale">
-                                <a class="movie-presale-sep">预告片
-                                </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1302494}">预 售</a>
-                            </div>
-                            <div class="movie-ver"></div>
-                        </div>
-                        <div class="movie-detail movie-rt">3月13日上映</div>
-
-                    </dd><dd>
-                        <div class="movie-item">
-                            <a href="https://maoyan.com/films/1298030" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1298030}">
-                                <div class="movie-poster">
-                                    <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                    <img alt="愤怒的心海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/174c45cf85694f065224ee38b29282903015976.jpg@160w_220h_1e_1c">
-                                    <div class="movie-overlay movie-overlay-bg">
-                                        <div class="movie-info">
-                                            <div class="movie-title" title="愤怒的心">愤怒的心</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                            <div class="movie-detail movie-detail-strong movie-presale">
-                                <a class="movie-presale-sep">预告片
-                                </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1298030}">预 售</a>
-                            </div>
-                            <div class="movie-ver"></div>
-                        </div>
-                        <div class="movie-detail movie-rt">3月15日上映</div>
-
-                    </dd><dd>
-                        <div class="movie-item">
-                            <a href="https://maoyan.com/films/1233316" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1233316}">
-                                <div class="movie-poster">
-                                    <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                    <img alt="忠爱无言2海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/2c24eb6a84a92b9ba837967851bec9462844109.jpg@160w_220h_1e_1c">
-                                    <div class="movie-overlay movie-overlay-bg">
-                                        <div class="movie-info">
-                                            <div class="movie-title" title="忠爱无言2">忠爱无言2</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                            <div class="movie-detail movie-detail-strong movie-presale">
-                                <a class="movie-presale-sep">预告片
-                                </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1233316}">预 售</a>
-                            </div>
-                            <div class="movie-ver"></div>
-                        </div>
-                        <div class="movie-detail movie-rt">3月20日上映</div>
-
-                    </dd><dd>
-                        <div class="movie-item">
-                            <a href="https://maoyan.com/films/1219866" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1219866}">
-                                <div class="movie-poster">
-                                    <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                    <img alt="通往春天的列车海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/331c70099c5728d53694009426fb84ba165027.jpg@160w_220h_1e_1c">
-                                    <div class="movie-overlay movie-overlay-bg">
-                                        <div class="movie-info">
-                                            <div class="movie-title" title="通往春天的列车">通往春天的列车</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                            <div class="movie-detail movie-detail-strong movie-presale">
-                                <a class="movie-presale-sep">预告片
-                                </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1219866}">预 售</a>
-                            </div>
-                            <div class="movie-ver"></div>
-                        </div>
-                        <div class="movie-detail movie-rt">3月20日上映</div>
-
-                    </dd><dd>
-                        <div class="movie-item">
-                            <a href="https://maoyan.com/films/1294417" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1294417}">
-                                <div class="movie-poster">
-                                    <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                    <img alt="危险记忆海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/582d57e86924b47279c001dca5a12adb5773823.png@160w_220h_1e_1c">
-                                    <div class="movie-overlay movie-overlay-bg">
-                                        <div class="movie-info">
-                                            <div class="movie-title" title="危险记忆">危险记忆</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                            <div class="movie-detail movie-detail-strong movie-presale">
-                                <a class="movie-presale-sep">预告片
-                                </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1294417}">预 售</a>
-                            </div>
-                            <div class="movie-ver"></div>
-                        </div>
-                        <div class="movie-detail movie-rt">3月20日上映</div>
-
-                    </dd><dd>
-                        <div class="movie-item">
-                            <a href="https://maoyan.com/films/1208921" target="_blank" data-act="upcomingMovie-click" data-val="{movieid:1208921}">
-                                <div class="movie-poster">
-                                    <img class="poster-default" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/loading_2.e3d934bf.png">
-                                    <img alt="撼山瑶海报封面" src="./电影院票房购票_评分_选座_经典影视推荐-猫眼电影_files/1d1a24c486900bb5a9878b943fba30f61121816.png@160w_220h_1e_1c">
-                                    <div class="movie-overlay movie-overlay-bg">
-                                        <div class="movie-info">
-                                            <div class="movie-title" title="撼山瑶">撼山瑶</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="movie-detail movie-wish"><span class="stonefont"></span>人想看</div>
-                            <div class="movie-detail movie-detail-strong movie-presale">
-                                <a class="movie-presale-sep">预告片
-                                </a><a data-act="presaleUpcomingMovie-click" data-val="{movieid:1208921}">预 售</a>
-                            </div>
-                            <div class="movie-ver"></div>
-                        </div>
-                        <div class="movie-detail movie-rt">3月20日上映</div>
-
-                    </dd></dl>
+                    <dl class="movie-list" id="movieList2">
+                       </dl>
 
 
                 </div>
@@ -979,4 +808,121 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(function () {
+
+            //获取正在热映
+            $.ajax({
+                url : 'movie_list_by_State',
+                method : 'get',
+                data:{'pageNum':1,'pageSize':6,'State':1},
+                success : function(result){
+                    if(result.code == 200){
+                        console.log(result.data)
+                        addMovie(result.data);
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            });
+
+
+            //正在热映
+            function addMovie(dataList){
+                $("#movieList").empty();
+                $.each(dataList.list,function (index,obj) {
+                    $.ajax({
+                        url : 'movie_poster',
+                        method : 'get',
+                        data:{'movieId':obj.movieId},
+                        success : function(moviePoster){
+                            if(moviePoster.code == 200){
+                                $("#movieList1").append(
+                                    '<dd>' +
+                                    '                            <div class="movie-item">' +
+                                    '                                <a href="movieIntroduction.html?id='+ obj.movieId +'" target="_blank" >' +
+                                    '                                    <div class="movie-poster">' +
+                                    '                                        <img class="poster-default" src="'+ moviePoster.data +'">' +
+                                    '                                        <img alt="'+obj.movieName+'海报封面" src="'+ moviePoster.data +'">' +
+                                    '                                        <div class="movie-overlay movie-overlay-bg">' +
+                                    '                                            <div class="movie-info">' +
+                                    '                                                <div class="movie-title" title="'+obj.movieName+'">'+obj.movieName+'</div>' +
+                                    '                                            </div>' +
+                                    '                                        </div>' +
+                                    '                                    </div>' +
+                                    '                                </a>' +
+                                    '                                <div class="movie-detail movie-wish"><span class="stonefont">'+obj.movieWantToSee+'</span>人想看</div>' +
+                                    '                            </div>' +
+                                    '                        </dd>'
+                                )
+                            }else {
+                                alert(moviePoster.message);
+                            }
+                        }
+                    });
+                })
+            }
+
+
+            //获取即将上映
+            $.ajax({
+                url : 'movie_list_by_State',
+                method : 'get',
+                data:{'pageNum':1,'pageSize':6,'State':2},
+                success : function(result){
+                    if(result.code == 200){
+                        console.log(result.data)
+                        addMovieNow(result.data);
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            });
+
+
+            //即将上映
+            function addMovieNow(dataList){
+                $("#movieList").empty();
+                $.each(dataList.list,function (index,obj) {
+                    $.ajax({
+                        url : 'movie_poster',
+                        method : 'get',
+                        data:{'movieId':obj.movieId},
+                        success : function(moviePoster){
+                            if(moviePoster.code == 200){
+                                $("#movieList2").append(
+                                    '<dd>' +
+                                    '                            <div class="movie-item">' +
+                                    '                                <a href="movieIntroduction.html?id='+ obj.movieId +'" target="_blank" >' +
+                                    '                                    <div class="movie-poster">' +
+                                    '                                        <img class="poster-default" src="'+ moviePoster.data +'">' +
+                                    '                                        <img alt="'+obj.movieName+'海报封面" src="'+ moviePoster.data +'">' +
+                                    '                                        <div class="movie-overlay movie-overlay-bg">' +
+                                    '                                            <div class="movie-info">' +
+                                    '                                                <div class="movie-title" title="'+obj.movieName+'">'+obj.movieName+'</div>' +
+                                    '                                            </div>' +
+                                    '                                        </div>' +
+                                    '                                    </div>' +
+                                    '                                </a>' +
+                                    '                                <div class="movie-detail movie-wish"><span class="stonefont">'+obj.movieWantToSee+'</span>人想看</div>' +
+                                    '                            </div>' +
+                                    '                        </dd>'
+                                )
+                            }else {
+                                alert(moviePoster.message);
+                            }
+                        }
+                    });
+                })
+            }
+
+
+
+
+
+
+
+        });
+    </script>
 </div>
