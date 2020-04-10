@@ -33,7 +33,7 @@
         <a class="score-btn " style="height: 35px;">
           <div>
             <i class="icon score-btn-icon"></i>
-              <span class="score-btn-msg" data-toggle="modal" data-target="#myModal">评分</span>
+              <span class="score-btn-msg" onclick="isload()">评分</span>
           </div>
         </a>
       </div>
@@ -248,7 +248,8 @@
 
                       </ul>
             </div>
-        <a class="comment-entry" data-toggle="modal" data-target="#myModal">写短评</a>
+        <a class="comment-entry" href="javascript:void(0);" onclick="isload()">写短评</a>
+        <a class="comment-entry" data-toggle="modal" data-target="#myModal" style="display: none;" id="open">写短评</a>
     </div>
   </div>
         </div>
@@ -461,9 +462,8 @@
                                 <span class="word-count-info"></span>
                             </div>
                             <input type="hidden" name="mc_scroe" id="hidden-score" value="0">
-                            <input type="hidden" name="user_id" value="8"><!--用户id-->
+                            <input type="hidden" name="user_id" id="uId"><!--用户id-->
                             <input type="hidden" id="movie_id" name="movie_id">
-                            <input type="hidden" name="mc_id" value="10"><!--评论id-->
                             <input class="btn" id="submit-comment" type="button" value="提交"  disabled="true">
                         </form>
                     </div>
@@ -475,6 +475,20 @@
 
 
     <script>
+        function isload(){
+            $.ajax({
+                url:'getCustomerInfo',
+                method:'get',
+                success:function(result){
+                    if(result.code==200){
+                        $("#uId").val(result.data.customerId);
+                        $("#open").click();
+                    }else{
+                        location.href="login.html";
+                    }
+                }
+            });
+        }
       $(function () {
 
           //获取movie.html传过来的ID
@@ -691,10 +705,13 @@
                   success:function (result) {
                       if (result.code==200){
                           $('#myModal').modal('hide');
+                      }else{
+                          alert("评论失败");
                       }
                   }
               })
           })
+
           $.ajax({
               url:"listCommentInfo/"+movieId,
               method:"get",
