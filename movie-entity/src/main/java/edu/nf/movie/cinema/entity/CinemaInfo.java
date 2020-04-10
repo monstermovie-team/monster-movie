@@ -13,4 +13,5 @@ public class CinemaInfo {
     private String cinemaAddress;
     private String cinemaNumber;
     private String cinemaReferencePrice;
+    private CinemaImages cinemaImages;
 }
